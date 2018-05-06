@@ -75,7 +75,7 @@ class LODE:
             web.header('Access-Control-Allow-Credentials', 'true')
             web.header('Content-Type', 'Content-type: text/html')
             web_logger.mes()
-            return req.text + params[1:] + translated_string
+            return req.text
 
 
 if __name__ == "__main__":
