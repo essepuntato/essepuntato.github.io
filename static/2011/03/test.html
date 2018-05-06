@@ -1,0 +1,57 @@
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Tests on schema examples</title>
+</head>
+<body>
+<table border="1">
+<tr><th>Document description</th><th>Model used</th><th>Is the document consistent against the model?</th></tr>
+<tr>
+  <td>
+     <p>A <a href="http://www.essepuntato.it/2011/03/exampleJustEARMARK.owl">document</a> that describe the following TEI-like fragment (with overlaps):</p>
+     <pre>&lt;phrase&gt;
+	Fabio says that
+	&lt;noun xml:id="e1" next="e2"&gt;overl&lt;/noun&gt;
+	&lt;verb&gt;h&lt;noun xml:id="e2"&gt;ap&lt;noun&gt;pens&lt;/verb&gt;
+&lt;/phrase&gt;</pre>
+  </td>
+  <td><a href="http://www.essepuntato.it/2008/12/earmark">EARMARK ontology</a></td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td>
+     <p>A <a href="http://www.essepuntato.it/2011/03/exampleNotValid.owl">document</a> that describe the following TEI-like fragment (with overlaps):</p>
+     <pre>&lt;phrase&gt;
+	Fabio says that
+	&lt;noun xml:id="e1" next="e2"&gt;overl&lt;/noun&gt;
+	&lt;verb&gt;h&lt;noun xml:id="e2"&gt;ap&lt;noun&gt;pens&lt;/verb&gt;
+&lt;/phrase&gt;</pre>
+  </td>
+  <td>
+     <p>An <a href="http://www.essepuntato.it/2011/03/schemaexample">extension of EARMARK</a> implementing the following RelaxNG-like schema:</p>
+     <pre>start = (e.phrase | e.noun | e.verb)*
+e.phrase = element phrase { (e.noun | e.verb)* }
+e.noun = element noun { text }
+e.verb = element verb { text }</pre>
+  </td>
+  <td>No: the element <em>phrase</em> cannot contain any text.</td>
+</tr>
+<tr>
+  <td>
+     <p>A <a href="http://www.essepuntato.it/2011/03/exampleValidWithoutFreeText.owl">document</a> that describe the following TEI-like fragment (with overlaps):</p>
+     <pre>&lt;phrase&gt;
+	&lt;noun xml:id="e1" next="e2"&gt;overl&lt;/noun&gt;
+	&lt;verb&gt;h&lt;noun xml:id="e2"&gt;ap&lt;noun&gt;pens&lt;/verb&gt;
+&lt;/phrase&gt;</pre>
+  </td>
+  <td>
+     <p>An <a href="http://www.essepuntato.it/2011/03/schemaexample">extension of EARMARK</a> implementing the following RelaxNG-like schema:</p>
+     <pre>start = (e.phrase | e.noun | e.verb)*
+e.phrase = element phrase { (e.noun | e.verb)* }
+e.noun = element noun { text }
+e.verb = element verb { text }</pre>
+  </td>
+  <td>Yes</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,335 @@
+@prefix earmark:  <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix co:      <http://swan.mindinformatics.org/ontologies/1.2/collections/> .
+@prefix op:      <http://www.example.com/operation/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xs:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix this:    <http://www.essepuntato.it/2011/jasist/Weekdays#> .
+
+this:saturday_r1
+      a       _:b1 ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "2"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:saturday_docuverse .
+
+this:wednesday_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:wednesday_r2 ;
+                co:nextItem
+                        [ co:itemContent this:wednesday_r1 ;
+                          co:nextItem
+                                  [ co:itemContent this:tuesday_r6
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:saturday_r5
+      a       _:b2 ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "3"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:thrusday_docuverse .
+
+this:tuesday_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:tuesday_r2 ;
+                co:nextItem
+                        [ co:itemContent this:tuesday_r4 ;
+                          co:nextItem
+                                  [ co:itemContent this:tuesday_r1 ;
+                                    co:nextItem
+                                            [ co:itemContent this:tuesday_r6
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+_:b3  a       op:Deletion ;
+      dc:creator "Wednesday" ;
+      dc:date "2010-09-28T10:27:00" .
+
+this:tuesday_r1
+      a       _:b3 ;
+      a       [ a       op:Insertion ;
+                dc:creator "Tuesday" ;
+                dc:date "2010-09-28T10:26:00"
+              ] ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "1"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:tuesday_docuverse .
+
+this:thrusday_docuverse
+      earmark:hasContent ": some content s added, some removed"^^xs:string .
+
+_:b4  a       op:Deletion ;
+      dc:creator "Tuesday" ;
+      dc:date "2010-09-28T10:26:00" .
+
+this:wednesday_r3
+      a       _:b3 ;
+      earmark:begins "9"^^xs:nonNegativeInteger ;
+      earmark:ends "14"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .
+
+this:monday_r
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "44"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .
+
+this:saturday_p1
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:wednesday_r2 ;
+                co:nextItem
+                        [ co:itemContent this:saturday_r3 ;
+                          co:nextItem
+                                  [ co:itemContent this:saturday_r1
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:friday_r3
+      earmark:begins "15"^^xs:nonNegativeInteger ;
+      earmark:ends "36"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:thrusday_docuverse .
+
+this:tuesday_docuverse
+      earmark:hasContent "s"^^xs:string .
+
+this:thrusday_r
+      a       [ a       op:Insertion ;
+                dc:creator "Thrusday" ;
+                dc:date "2010-09-28T10:29:00"
+              ] ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "36"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:thrusday_docuverse .
+
+this:tuesday
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:tuesday_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:wednesday
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:wednesday_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:saturday_r4
+      a       _:b2 ;
+      earmark:begins "7"^^xs:nonNegativeInteger ;
+      earmark:ends "8"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:wednesday_docuverse .
+
+_:b2  a       op:Deletion ;
+      dc:creator "Saturday" ;
+      dc:date "2010-09-28T10:32:00" .
+
+this:monday_docuverse
+      earmark:hasContent "This paragraph will evolve during this week."^^xs:string .
+
+this:tuesday_r6
+      earmark:begins "43"^^xs:nonNegativeInteger ;
+      earmark:ends "44"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .
+
+this:wednesday_r2
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "9"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .
+
+this:friday_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:wednesday_r2 ;
+                co:nextItem
+                        [ co:itemContent this:wednesday_r1 ;
+                          co:nextItem
+                                  [ co:itemContent this:friday_r2 ;
+                                    co:nextItem
+                                            [ co:itemContent this:friday_r1 ;
+                                              co:nextItem
+                                                      [ co:itemContent this:friday_r3 ;
+                                                        co:nextItem
+                                                                [ co:itemContent this:tuesday_r6
+                                                                ]
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+_:b1  a       op:Insertion ;
+      dc:creator "Saturday" ;
+      dc:date "2010-09-28T10:32:00" .
+
+this:friday_r2
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "15"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:thrusday_docuverse .
+
+this:saturday_r3
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "7"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:wednesday_docuverse .
+
+this:saturday_docuverse
+      earmark:hasContent "d.S"^^xs:string .
+
+this:tuesday_r3
+      a       _:b4 ;
+      earmark:begins "14"^^xs:nonNegativeInteger ;
+      earmark:ends "19"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .
+
+this:tuesday_r5
+      a       _:b4 ;
+      earmark:begins "26"^^xs:nonNegativeInteger ;
+      earmark:ends "43"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .
+
+this:friday_docuverse
+      earmark:hasContent "i"^^xs:string .
+
+this:monday
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:monday_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:monday_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:monday_r
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+<http://www.essepuntato.it/2011/jasist/Weekdays>
+      a       owl:Ontology .
+
+this:friday
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:friday_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:thrusday
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:thrusday_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:wednesday_docuverse
+      earmark:hasContent " changes"^^xs:string .
+
+this:wednesday_r1
+      a       [ a       op:Insertion ;
+                dc:creator "Wednesday" ;
+                dc:date "2010-09-28T10:27:00"
+              ] ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "8"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:wednesday_docuverse .
+
+this:saturday_p2
+      a       _:b1 , earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:saturday_r2 ;
+                co:nextItem
+                        [ co:itemContent this:saturday_r6 ;
+                          co:nextItem
+                                  [ co:itemContent this:friday_r1 ;
+                                    co:nextItem
+                                            [ co:itemContent this:friday_r3 ;
+                                              co:nextItem
+                                                      [ co:itemContent this:tuesday_r6
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:thrusday_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:wednesday_r2 ;
+                co:nextItem
+                        [ co:itemContent this:wednesday_r1 ;
+                          co:nextItem
+                                  [ co:itemContent this:thrusday_r ;
+                                    co:nextItem
+                                            [ co:itemContent this:tuesday_r6
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:saturday
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:saturday_p1 ;
+                co:nextItem
+                        [ co:itemContent this:saturday_p2
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:friday_r1
+      a       [ a       op:Insertion ;
+                dc:creator "Friday" ;
+                dc:date "2010-09-28T10:30:00"
+              ] ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "1"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:friday_docuverse .
+
+this:saturday_r2
+      a       _:b1 ;
+      earmark:begins "2"^^xs:nonNegativeInteger ;
+      earmark:ends "3"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:saturday_docuverse .
+
+this:saturday_r6
+      earmark:begins "3"^^xs:nonNegativeInteger ;
+      earmark:ends "15"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:thrusday_docuverse .
+
+this:tuesday_r4
+      a       _:b3 ;
+      earmark:begins "19"^^xs:nonNegativeInteger ;
+      earmark:ends "26"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .
+
+this:tuesday_r2
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "14"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:monday_docuverse .

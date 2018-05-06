@@ -1,0 +1,202 @@
+@prefix earmark:  <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix w:       <http://www.example.com/wiki/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix co:      <http://swan.mindinformatics.org/ontologies/1.2/collections/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xs:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix this:    <http://www.essepuntato.it/2011/jasist/WikiChangeTracking#> .
+
+this:r9
+      a       _:b1 ;
+      earmark:begins "7"^^xs:nonNegativeInteger ;
+      earmark:ends "28"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse3 .
+
+this:r3
+      earmark:begins "27"^^xs:nonNegativeInteger ;
+      earmark:ends "36"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:div5
+      a       earmark:Element ;
+      a       [ a       w:Insertion ;
+                dc:creator "Fabio Vitali" ;
+                dc:date "2009-11-08T15:48:00"
+              ] ;
+      co:firstItem
+              [ co:itemContent this:r9
+              ] ;
+      earmark:hasGeneralIdentifier
+              "div"^^xs:string .
+
+this:docuverse1
+      earmark:hasContent "Bob was farming carrots and tomatoes."^^xs:string .
+
+this:r8
+      a       _:b1 ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "6"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse3 .
+
+this:EARMARKitem1
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:div4 ;
+                co:nextItem
+                        [ co:itemContent this:div5
+                        ]
+              ] .
+
+this:r2
+      a       [ a       w:Deletion ;
+                dc:creator "Angelo Di Iorio" ;
+                dc:date "2009-11-08T15:46:00"
+              ] ;
+      earmark:begins "23"^^xs:nonNegativeInteger ;
+      earmark:ends "27"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+_:b2  a       w:Insertion ;
+      dc:creator "Angelo Di Iorio" ;
+      dc:date "2009-11-08T15:46:00" .
+
+this:div4
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r1 ;
+                co:nextItem
+                        [ co:itemContent this:r5 ;
+                          co:nextItem
+                                  [ co:itemContent this:r3 ;
+                                    co:nextItem
+                                            [ co:itemContent this:r6 ;
+                                              co:nextItem
+                                                      [ co:itemContent this:r8 ;
+                                                        co:nextItem
+                                                                [ co:itemContent this:r7 ;
+                                                                  co:nextItem
+                                                                          [ co:itemContent this:r4
+                                                                          ]
+                                                                ]
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "div"^^xs:string .
+
+this:div3
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r1 ;
+                co:nextItem
+                        [ co:itemContent this:r5 ;
+                          co:nextItem
+                                  [ co:itemContent this:r3 ;
+                                    co:nextItem
+                                            [ co:itemContent this:r6 ;
+                                              co:nextItem
+                                                      [ co:itemContent this:r8 ;
+                                                        co:nextItem
+                                                                [ co:itemContent this:r7 ;
+                                                                  co:nextItem
+                                                                          [ co:itemContent this:r4 ;
+                                                                            co:nextItem
+                                                                                    [ co:itemContent this:r9
+                                                                                    ]
+                                                                          ]
+                                                                ]
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "div"^^xs:string .
+
+this:docuverse2
+      earmark:hasContent ", and beans"^^xs:string .
+
+this:r7
+      a       _:b2 ;
+      earmark:begins "5"^^xs:nonNegativeInteger ;
+      earmark:ends "11"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse2 .
+
+this:r1
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "23"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:r6
+      a       _:b2 ;
+      earmark:begins "1"^^xs:nonNegativeInteger ;
+      earmark:ends "5"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse2 .
+
+this:docuverse3
+      earmark:hasContent " green They are all tasteful"^^xs:string .
+
+this:div2
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r1 ;
+                co:nextItem
+                        [ co:itemContent this:r5 ;
+                          co:nextItem
+                                  [ co:itemContent this:r3 ;
+                                    co:nextItem
+                                            [ co:itemContent this:r6 ;
+                                              co:nextItem
+                                                      [ co:itemContent this:r7 ;
+                                                        co:nextItem
+                                                                [ co:itemContent this:r4
+                                                                ]
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "div"^^xs:string .
+
+<http://www.essepuntato.it/2011/jasist/WikiChangeTracking>
+      a       owl:Ontology .
+
+_:b1  a       w:Insertion ;
+      dc:creator "Silvio Peroni" ;
+      dc:date "2009-11-08T15:47:00" .
+
+this:r4
+      earmark:begins "36"^^xs:nonNegativeInteger ;
+      earmark:ends "37"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:r5
+      a       _:b2 ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "1"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse2 .
+
+this:div1
+      a       earmark:Element ;
+      a       [ dc:creator "151.61.3.122" ;
+                dc:date "2009-11-08T15:45:00"
+              ] ;
+      co:firstItem
+              [ co:itemContent this:r1 ;
+                co:nextItem
+                        [ co:itemContent this:r2 ;
+                          co:nextItem
+                                  [ co:itemContent this:r3 ;
+                                    co:nextItem
+                                            [ co:itemContent this:r4
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "div"^^xs:string .

@@ -1,0 +1,212 @@
+/* General stuff */
+
+html, body {
+  background:#fff;
+  color:#2e2e2e;
+  font-family:"Arial Unicode MS", "Arial Unicode", Arial, "URW Gothic L", Helvetica, Tahoma, sans-serif;
+  font-size:11pt;
+  line-height:1.5em;
+  overflow:auto;
+  min-width: 1220px;
+}
+h1, h2, h3, h4, h5
+{
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+
+/** Layout of everything **/
+div#e_div_1 { 
+	float:left;
+	display: block;
+	width: 58%;
+	padding-left: 12px;
+}
+div#div_side {
+	float: right;
+	position: fixed; 
+	top: 0px; right: 0px;
+	width: 37%;
+	height: 100%;
+	
+	background: #EBFFD6;
+	border: 1px solid #D6EB99;
+}
+div#lensmenucont{
+	height: 78%;
+	overflow: auto;
+	}
+div#tips_area {
+	height: 18%;
+	width: 36%;
+	position: fixed;
+	bottom: 0px;
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	z-index: 10;
+	
+	/* Box effect */
+	border-radius: 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	background: #FFFFAA;
+	border: 1px solid #FFAD33;
+}
+p {
+	float: clear;
+}
+
+
+/** Part for the article content style **/
+#e_div_1 h1, #e_div_1 h2, #e_div_1 h3, #e_div_1 h4, #e_div_1 h5, #e_div_1 h6 {color: #5c5c5c;font-weight: 100;margin: 0px 0px 6px 0px;LINE-HEIGHT: 1.5em;CLEAR: both;}
+#e_div_1 h1 {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+#e_div_1 h2 { font-size: 1.5em;	}
+#e_div_1 h3 { font-size: 1.35em; }
+#e_div_1 h4 { font-size: 1.2em; }
+#e_div_1 h5, #e_div_1 h6 { font-size: 1.1em; }
+
+#e_div_1 sub, #e_div_1 sup {
+  font-size: .75em;
+  line-height: 0;
+}
+#e_div_1 sup, #e_div_1 sub{
+*font-size:0.95em;
+}
+#e_div_1 sup { vertical-align: super; }
+#e_div_1 sub { vertical-align: sub; }
+#e_div_1 span.underline {text-decoration: underline;}
+#e_div_1 span.smallcaps{font-variant: small-caps;}
+#e_div_1 span.sansserif{font-family:sans-serif;}
+#e_div_1 span.crossout{text-decoration:line-through;}
+#e_div_1 p {
+  margin-bottom: 9px;
+  text-aign: justify;
+  word-spacing: -0.15ex;
+}
+/* Table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+dl.table {
+	border:1px solid #d7d7d7;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin:0 0 15px;
+	padding:6px;
+	background-color:#fff;
+}
+dl.table dt {
+    overflow:auto;
+}
+dl.table dd.table {
+	overflow:auto;
+        overflow-y:hidden;
+	margin-top:12px;
+	max-width:600px;
+	padding:1px;
+}
+dl.table dd {
+	color:#5c5c5c;
+	font-size:.8em;
+}
+
+dl.table table th {
+	background:#f9fbfc;
+	border:1px solid #F9FBFC;
+	vertical-align:top;
+}
+
+dl.table table th,
+dl.table table td {
+	padding:.1em .5em;
+	text-align:left;
+	vertical-align:top;
+}
+
+dl.table table tr td {
+	border:1px solid #ecf2f6;
+}
+
+dl.table table tr.spacer td {
+	border-top:1px solid #ecf2f6;
+	height:16px;
+}
+
+dl.table table hr {
+	background: none repeat scroll 0 0 #D7D7D7;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	height: 1px;
+}
+
+/* Formula */
+
+div.formula {
+	margin:0 0 12px 0;
+}
+div.formula div.label {
+	float:right;
+    vertical-align:bottom;
+    margin-left:4px;
+}
+div.formula div.mathml {
+      overflow:auto;
+      overflow-y:hidden;
+}
+/* Displayed-quote */
+
+blockquote {
+	padding:12px;
+}
+
+/* Author Vitae */
+
+#e_div_1 div.vitae {
+	clear:both;
+	display:inline-block;
+	width:100%;
+	margin-bottom:21px;
+}
+#e_div_1 div.vitae img {
+	float:left;
+	width:86px;
+}
+#e_div_1 div.vitae p {
+	clear:none;
+	float:right;
+	width:510px;
+}
+
+/* Footnote */
+
+dl.footnote {
+	clear: both;
+}
+dl.footnote > dt {
+	float: left;
+	padding-right: 6px;
+	font-weight: 100;
+}
+dl.footnote > dt + dd {
+	margin-left: 30px;
+}
+dl.footnote > dd p {
+	display: inline-block;
+}
+
+.figure {
+	border:1px solid grey;
+	padding:5px;
+}

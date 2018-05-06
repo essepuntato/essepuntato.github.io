@@ -1,0 +1,223 @@
+@prefix earmark:  <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix co:      <http://swan.mindinformatics.org/ontologies/1.2/collections/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xs:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix this:    <http://www.essepuntato.it/2011/jasist/MicroformatTable#> .
+
+this:role1
+      a       earmark:Element , co:Set ;
+      co:element this:r7 ;
+      earmark:hasGeneralIdentifier
+              "role"^^xs:string .
+
+this:tr1
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:td1 ;
+                co:nextItem
+                        [ co:itemContent this:td2 ;
+                          co:nextItem
+                                  [ co:itemContent this:td3 ;
+                                    co:nextItem
+                                            [ co:itemContent this:td4 ;
+                                              co:nextItem
+                                                      [ co:itemContent this:td5
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "tr"^^xs:string .
+
+this:vcard4
+      a       earmark:Element , co:Set ;
+      co:element this:fn4 , this:role2 ;
+      earmark:hasGeneralIdentifier
+              "vcard"^^xs:string .
+
+this:r3
+      earmark:begins "20"^^xs:nonNegativeInteger ;
+      earmark:ends "33"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:td5
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r5
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:fn2
+      a       earmark:Element , co:Set ;
+      co:element this:role1 , this:r5 ;
+      earmark:hasGeneralIdentifier
+              "fn"^^xs:string .
+
+this:r7
+      earmark:begins "69"^^xs:nonNegativeInteger ;
+      earmark:ends "92"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:vcard1
+      a       earmark:Element , co:Set ;
+      co:element this:role1 , this:fn1 ;
+      earmark:hasGeneralIdentifier
+              "vcard"^^xs:string .
+
+this:table1
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:tr1 ;
+                co:nextItem
+                        [ co:itemContent this:tr2
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "table"^^xs:string .
+
+this:td6
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r6
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:r4
+      earmark:begins "34"^^xs:nonNegativeInteger ;
+      earmark:ends "44"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:td1
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r1
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:fn3
+      a       earmark:Element , co:Set ;
+      co:element this:r3 ;
+      earmark:hasGeneralIdentifier
+              "fn"^^xs:string .
+
+this:r8
+      earmark:begins "93"^^xs:nonNegativeInteger ;
+      earmark:ends "109"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:vcard2
+      a       earmark:Element , co:Set ;
+      co:element this:role1 , this:fn2 ;
+      earmark:hasGeneralIdentifier
+              "vcard"^^xs:string .
+
+this:td2
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r2
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:td3
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r3
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:docuverse1
+      earmark:hasContent "Name Juliana Freire Michael Rappa Paul Jones Soumen Chakrabarti Role Program Commettee Chair Conference Chair"^^xs:string .
+
+this:r1
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "4"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:td7
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r7
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:fn4
+      a       earmark:Element , co:Set ;
+      co:element this:r4 ;
+      earmark:hasGeneralIdentifier
+              "fn"^^xs:string .
+
+this:r5
+      earmark:begins "45"^^xs:nonNegativeInteger ;
+      earmark:ends "63"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+<http://www.essepuntato.it/2011/jasist/MicroformatTable>
+      a       owl:Ontology .
+
+this:vcard3
+      a       earmark:Element , co:Set ;
+      co:element this:fn3 , this:role2 ;
+      earmark:hasGeneralIdentifier
+              "vcard"^^xs:string .
+
+this:tr2
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:td6 ;
+                co:nextItem
+                        [ co:itemContent this:td7 ;
+                          co:nextItem
+                                  [ co:itemContent this:td8
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "tr"^^xs:string .
+
+this:r2
+      earmark:begins "5"^^xs:nonNegativeInteger ;
+      earmark:ends "19"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:td4
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r4
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:r6
+      earmark:begins "64"^^xs:nonNegativeInteger ;
+      earmark:ends "58"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:docuverse1 .
+
+this:td8
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:r8
+              ] ;
+      earmark:hasGeneralIdentifier
+              "td"^^xs:string .
+
+this:role2
+      a       earmark:Element , co:Set ;
+      co:element this:r8 ;
+      earmark:hasGeneralIdentifier
+              "role"^^xs:string .
+
+this:fn1
+      a       earmark:Element , co:Set ;
+      co:element this:r2 ;
+      earmark:hasGeneralIdentifier
+              "fn"^^xs:string .

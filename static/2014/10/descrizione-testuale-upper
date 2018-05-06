@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY upper "http://www.essepuntato.it/2014/10/disciplinare-upper/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/"
+     xml:base="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:upper="http://www.essepuntato.it/2014/10/disciplinare-upper/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper">
+        <dc:creator>Silvio Peroni</dc:creator>
+        <dc:title>Descrizioni testuali generali dei disciplinari</dc:title>
+        <dc:contributor>Giorgia Lodi</dc:contributor>
+        <dc:date>2014-10-29</dc:date>
+        <dc:contributor>Aldo Gangemi</dc:contributor>
+        <owl:imports rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="&rdf;PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="&rdfs;Literal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale">
+        <rdfs:label>ha descrizione testuale</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa a tutto o parte di un certo disciplinare.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeCaratteri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeCaratteri">
+        <rdfs:label>ha descrizione testuale dei caratteri</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa ai caratteri relativi all&apos;etichettatura dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeEtichettatura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeCaratteristiche -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeCaratteristiche">
+        <rdfs:label>ha descrizione testuale delle caratteristiche</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle caratteristiche che contraddistinguono i prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeConfezionamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeConfezionamento">
+        <rdfs:label>ha descrizione testuale del confezionamento</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle caratteristiche proprie al confezionamento dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeDenominazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeDenominazione">
+        <rdfs:label>ha descrizione testuale della denominazione</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla denominazione descritta dal disciplinare.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeEtichettatura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeEtichettatura">
+        <rdfs:label>ha descrizione testuale dell&apos;etichettatura</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle caratteristiche relative all&apos;etichettatura dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeFattoriAmbientali -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeFattoriAmbientali">
+        <rdfs:label>ha descrizione testuale fattori ambientali</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale riguardante il legame della denominazione con l&apos;ambiente geografico con particolare riferimento ai suoi fattori ambientali.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeLegameConAmbienteGeografico"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeFattoriStorici -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeFattoriStorici">
+        <rdfs:label>ha descrizione testuale fattori storici</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale riguardante il legame della denominazione con l&apos;ambiente geografico con particolare riferimento ai suoi fattori storici.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeLegameConAmbienteGeografico"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeFattoriUmani -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeFattoriUmani">
+        <rdfs:label>ha descrizione testuale fattori umani</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale riguardante il legame della denominazione con l&apos;ambiente geografico con particolare riferimento ai suoi fattori umani.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeLegameConAmbienteGeografico"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeLegameConAmbienteGeografico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeLegameConAmbienteGeografico">
+        <rdfs:label>ha descrizione testuale del legame con l&apos;ambiente geografico</rdfs:label>
+        <rdfs:comment>Permette di associare un testo in linguaggio naturale che spiega i vari legami con l&apos;ambiente geografico, che possono essere di carattere storico, ambientale o umano.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeLogo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeLogo">
+        <rdfs:label>ha descrizione testuale del logo</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa al logo che caratterizza parte dell&apos;etichettatura dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeEtichettatura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeMateriePrime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeMateriePrime">
+        <rdfs:label>ha descrizione testuale delle materie prime</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle materie prime usate per produrre i prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeMenzioniFacoltative -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeMenzioniFacoltative">
+        <rdfs:label>ha descrizione testuale delle menzioni facoltative</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa a particolari menzioni facoltative che caratterizzano parte dell&apos;etichettatura dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeEtichettatura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeMetodoOttenimento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeMetodoOttenimento">
+        <rdfs:label>ha descrizione testuale del metodo di ottenimento</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa ai metodi utilizzati per ottenere i prodotti relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeOrganismoDiControlloECertificazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeOrganismoDiControlloECertificazione">
+        <rdfs:label>ha descrizione testuale del&apos;organismo di controllo e di certificazione</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa all&apos;organismo di controllo e di certificazione relativo ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeQualificazioni -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeQualificazioni">
+        <rdfs:label>ha descrizione testuale delle qualificazioni</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle qualificazioni che caratterizzano parte dell&apos;etichettatura dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeEtichettatura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeZonaDiProduzione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestualeZonaDiProduzione">
+        <rdfs:label>ha descrizione testuale della zona di produzione</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle zona di produzione dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/haDescrizioneTestuale"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/VersioneDisciplinare -->
+
+    <owl:Class rdf:about="&upper;VersioneDisciplinare">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

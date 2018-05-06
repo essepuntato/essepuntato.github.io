@@ -1,0 +1,1219 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY pattern "http://www.essepuntato.it/2008/12/pattern#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/2008/12/pattern#"
+     xml:base="http://www.essepuntato.it/2008/12/pattern"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:pattern="http://www.essepuntato.it/2008/12/pattern#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2008/12/pattern">
+        <rdfs:label xml:lang="en">pattern ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.3</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;date">2010-10-26</dc:date>
+        <dc:creator rdf:datatype="&xsd;string">Angelo Di Iorio</dc:creator>
+        <dc:creator rdf:datatype="&xsd;string">Fabio Vitali</dc:creator>
+        <dc:creator rdf:datatype="&xsd;string">Silvio Peroni</dc:creator>
+        <rdfs:comment xml:lang="en">An ontology defining formally patterns for segmenting a document into atomic components, in order to be manipulated independently and re-flowed in different contexts.</rdfs:comment>
+        <dc:title xml:lang="en">The Pattern Ontology
+Describing documents by means of their structural components</dc:title>
+        <dc:description xml:lang="en">The idea of using patterns to produce reusable and high-quality assets is not new in the literature. Software engineers, architects (as Alexander who first introduced this term) and designers very often use – or rather reuse – patterns to handle problems which recur over and over. Patterns have also been studied to modularize and customize web ontologies (http://ontologydesignpatterns.org). They guarantee the flexibility and maintainability of concepts and solutions in several heterogeneous scenarios.
+
+We&#39;ve been investigating patterns for XML documents for some time. The overall goal of this research is to understand how the structure of digital documents can be segmented into atomic components, that can be manipulated independently and re-flowed in different contexts. Instead of defining a large number of complex and diversified structures, we have identified a small number of structures/patterns that are sufficient to express what most users need. Our idea is that a low number of patterns are enough to capture the most relevant document structures.</dc:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#contains -->
+
+    <owl:ObjectProperty rdf:about="&pattern;contains">
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:comment xml:lang="en">A hierarchical-based entity contains another pattern-based one.</rdfs:comment>
+        <rdfs:domain rdf:resource="&pattern;Hierarchical"/>
+        <rdfs:range rdf:resource="&pattern;Pattern"/>
+        <owl:inverseOf rdf:resource="&pattern;isContainedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#containsInFirstPositions -->
+
+    <owl:ObjectProperty rdf:about="&pattern;containsInFirstPositions">
+        <rdfs:label xml:lang="en">contains in the first positions</rdfs:label>
+        <rdfs:comment xml:lang="en">A hierarchical-based entity contains another pattern-based entity in one of the first positions.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&pattern;contains"/>
+        <owl:inverseOf rdf:resource="&pattern;isContainedInFirstPositionsBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#isContainedBy -->
+
+    <owl:ObjectProperty rdf:about="&pattern;isContainedBy">
+        <rdfs:label xml:lang="en">is contained by</rdfs:label>
+        <rdfs:comment xml:lang="en">A pattern-based entity that is contained by another hierarchical-based entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&pattern;Hierarchical"/>
+        <rdfs:domain rdf:resource="&pattern;Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#isContainedInFirstPositionsBy -->
+
+    <owl:ObjectProperty rdf:about="&pattern;isContainedInFirstPositionsBy">
+        <rdfs:label xml:lang="en">is contained in the first positions by</rdfs:label>
+        <rdfs:comment xml:lang="en">A pattern-based entity that is contained by another hierarchical-based entity in one of the first positions.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&pattern;isContainedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#containsDifferentEntities -->
+
+    <owl:DatatypeProperty rdf:about="&pattern;containsDifferentEntities">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">contains different entities</rdfs:label>
+        <rdfs:comment xml:lang="en">A hierarchical-based entity contains al least two entities having different names.</rdfs:comment>
+        <rdfs:domain rdf:resource="&pattern;Hierarchical"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#containsSimilarEntities -->
+
+    <owl:DatatypeProperty rdf:about="&pattern;containsSimilarEntities">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">contains similar entities</rdfs:label>
+        <rdfs:comment xml:lang="en">A hierarchical-based entity contains al least two entities that share the same name.</rdfs:comment>
+        <rdfs:domain rdf:resource="&pattern;Hierarchical"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#hasName -->
+
+    <owl:DatatypeProperty rdf:about="&pattern;hasName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has name</rdfs:label>
+        <rdfs:comment xml:lang="en">The name of a particular entity.</rdfs:comment>
+        <rdfs:domain rdf:resource="&pattern;Pattern"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Atom -->
+
+    <owl:Class rdf:about="&pattern;Atom">
+        <rdfs:label xml:lang="en">atom-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Flat"/>
+        <rdfs:comment xml:lang="en">All those entities that can contain text only and that can be contained by any other entity compliant with the pattern container.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Block -->
+
+    <owl:Class rdf:about="&pattern;Block">
+        <rdfs:label xml:lang="en">block-based entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&pattern;Mixed"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;contains"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&pattern;Inline"/>
+                                    <rdf:Description rdf:about="&pattern;Milestone"/>
+                                    <rdf:Description rdf:about="&pattern;Popup"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&pattern;Inline"/>
+        <rdfs:comment xml:lang="en">All those entities that can contain text and that admit in their content model only entities compliant with the patterns inline, milestone and popup.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Bucket -->
+
+    <owl:Class rdf:about="&pattern;Bucket">
+        <rdfs:label xml:lang="en">bucket-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Hierarchical"/>
+        <rdfs:subClassOf rdf:resource="&pattern;Structural"/>
+        <owl:disjointWith rdf:resource="&pattern;Marker"/>
+        <rdfs:comment xml:lang="en">All those entities that can contain other entities and that cannot contain any text.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Container -->
+
+    <owl:Class rdf:about="&pattern;Container">
+        <rdfs:label xml:lang="en">container-based entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&pattern;Bucket"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;contains"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&pattern;Structural"/>
+                                            <owl:Class>
+                                                <owl:complementOf>
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&pattern;Milestone"/>
+                                                            <rdf:Description rdf:about="&pattern;Popup"/>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                </owl:complementOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&pattern;Textual"/>
+                                            <owl:Class>
+                                                <owl:complementOf rdf:resource="&pattern;Inline"/>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">All those entities that cannot contain text and that admit in their content model only entities compliant with the patterns block, atom, meta, and any container but popup.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Flat -->
+
+    <owl:Class rdf:about="&pattern;Flat">
+        <rdfs:label xml:lang="en">flat-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Leaf"/>
+        <rdfs:subClassOf rdf:resource="&pattern;Textual"/>
+        <owl:disjointWith rdf:resource="&pattern;Mixed"/>
+        <rdfs:comment xml:lang="en">All those entities that cannot contain any other entity and that can contain text.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#HContainer -->
+
+    <owl:Class rdf:about="&pattern;HContainer">
+        <rdfs:label xml:lang="en">hcontainer-based entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&pattern;Container"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;containsInFirstPositions"/>
+                        <owl:allValuesFrom rdf:resource="&pattern;Block"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">All those entities compliant with the pattern container and that contain always in the first positions block-based entities only.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Hierarchical -->
+
+    <owl:Class rdf:about="&pattern;Hierarchical">
+        <rdfs:label xml:lang="en">hierarchical-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Pattern"/>
+        <owl:disjointWith rdf:resource="&pattern;Leaf"/>
+        <rdfs:comment xml:lang="en">All those entities compliant with a pattern that admits other entities in its content model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Inline -->
+
+    <owl:Class rdf:about="&pattern;Inline">
+        <rdfs:label xml:lang="en">inline-based entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&pattern;isContainedBy"/>
+                <owl:someValuesFrom rdf:resource="&pattern;Block"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&pattern;Mixed"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;contains"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&pattern;Inline"/>
+                                    <rdf:Description rdf:about="&pattern;Milestone"/>
+                                    <rdf:Description rdf:about="&pattern;Popup"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">All those entities, always contained by block-based entities, that can contain text and that admit in their content model only entities compliant with the patterns inline, milestone and popup.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Leaf -->
+
+    <owl:Class rdf:about="&pattern;Leaf">
+        <rdfs:label xml:lang="en">leaf-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Pattern"/>
+        <rdfs:comment xml:lang="en">All those entities compliant with a pattern that does not admit other entities in its content model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Marker -->
+
+    <owl:Class rdf:about="&pattern;Marker">
+        <rdfs:label xml:lang="en">marker-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Leaf"/>
+        <rdfs:subClassOf rdf:resource="&pattern;Structural"/>
+        <rdfs:comment xml:lang="en">All those entities that cannot contain neither entities nor text.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Meta -->
+
+    <owl:Class rdf:about="&pattern;Meta">
+        <rdfs:label xml:lang="en">meta-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Marker"/>
+        <owl:disjointWith rdf:resource="&pattern;Milestone"/>
+        <rdfs:comment xml:lang="en">All those entities that cannot contain any text and that can be contained by any other entity compliant with the pattern container.
+
+The meaning of this kind of entities depends on its presence and its attributes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Milestone -->
+
+    <owl:Class rdf:about="&pattern;Milestone">
+        <rdfs:label xml:lang="en">milestone-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Marker"/>
+        <rdfs:comment xml:lang="en">All those entities that cannot contain any and that can be contained by any other entity compliant with the pattern block and inline.
+
+The meaning of these kind of entities depends on its position.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Mixed -->
+
+    <owl:Class rdf:about="&pattern;Mixed">
+        <rdfs:label xml:lang="en">mixed-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Hierarchical"/>
+        <rdfs:subClassOf rdf:resource="&pattern;Textual"/>
+        <rdfs:comment xml:lang="en">All those entities that can contain other entities and text.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Pattern -->
+
+    <owl:Class rdf:about="&pattern;Pattern">
+        <rdfs:label xml:lang="en">pattern-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment xml:lang="en">A structural pattern is an atomic component of a document, that is able to capture a recurrent and well knwon structure of a document.
+
+Any entity belonging to this class is compliant with exactly one structural pattern.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Popup -->
+
+    <owl:Class rdf:about="&pattern;Popup">
+        <rdfs:label xml:lang="en">popup-based entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&pattern;Container"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;isContainedBy"/>
+                        <owl:someValuesFrom rdf:resource="&pattern;Mixed"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">All those entities compliant with the pattern container and that are always contained by mixed-based entities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Record -->
+
+    <owl:Class rdf:about="&pattern;Record">
+        <rdfs:label xml:lang="en">record-base entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&pattern;Container"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;containsDifferentEntities"/>
+                        <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;containsSimilarEntities"/>
+                        <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">All those entities compliant with the pattern container and that admit in their content model only entities having different names among them.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Structural -->
+
+    <owl:Class rdf:about="&pattern;Structural">
+        <rdfs:label xml:lang="en">structural-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Pattern"/>
+        <owl:disjointWith rdf:resource="&pattern;Textual"/>
+        <rdfs:comment xml:lang="en">All those entities compliant with a pattern that does not admit any textual content in its content model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Table -->
+
+    <owl:Class rdf:about="&pattern;Table">
+        <rdfs:label xml:lang="en">table-based entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&pattern;Container"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&pattern;containsDifferentEntities"/>
+                        <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">All those entities compliant with the pattern container and that admit in their content model only entities with the same name.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#Textual -->
+
+    <owl:Class rdf:about="&pattern;Textual">
+        <rdfs:label xml:lang="en">textual-based entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&pattern;Pattern"/>
+        <rdfs:comment xml:lang="en">All those entities compliant with a pattern that admits textual contents in its content model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&pattern;HContainer"/>
+            <rdf:Description rdf:about="&pattern;Popup"/>
+            <rdf:Description rdf:about="&pattern;Record"/>
+            <rdf:Description rdf:about="&pattern;Table"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <swrl:Variable rdf:about="&pattern;x"/>
+    <swrl:Variable rdf:about="&pattern;s"/>
+    <swrl:Variable rdf:about="&pattern;y"/>
+    <swrl:Variable rdf:about="&pattern;z"/>
+    <swrl:Variable rdf:about="&pattern;g"/>
+    <swrl:Variable rdf:about="urn:swrl#p"/>
+    <swrl:Variable rdf:about="urn:swrl#x"/>
+    <swrl:Variable rdf:about="urn:swrl#y"/>
+    <swrl:Variable rdf:about="urn:swrl#s"/>
+    <swrl:Variable rdf:about="&pattern;p"/>
+    <swrl:Variable rdf:about="&pattern;t"/>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                                <swrl:argument1 rdf:resource="&pattern;z"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;contains"/>
+                                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                                        <swrl:argument2 rdf:resource="&pattern;z"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;contains"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                                <swrl:argument2 rdf:resource="&pattern;y"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Table"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:DatavaluedPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Container"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Container"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Atom"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Atom"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Table"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Table"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;contains"/>
+                                <swrl:argument1 rdf:resource="&pattern;p"/>
+                                <swrl:argument2 rdf:resource="&pattern;y"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                                <swrl:argument2 rdf:resource="&pattern;t"/>
+                                                <swrl:argument1 rdf:resource="&pattern;y"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <swrl:AtomList>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <swrl:BuiltinAtom>
+                                                        <swrl:builtin rdf:resource="&swrlb;notEqual"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&pattern;s"/>
+                                                            <rdf:Description rdf:about="&pattern;t"/>
+                                                        </swrl:arguments>
+                                                    </swrl:BuiltinAtom>
+                                                </rdf:first>
+                                            </swrl:AtomList>
+                                        </rdf:rest>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&pattern;contains"/>
+                        <swrl:argument1 rdf:resource="&pattern;p"/>
+                        <swrl:argument2 rdf:resource="&pattern;x"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:datatype="&xsd;boolean">true</swrl:argument2>
+                        <swrl:propertyPredicate rdf:resource="&pattern;containsDifferentEntities"/>
+                        <swrl:argument1 rdf:resource="&pattern;p"/>
+                    </swrl:DatavaluedPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Textual"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Pattern"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:ClassAtom>
+                                <swrl:classPredicate rdf:resource="&pattern;Textual"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:ClassAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:argument2 rdf:resource="&pattern;g"/>
+                                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                                <swrl:argument1 rdf:resource="&pattern;y"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:argument2 rdf:resource="&pattern;g"/>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:datatype="&xsd;boolean">true</swrl:argument2>
+                        <swrl:propertyPredicate rdf:resource="&pattern;containsSimilarEntities"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                    </swrl:DatavaluedPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="&pattern;contains"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <swrl:AtomList>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <swrl:DatavaluedPropertyAtom>
+                                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#s"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                            </swrl:DatavaluedPropertyAtom>
+                                        </rdf:first>
+                                    </swrl:AtomList>
+                                </rdf:rest>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;contains"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Milestone"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Milestone"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Block"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Block"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Table"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:datatype="&xsd;boolean">false</swrl:argument2>
+                        <swrl:propertyPredicate rdf:resource="&pattern;containsDifferentEntities"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:DatavaluedPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Meta"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Meta"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Record"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Record"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:DatavaluedPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                <swrl:argument2 rdf:resource="&pattern;s"/>
+                                <swrl:argument1 rdf:resource="&pattern;x"/>
+                            </swrl:DatavaluedPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:DatavaluedPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="&pattern;hasName"/>
+                                        <swrl:argument2 rdf:resource="&pattern;s"/>
+                                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                                    </swrl:DatavaluedPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Inline"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Inline"/>
+                        <swrl:argument1 rdf:resource="&pattern;y"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:DatavaluedPropertyAtom>
+                        <swrl:argument2 rdf:datatype="&xsd;boolean">false</swrl:argument2>
+                        <swrl:propertyPredicate rdf:resource="&pattern;containsSimilarEntities"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:DatavaluedPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:ClassAtom>
+                        <swrl:classPredicate rdf:resource="&pattern;Record"/>
+                        <swrl:argument1 rdf:resource="&pattern;x"/>
+                    </swrl:ClassAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+

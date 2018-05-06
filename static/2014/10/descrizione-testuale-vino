@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY upper "http://www.essepuntato.it/2014/10/disciplinare-upper/" >
+    <!ENTITY desc-upper "http://www.essepuntato.it/2014/10/descrizione-testuale-upper/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/"
+     xml:base="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:upper="http://www.essepuntato.it/2014/10/disciplinare-upper/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:desc-upper="http://www.essepuntato.it/2014/10/descrizione-testuale-upper/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino">
+        <dc:title>Descrizioni testuali specifiche per i disciplinari sui vini</dc:title>
+        <dc:creator>Silvio Peroni</dc:creator>
+        <dc:contributor>Giorgia Lodi</dc:contributor>
+        <dc:date>2014-10-29</dc:date>
+        <dc:contributor>Aldo Gangemi</dc:contributor>
+        <owl:imports rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-upper"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="&rdf;PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <rdfs:Datatype rdf:about="&rdfs;Literal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeAffinamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeAffinamento">
+        <rdfs:label>ha descrizione testuale dell&apos;affinamento</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa all&apos;affinamento di vini come parte delle norme di vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeAnnata -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeAnnata">
+        <rdfs:label>ha descrizione testuale dell&apos;annata</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa all&apos;annata di produzione delle uve che caratterizza parte dell&apos;etichettatura dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="&desc-upper;haDescrizioneTestualeEtichettatura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeArricchimento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeArricchimento">
+        <rdfs:label>ha descrizione testuale dell&apos;arricchimento</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa all&apos;arricchimento di vini come parte delle norme di vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeCondizioniNaturaliAmbiente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeCondizioniNaturaliAmbiente">
+        <rdfs:label>ha descrizione testuale delle condizioni naturali dell&apos;ambiente</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle condizioni naturali dell&apos;ambiente dove sono presenti i vigneti destinati alla produzione di vini di una certa denominazione, come parte delle relative norme di viticultura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeDensitaImpianti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeDensitaImpianti">
+        <rdfs:label>ha descrizione testuale delle denistà degli impianti</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla densità degli impianti usati nei vigneti destinati alla produzione di vini di una certa denominazione, come parte delle relative norme di viticultura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeElaborazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeElaborazione">
+        <rdfs:label>ha descrizione testuale dell&apos;elaborazione</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa all&apos;elaborazione di vini come parte delle norme di vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeFormaAllevamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeFormaAllevamento">
+        <rdfs:label>ha descrizione testuale delle forme di allevamento</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle forme di allevamento dei vigneti destinati alla produzione di vini di una certa denominazione, come parte delle relative norme di viticultura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeForzatura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeForzatura">
+        <rdfs:label>ha descrizione testuale della forzatura</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla forzatura dei vigneti destinati alla produzione di vini di una certa denominazione, come parte delle relative norme di viticultura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeImmissioneConsumo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeImmissioneConsumo">
+        <rdfs:label>ha descrizione testuale dell&apos;immisione al consumo</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa all&apos;immisione al consumo di vini come parte delle norme di vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeIrrigazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeIrrigazione">
+        <rdfs:label>ha descrizione testuale dell&apos;irrigazione</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa all&apos;irrigazione dei vigneti destinati alla produzione di vini di una certa denominazione, come parte delle relative norme di viticultura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione">
+        <rdfs:label>ha descrizione testuale delle norme per la vinificazione</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle norme seguite per la vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="&desc-upper;haDescrizioneTestualeMetodoOttenimento"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura">
+        <rdfs:label>ha descrizione testuale delle norme per la viticultura</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alle norme seguite per la viticultura utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="&desc-upper;haDescrizioneTestualeMetodoOttenimento"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeResaUvaEttaroEGradazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeResaUvaEttaroEGradazione">
+        <rdfs:label>ha descrizione testuale della resa a ettaro e gradazione minima</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla resa dell&apos;uva a ettaro e della relativa gradazione minima dei vini di una certa denominazione, come parte delle relative norme di viticultura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeResaUvaVino -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeResaUvaVino">
+        <rdfs:label>ha descrizione testuale della resa uva/vino</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla resa massima dell&apos;uva in vino come parte delle norme di vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeSceltaVendemmiale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeSceltaVendemmiale">
+        <rdfs:label>ha descrizione testuale della scelta vendemmiale</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla scelta vendemmiale di vini come parte delle norme di vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeSistemiPotatura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeSistemiPotatura">
+        <rdfs:label>ha descrizione testuale dei sistemi di potatura</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa ai sistemi di potatura per i vigneti destinati alla produzione di vini di una certa denominazione, come parte delle relative norme di viticultura.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeViticultura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeTappatura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeTappatura">
+        <rdfs:label>ha descrizione testuale della tappatura</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla tipologia di tappatura per i vini di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="&desc-upper;haDescrizioneTestualeConfezionamento"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeVigna -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeVigna">
+        <rdfs:label>ha descrizione testuale della vigna</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla vigna che caratterizza parte dell&apos;etichettatura dei prodotti di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="&desc-upper;haDescrizioneTestualeEtichettatura"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeVolumiNominali -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeVolumiNominali">
+        <rdfs:label>ha descrizione testuale dei volumi nominali</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa ai volumi nominali dei recipienti per i vini di una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="&desc-upper;haDescrizioneTestualeConfezionamento"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeZonaVinificazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeZonaVinificazione">
+        <rdfs:label>ha descrizione testuale della zona di vinificazione</rdfs:label>
+        <rdfs:comment>Permette di associare una descrizione in linguaggio naturale relativa alla zona di vinificazione come parte delle norme di vinificazione utilizzate per ottenere i vini relativi ad una certa denominazione.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino/haDescrizioneTestualeNormeVinificazione"/>
+        <rdfs:domain rdf:resource="&upper;VersioneDisciplinare"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/VersioneDisciplinare -->
+
+    <owl:Class rdf:about="&upper;VersioneDisciplinare">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/descrizione-testuale-vino"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

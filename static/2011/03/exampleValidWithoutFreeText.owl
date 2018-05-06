@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY earmark "http://www.essepuntato.it/2008/12/earmark#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY collections "http://swan.mindinformatics.org/ontologies/1.2/collections/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.example.com/"
+     xml:base="http://www.example.com/"
+     xmlns:earmark="http://www.essepuntato.it/2008/12/earmark#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:collections="http://swan.mindinformatics.org/ontologies/1.2/collections/">
+    <owl:Ontology rdf:about="http://www.example.com">
+        <owl:imports rdf:resource="http://www.essepuntato.it/2011/03/schemaexample"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/doc -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/doc">
+        <rdf:type rdf:resource="&earmark;StringDocuverse"/>
+        <rdfs:label>doc</rdfs:label>
+        <earmark:hasContent rdf:datatype="&xsd;string">Fabio says that overlhappens</earmark:hasContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/i_noun_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/i_noun_1">
+        <rdf:type rdf:resource="&collections;ListItem"/>
+        <rdfs:label>i_noun_1</rdfs:label>
+        <collections:nextItem rdf:resource="http://www.example.com/i_noun_2"/>
+        <collections:itemContent rdf:resource="http://www.example.com/r16_21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/i_noun_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/i_noun_2">
+        <rdf:type rdf:resource="&collections;ListItem"/>
+        <rdfs:label>i_noun_2</rdfs:label>
+        <collections:itemContent rdf:resource="http://www.example.com/r22_24"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/i_phrase_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/i_phrase_2">
+        <rdf:type rdf:resource="&collections;ListItem"/>
+        <rdfs:label>i_phrase_2</rdfs:label>
+        <collections:nextItem rdf:resource="http://www.example.com/i_phrase_3"/>
+        <collections:itemContent rdf:resource="http://www.example.com/noun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/i_phrase_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/i_phrase_3">
+        <rdf:type rdf:resource="&collections;ListItem"/>
+        <rdfs:label>i_phrase_3</rdfs:label>
+        <collections:itemContent rdf:resource="http://www.example.com/verb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/i_verb_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/i_verb_1">
+        <rdf:type rdf:resource="&collections;ListItem"/>
+        <rdfs:label>i_verb_1</rdfs:label>
+        <collections:itemContent rdf:resource="http://www.example.com/r21_28"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/noun -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/noun">
+        <rdf:type rdf:resource="&earmark;Element"/>
+        <rdfs:label>noun</rdfs:label>
+        <earmark:hasGeneralIdentifier rdf:datatype="&xsd;string">noun</earmark:hasGeneralIdentifier>
+        <collections:firstItem rdf:resource="http://www.example.com/i_noun_1"/>
+        <collections:lastItem rdf:resource="http://www.example.com/i_noun_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/phrase -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/phrase">
+        <rdf:type rdf:resource="&earmark;Element"/>
+        <rdfs:label>phrase</rdfs:label>
+        <earmark:hasGeneralIdentifier rdf:datatype="&xsd;string">phrase</earmark:hasGeneralIdentifier>
+        <collections:firstItem rdf:resource="http://www.example.com/i_phrase_2"/>
+        <collections:lastItem rdf:resource="http://www.example.com/i_phrase_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/r16_21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/r16_21">
+        <rdf:type rdf:resource="&earmark;PointerRange"/>
+        <rdfs:label>r16_21</rdfs:label>
+        <earmark:begins rdf:datatype="&xsd;nonNegativeInteger">16</earmark:begins>
+        <earmark:ends rdf:datatype="&xsd;nonNegativeInteger">21</earmark:ends>
+        <earmark:refersTo rdf:resource="http://www.example.com/doc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/r21_28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/r21_28">
+        <rdf:type rdf:resource="&earmark;PointerRange"/>
+        <rdfs:label>r21_28</rdfs:label>
+        <earmark:begins rdf:datatype="&xsd;nonNegativeInteger">21</earmark:begins>
+        <earmark:ends rdf:datatype="&xsd;nonNegativeInteger">28</earmark:ends>
+        <earmark:refersTo rdf:resource="http://www.example.com/doc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/r22_24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/r22_24">
+        <rdf:type rdf:resource="&earmark;PointerRange"/>
+        <rdfs:label>r22_24</rdfs:label>
+        <earmark:begins rdf:datatype="&xsd;nonNegativeInteger">22</earmark:begins>
+        <earmark:ends rdf:datatype="&xsd;nonNegativeInteger">24</earmark:ends>
+        <earmark:refersTo rdf:resource="http://www.example.com/doc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/verb -->
+
+    <owl:NamedIndividual rdf:about="http://www.example.com/verb">
+        <rdf:type rdf:resource="&earmark;Element"/>
+        <rdfs:label>verb</rdfs:label>
+        <earmark:hasGeneralIdentifier rdf:datatype="&xsd;string">verb</earmark:hasGeneralIdentifier>
+        <collections:lastItem rdf:resource="http://www.example.com/i_verb_1"/>
+        <collections:firstItem rdf:resource="http://www.example.com/i_verb_1"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1782) http://owlapi.sourceforge.net -->
+

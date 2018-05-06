@@ -1,0 +1,65 @@
+span.rhetflag {
+	color: crimson;
+	font-weight: bold;
+	text-align: center;
+	/* display: none; */
+	position: relative;
+}
+span.rhetdenotes {
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+/* FOR THE RHETORIC */
+.infotip {
+	
+	}
+/* FOR BIBLIO TOOLTIPS */
+.bibliotip {
+	
+}
+	/* TOOLTIPS GENERAL */
+.tooltip 
+{
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	display: block;
+	/* 	TEMP disabled PER DEBUGGARE TOOLTIPJS */
+	position: fixed;
+	bottom: 0px;
+	right: 25px; 
+/* 	left: 150px; */
+/* 	top: 100px; */
+	z-index: 99;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 16%;
+	width: 35%;
+	
+	padding-top: 0.8em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	
+	font-size: small;
+	
+/* 	background: red; */
+/* 	border: 1px solid #FFAD33 */
+}
+
+p.section {
+	margin-top: 10px;
+}
+
+
+span.biblio_tooltip {
+	 /* display:none; */
+}
+
+
+
+/*** THIS HAVE TO BE THE LAST!! **/
+	.hidden {
+		display:none;
+	}
+	.invisible {
+		visibility:hidden;
+	}

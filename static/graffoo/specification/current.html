@@ -1,0 +1,621 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Graffoo Specification</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="head">
+        	<h1>Graffoo Specification</h1>
+        	<dl>
+        		<dt>Date:</dt>
+        		<dd>28/10/2013</dd>
+        		<dt>Current version:</dt>
+        		<dd>1.0</dd>
+        		<dt>Author</dt>
+        		<dd>Silvio Peroni (<a href="http://www.essepuntato.it">web</a>, <a href="http://palindrom.es/phd">blog</a>, <a href="http://twitter.com/essepuntato">twitter</a>, <a href="http://orcid.org/0000-0003-0530-4305">orcid</a>)</dd>
+        	</dl>
+        	<div class="copyright">
+        		<p>This work is distributed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+        	</div>
+        </div>	
+        
+        <hr />
+        
+        <div id="toc">
+        	<h2>Table of Content</h2>
+        	<ol>
+        		<li>
+        			<a href="#basic-widgets">Basic widgets</a>
+	        		<ol>
+    	    			<li>
+    	    				<a href="#classes">Classes</a>
+    	    				<ul>
+    	    					<li><a href="#class-declaration">Class declaration</a></li>
+    	    					<li><a href="#subclass-axiom">Subclass axiom</a></li>
+    	    					<li><a href="#equivalence-axiom">Equivalence axiom</a></li>
+    	    					<li><a href="#disjoint-axiom">Disjoint axiom</a></li>
+    	    				</ul>
+    	    			</li>
+       	 				<li>
+       	 					<a href="#datatypes">Datatypes</a>
+       	 					<ul>
+    	    					<li><a href="#datarange-declaration">Datatype declaration</a></li>
+    	    				</ul>
+       	 				</li>
+        				<li>
+        					<a href="#properties">Properties</a>
+        					<ul>
+    	    					<li><a href="#annotationproperty-declaration">Annotation property declaration</a></li>
+    	    					<li><a href="#dataproperty-declaration">Data property declaration</a></li>
+    	    					<li><a href="#objectproperty-declaration">Object property declaration</a></li>
+    	    				</ul>
+        				</li>
+        				<li>
+        					<a href="#individuals">Individuals</a>
+        					<ul>
+    	    					<li><a href="#individual-declaration">Individual declaration</a></li>
+    	    					<li><a href="#individual-type">Class assertion</a></li>
+    	    					<li><a href="#individual-equality">Individual equality</a></li>
+    	    					<li><a href="#individual-disequality">Individual disequality</a></li>
+    	    					<li><a href="#individual-data-assertion">Data property assertion</a></li>
+    	    					<li><a href="#individual-object-assertion">Object property assertion</a></li>
+    	    				</ul>
+        				</li>
+        				<li>
+        					<a href="#ontologies">Ontologies</a>
+        					<ul>
+    	    					<li><a href="#ontology-declaration">Ontology declaration</a></li>
+    	    					<li><a href="#ontology-version-iri-specification">Version IRI specification</a></li>
+    	    					<li><a href="#ontology-import">Import axiom</a></li>
+    	    					<li><a href="#provenance-of-entities">Provenance of entities</a></li>
+    	    				</ul>
+        				</li>
+        				<li>
+        					<a href="#general">General</a>
+        					<ul>
+    	    					<li><a href="#prefixes">Prefixes</a></li>
+    	    					<li><a href="#iri-and-curie">IRI and CURIE defining entities</a></li>
+    	    				</ul>
+        				</li>
+        			</ol>
+        		</li>
+        		<li>
+        			<a href="#advanced-widgets">Advanced widgets</a>
+        			<ol start="7">
+						<li>
+							<a href="#restrictions">Restrictions</a>
+							<ul>
+								<li><a href="#class-restriction">Class restriction</a></li>
+								<li><a href="#class-axioms-restriction">Class axioms with restrictions</a></li>
+								<li><a href="#datatype-restriction">Datatype restriction</a></li>
+								<li><a href="#datatype-declaration-restrictions">Datatype declaration with restrictions</a></li>
+								<li><a href="#property-declaration-restrictions">Property declarations with restrictions</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#other-axioms">Other OWL features</a>
+							<ul>
+								<li><a href="#additional-axioms">Additional axioms</a></li>
+								<li><a href="#punning">Punning</a></li>
+								<li><a href="#swrl-rules">SWRL rules</a></li>
+							</ul>
+						</li>
+        				<li>
+        					<a href="#understanding">Supporting understanding</a>
+        					<ul>
+        						<li><a href="#annotationproperty-facility">Annotation property facility</a></li>
+        						<li><a href="#dataproperty-facility">Data property facility</a></li>
+        						<li><a href="#objectproperty-facility">Object property facility</a></li>
+        					</ul>
+        				</li>
+    	    		</ol>
+        		</li>
+        	</ol>
+        </div>
+        
+        <h2 id="basic-widgets"><span>Basic widgets</span><span class="backlink">back to <a href="#toc">ToC</a></span></h2>
+        <p>In this section we introduce all the basic widgets of Graffoo, which allow one to create classes, datatypes, (annotation, data and object) properties, individuals and ontologies. All the examples are based on the <a href="http://www.essepuntato.it/2008/12/earmark">EARMARK Ontology</a> (default prefix).</p>
+        
+        <h3 id="classes"><span>Classes</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+        <p>A yellow rectangle with solid black border is used to declare classes. Solid black and labelled arrows are used to declare class axioms.</p>
+        <table border="1">
+        	<tr>
+        		<th>Type of axiom</th>
+        		<th>Graffoo widget</th>
+        		<th>Manchester Syntax translation</th>
+        	</tr>
+        	<tr id="class-declaration">
+        		<td>Class declaration</td>
+        		<td><img alt="" src="class-declaration.png" /></td>
+        		<td>
+        			<pre>
+Class: Range
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="subclass-axiom">
+        		<td>Subclass axiom</td>
+        		<td><img alt="" src="subclass-axiom.png" /></td>
+        		<td>
+        			<pre>
+Class: Range
+
+Class: XPathRange
+	SubClassOf: Range
+	
+Class: PointerRange
+	SubClassOf: Range
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="equivalence-axiom">
+        		<td>Equivalence axiom</td>
+        		<td><img alt="" src="equivalence-axiom.png" /></td>
+        		<td>
+        			<pre>
+Class: Range
+
+Class: Offset
+	EquivalentTo: Range
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="disjoint-axiom">
+        		<td>Disjoint axiom</td>
+        		<td><img alt="" src="disjoint-axiom.png" /></td>
+        		<td>
+        			<pre>
+Class: Range
+
+Class: Docuverse
+	DisjointWith: Range
+					</pre>
+        		</td>
+        	</tr>
+        </table>
+        
+        <h3 id="datatypes"><span>Datatypes</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+        <p>A green rhomboid with solid black border is used to declare datatypes. Note that in the example we declare the datatype <em>rdfs:Literal</em> explicitly for the sake of understandability, even if the <a href="http://www.w3.org/TR/owl2-syntax/#Datatype_Maps">OWL 2 standard datatypes</a> do not need to be explicitly declared.</p>
+        <table border="1">
+        	<tr>
+        		<th>Type of axiom</th>
+        		<th>Graffoo widget</th>
+        		<th>Manchester Syntax translation</th>
+        	</tr>
+			<tr id="datarange-declaration">
+        		<td>Datatype declaration</td>
+				<td><img alt="" src="datarange-declaration.png" /></td>
+        		<td>
+        			<pre>
+Datatype: rdfs:Literal
+					</pre>
+        		</td>
+        	</tr>  
+        </table>      	
+        
+        <h3 id="properties"><span>Properties</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+        <p>An orange solid line is used to declare annotation properties, where the backslash at the beginning identifies the propert domain while the dashed arrow at the end indicates the property range. A green solid line is used to declare data properties, where the empty circle at the beginning identifies the property domain while the empty arrow at the end indicates the property range. A blue solid line is used to declare object properties, where the solid circle at the beginning identifies the property domain while the solid arrow at the end indicates the property range.</p>
+        <table border="1">
+        	<tr>
+        		<th>Type of axiom</th>
+        		<th>Graffoo widget</th>
+        		<th>Manchester Syntax translation</th>
+        	</tr>
+        	<tr id="annotationproperty-declaration">
+        		<td>Annotation property declaration</td>
+        		<td><img alt="" src="annotationproperty-declaration.png" /></td>
+        		<td>
+        			<pre>
+AnnotationProperty: dc:date
+	Domain: owl:Thing
+	Range: rdfs:Literal
+
+Class: owl:Thing
+
+Datatype: rdfs:Literal
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="dataproperty-declaration">
+        		<td>Data property declaration</td>
+        		<td><img alt="" src="dataproperty-declaration.png" /></td>
+        		<td>
+        			<pre>
+DataProperty: hasContent
+	Domain: Docuverse
+	Range: rdfs:Literal
+
+Class: Docuverse
+
+Datatype: rdfs:Literal
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="objectproperty-declaration">
+        		<td>Object property declaration</td>
+        		<td><img alt="" src="objectproperty-declaration.png" /></td>
+        		<td>
+        			<pre>
+ObjectProperty: refersTo
+	Domain: Range
+	Range: Docuverse
+
+Class: Range
+
+Class: Docuverse
+					</pre>
+        		</td>
+        	</tr>
+        </table>
+        
+        <h3 id="individuals"><span>Individuals</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+        <p>A pink circle with solid black border is used to declare individuals. Solid black and labelled arrows are used to declare axioms and assertions among individuals.</p>
+        <table border="1">
+        	<tr>
+        		<th>Type of axiom</th>
+        		<th>Graffoo widget</th>
+        		<th>Manchester Syntax translation</th>
+        	</tr>
+        	<tr id="individual-declaration">
+        		<td>Individual declaration</td>
+        		<td><img alt="" src="individual-declaration.png" /></td>
+        		<td>
+        			<pre>
+Individual: r1
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="individual-type">
+        		<td>Class assertion</td>
+        		<td><img alt="" src="individual-type.png" /></td>
+        		<td>
+        			<pre>
+Individual: r1
+	Types: Range
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="individual-equality">
+        		<td>Individual equality</td>
+        		<td><img alt="" src="individual-equality.png" /></td>
+        		<td>
+        			<pre>
+Individual: r1
+	SameAs: r2
+
+Individual: r2
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="individual-disequality">
+        		<td>Individual disequality</td>
+        		<td><img alt="" src="individual-disequality.png" /></td>
+        		<td>
+        			<pre>
+Individual: r1
+	DifferentFrom: d1
+
+Individual: d1
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="individual-data-assertion">
+        		<td>Data property assertion</td>
+        		<td><img alt="" src="individual-data-assertion.png" /></td>
+        		<td>
+        			<pre>
+Individual: d1
+	Facts: hasContent "Some text"^^xsd:string
+					</pre>
+        		</td>
+        	</tr>
+			<tr id="individual-object-assertion">
+        		<td>Object property assertion</td>
+				<td><img alt="" src="individual-object-assertion.png" /></td>
+        		<td>
+        			<pre>
+Individual: r1
+	Facts: refersTo d1
+
+Individual: d1
+					</pre>
+        		</td>
+        	</tr>
+        </table>
+        
+        <h3 id="ontologies"><span>Ontologies</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+        <p>A transparent box with a light-blue heading and a dotted black border is used to declare ontologies.</p>
+        
+        <table border="1">
+        	<tr>
+        		<th>Type of axiom</th>
+        		<th>Graffoo widget</th>
+        		<th>Manchester Syntax translation</th>
+        	</tr>
+        	<tr id="ontology-declaration">
+        		<td>Ontology declaration</td>
+        		<td><img alt="" src="ontology-declaration.png" /></td>
+        		<td>
+        			<pre>
+Ontology: &lt;http://www.essepuntato.it/2008/12/earmark&gt;
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="ontology-version-iri-specification">
+        		<td>Version IRI specification</td>
+        		<td><img alt="" src="ontology-version-iri-specification.png" /></td>
+        		<td>
+        			<pre>
+Ontology: 
+	&lt;http://www.essepuntato.it/2008/12/earmark&gt;
+	&lt;http://www.essepuntato.it/2008/12/earmark/1.8.1&gt;
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="ontology-import">
+        		<td>Import axiom</td>
+        		<td><img alt="" src="ontology-import.png" /></td>
+        		<td>
+        			<pre>
+Ontology: &lt;http://www.essepuntato.it/2008/12/earmark&gt;
+	Import: &lt;http://www.essepuntato.it/2010/05/ghost&gt;
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="provenance-of-entities">
+        		<td>Provenance of entities</td>
+        		<td><img alt="" src="entity-definedin-annotation.png" /></td>
+        		<td>
+        			<pre>
+Ontology: &lt;http://www.essepuntato.it/2008/12/earmark&gt;
+	Import: &lt;http://www.essepuntato.it/2010/05/ghost&gt;
+
+Class: Range
+	Annotations: 
+		rdfs:isDefinedBy 
+			&lt;http://www.essepuntato.it/2010/05/ghost&gt;
+
+Class: XPathRange
+	Annotations: 
+		rdfs:isDefinedBy 
+			&lt;http://www.essepuntato.it/2008/12/earmark&gt;
+	SubClassOf: Range
+
+DataProperty: hasXPathContext
+	Annotations: 
+		rdfs:isDefinedBy 
+			&lt;http://www.essepuntato.it/2008/12/earmark&gt;
+	Domain: XPathRange
+	Range: xsd:string
+					</pre>
+        		</td>
+        	</tr>
+        </table>
+        
+        <h3 id="general"><span>General</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+        <p>A box entitled <q>Prefixes</q> is used to declare all the prefixes that can be used within an ontology. Thus, all the ontological entities can be declared through bracketed IRIs or CURIEs (i.e. prefix + local name).</p>
+        
+        <table border="1">
+        	<tr>
+        		<th>Type of axiom</th>
+        		<th>Graffoo widget</th>
+        		<th>Manchester Syntax translation</th>
+        	</tr>
+        	<tr id="prefixes">
+        		<td>Prefixes</td>
+        		<td><img alt="" src="prefixes.png" /></td>
+        		<td>
+        			<pre>
+Prefix: : &lt;http://www.essepuntato.it/2008/12/earmark#&gt;
+Prefix: owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+Prefix: rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+Prefix: xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="iri-and-curie">
+        		<td>IRI and CURIE defining entities</td>
+        		<td><img alt="" src="iri-and-curie.png" /></td>
+        		<td>
+        			<pre>
+Class: XPathRange
+
+ObjectProperty: hasXPathContext
+Domain: XPathRange
+Range: &lt;http://www.w3.org/2001/XMLSchema#string&gt;
+					</pre>
+        		</td>
+        	</tr>
+       	</table>
+        
+        
+        <h2 id="advanced-widgets"><span>Advanced widgets</span><span class="backlink">back to <a href="#toc">ToC</a></span></h2>
+        <p>In this section we introduce all the advanced widgets of Graffoo, which allow one to create restrictions, additional axioms, rules, punning and allow one to support ontology understanding. All the examples are based on the <a href="http://www.essepuntato.it/2008/12/earmark">EARMARK Ontology</a> (default prefix), the <a href="http://purl.org/spar/fabio">FRBR-aligned Bibliographic Ontology (FaBiO)</a> (prefix <em>fabio</em>), and the <a href="http://purl.org/co">Collections Ontology</a> (prefix <em>co</em>).</p>
+        
+        <h3 id="restrictions"><span>Restrictions</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+        <p>The widgets that define restrictions of classes and datatypes (which are a particular kinds of classes and datatypes) are, respectively, a light-yellow rectangle and a light-grey rhomboid with dotted border, and the text inside these shapes actually is a <a href="http://www.w3.org/TR/owl2-manchester-syntax">Manchester Syntax</a> expression defining the restriction in consideration. Contrarily to classes and datatypes, the restrictions are not first-class objects in OWL, which means that they are not identified by IRIs like other entities, and they can be defined as a (boolean, enumerative, existential, universal, and quantified) combination of other particular classes/datatypes.</p>
+        
+        <table border="1">
+        	<tr>
+        		<th>Type of axiom</th>
+        		<th>Graffoo widget</th>
+        		<th>Manchester Syntax translation</th>
+        	</tr>
+        	<tr id="class-restriction">
+        		<td>Class restriction</td>
+        		<td><img alt="" src="class-restriction.png" /></td>
+        		<td>
+        			<pre>
+(begins only xsd:nonNegativeInteger) 
+and 
+(ends only xsd:nonNegativeInteger)
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="class-axioms-restriction">
+        		<td>Class axioms with restrictions</td>
+        		<td><img alt="" src="class-axioms-restriction.png" /></td>
+        		<td>
+        			<pre>
+Class: PointerRange
+	SubClassOf: 
+		(begins only xsd:nonNegativeInteger) 
+		and 
+		(ends only xsd:nonNegativeInteger)
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="datatype-restriction">
+        		<td>Datatype restriction</td>
+        		<td><img alt="" src="datatype-restriction.png" /></td>
+        		<td>
+        			<pre>
+xsd:integer[>= 0]
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="datatype-declaration-restrictions">
+        		<td>Datatype declaration with restrictions</td>
+        		<td><img alt="" src="datatype-axioms-restriction.png" /></td>
+        		<td>
+        			<pre>
+Datatype: xsd:nonNegativeInteger
+EquivalentTo: xsd:integer[>= 0] 
+					</pre>
+        		</td>
+        	</tr>
+        	<tr id="property-declaration-restrictions">
+        		<td>Property declaration with restrictions</td>
+        		<td><img alt="" src="property-declaration-restrictions.png" /></td>
+        		<td>
+        			<pre>
+ObjectProperty: fabio:hasDiscipline
+Domain: fabio:TermDictionary or frbr:Endeavour
+Range: fabio:SubjectDiscipline
+
+DataProperty: prism:publicationDate
+Domain: frbr:Endeavour
+Range: xsd:date or xsd:gYear or xsd:gYearMonth
+					</pre>
+        		</td>
+        	</tr>
+       	</table>
+        
+        
+    	<h3 id="other-axioms"><span>Other OWL features</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+    	<p>Additional axioms (written in <a href="http://www.w3.org/TR/owl2-manchester-syntax">Manchester Syntax</a>) can be associated to any entity by using a light-blue and folded box. In particular, when it is needed to associate such axioms to all the Graffoo widgets but edges, one can link the box through a dashed line, while when one have to specify additional axioms to property declarations, (s)he needs to put the box close to the property declaration in consideration – i.e. the closest label of a property declaration to the box is the one to which the Manchester Syntax axioms are applied. This box is very useful when we want to define some properties that are not expressible using the other widgets, such as sub-property axioms, property characteristics, property chains, keys, annotations, etc. In addition to these axioms, Graffoo is able to address the punning of an entity without any particular issue, by defining such an entity through different widgets (explicitly or implicitly), and there is also a particular widget, i.e. a box with light-grey header (entitled <q>SWRL</q>) and black dashed border, to specify SWRL rules.</p>
+        
+    	<table border="1">
+    		<tr>
+    			<th>Type of axiom</th>
+    			<th>Graffoo widget</th>
+    			<th>Manchester Syntax translation</th>
+    		</tr>
+    		<tr id="additional-axioms">
+    			<td>Additional axioms</td>
+    			<td><img alt="" src="additional-axioms.png" /></td>
+    			<td>
+    				<pre>
+Class: co:Collection
+	Annotations:
+		rdfs:label "collection"
+		rdfs:comment "A group of objects that can 
+		              be considered as a whole."
+
+ObjectProperty: co:element
+	SubPropertyChain: co:item o co:itemContent
+					</pre>
+    			</td>
+    		</tr>
+    		<tr id="punning">
+    			<td>Punning</td>
+    			<td><img alt="" src="punning.png" /></td>
+    			<td>
+    				<pre>
+Class: co:MathematicalObject
+
+Class: co:Bag
+
+Individual: co:Bag
+	Types: co:MathematicalObject
+
+Class: co:List
+	SubClassOf: co:Bag
+
+Individual: co:List
+	Types: co:MathematicalObject
+					</pre>
+    			</td>
+    		</tr>
+    		<tr id="swrl-rules">
+    			<td>SWRL rules</td>
+    			<td><img alt="" src="swrl-rules.png" /></td>
+    			<td>
+    				<pre>
+Rule: 
+	followedBy(?&lt;urn:swrl#x&gt;, ?&lt;urn:swrl#x&gt;) -> 
+	error:hasError(
+		?&lt;urn:swrl#x&gt;, 
+		"A list item cannot be followed by itself")
+					</pre>
+    			</td>
+    		</tr>
+    	</table>
+    	
+    	
+    	<h3 id="understanding"><span>Supporting understanding</span><span class="backlink">back to <a href="#toc">ToC</a></span></h3>
+    	<p>In addition to all the modelling widgets we introduced previously, there is a particular kind of widgets, referring to (data, object and annotation) properties, that are necessary to decrease the cognitive effort of users when understanding an ontology. Let us introduce a particular scenario so as to clarify this need. In order to enable authors of diagrams to provide a systematic description of a class even if there are no formal definitions that involve it directly into play, Graffoo allows users to relax the widgets defining properties so as to say that a particular property (defined somewhere else) can be also used, for whatever reason, according to a particular domain and range, by drawing the arc of each property widget as a dotted line (instead of a solid line).</p>
+    	
+    	<table border="1">
+    		<tr>
+    			<th>Type of axiom</th>
+    			<th>Graffoo widget</th>
+    			<th>Manchester Syntax translation</th>
+    		</tr>
+    		<tr id="annotationproperty-facility">
+    			<td>Annotation property facility</td>
+    			<td><img alt="" src="annotationproperty-facility.png" /></td>
+    			<td>
+    				<pre>
+AnnotationProperty: dc:date
+
+Class: fabio:Vocabulary
+
+Datatype: rdfs:Literal
+					</pre>
+    			</td>
+    		</tr>
+    		<tr id="dataproperty-facility">
+    			<td>Data property facility</td>
+    			<td><img alt="" src="dataproperty-facility.png" /></td>
+    			<td>
+    				<pre>
+DataProperty: hasContent
+	
+Class: StringDocuverse
+
+Datatype: rdfs:Literal
+					</pre>
+    			</td>
+    		</tr>
+    		<tr id="objectproperty-facility">
+    			<td>Object property facility</td>
+    			<td><img alt="" src="objectproperty-facility.png" /></td>
+    			<td>
+    				<pre>
+ObjectProperty: refersTo
+
+Class: PointerRange
+
+Class: Docuverse
+					</pre>
+    			</td>
+    		</tr>
+    	</table>
+    	
+    	
+        
+        <p class="endnote"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Graffoo Specification</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.essepuntato.it/graffoo" property="cc:attributionName" rel="cc:attributionURL">Silvio Peroni</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribuzione 3.0 Unported License</a>.</p>
+    </body>
+</html>

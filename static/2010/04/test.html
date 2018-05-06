@@ -1,0 +1,26 @@
+<html>
+<head><title>Nine tests for pattern contraints</title></head>
+<body>
+<table border="1">
+<tr><th>Test number</th><th>div</th><th>p</th><th>span</th><th>consistent</th></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostCBA.owl">1</a></td><td>container</td><td>block</td><td>atom</td>
+<td>yes</td></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostCBI.owl">2</a></td><td>container</td><td>block</td><td>inline</td>
+<td>no: a container (syntax) cannot contain any inline</td></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostBBI.owl">3</a></td><td>block</td><td>block</td><td>inline</td>
+<td>no: a block (stanza) cannot contain at any level another block</td></tr>
+<tr><td><a href="hhttp://www.essepuntato.it/2010/04/ParadiseLostBII.owl">4</a></td><td>block</td><td>inline</td><td>inline</td>
+<td>yes</td></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostIII.owl">5</a></td><td>inline</td><td>inline</td><td>inline</td>
+<td>no: an inline (stanza and syntax) cannot be the root of a hierarchy</td></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostBIIA.owl">6</a></td><td>block</td><td>inline</td><td>inline for unit1 while atom for unit2</td>
+<td>no: element with the same general identifier (unit1 and unit2) must have the same pattern</td></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostAAA.owl">7</a></td><td>atom</td><td>atom</td><td>atom</td>
+<td>no: an atom (stanza and syntax) cannot contain any element</td></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostTAA.owl">8</a></td><td>table</td><td>atom</td><td>atom</td>
+<td>yes</td></tr>
+<tr><td><a href="http://www.essepuntato.it/2010/04/ParadiseLostRAA.owl">9</a></td><td>record</td><td>atom</td><td>atom</td>
+<td>no: a record (stanza and syntax) must contain only elements with different general identifiers</td></tr>
+</table>
+</body>
+</html>

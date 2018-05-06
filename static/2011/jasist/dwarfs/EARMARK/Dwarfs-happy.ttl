@@ -1,0 +1,257 @@
+@prefix earmark:  <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix co:      <http://swan.mindinformatics.org/ontologies/1.2/collections/> .
+@prefix op:      <http://www.example.com/operation/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xs:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix this:    <http://www.essepuntato.it/2011/jasist/Dwarfs#> .
+
+this:sleepy
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:sleepy_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:grumpy_r3
+      a       [ a       op:Deletion ;
+                dc:creator "Silvio Peroni" ;
+                dc:date "2010-09-28T12:28:00"
+              ] ;
+      earmark:begins "6"^^xs:nonNegativeInteger ;
+      earmark:ends "17"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:happy_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:happy_r5 ;
+                co:nextItem
+                        [ co:itemContent this:happy_r1 ;
+                          co:nextItem
+                                  [ co:itemContent this:happy_r3 ;
+                                    co:nextItem
+                                            [ co:itemContent this:sleepy_r3
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:grumpy_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:grumpy_r2 ;
+                co:nextItem
+                        [ co:itemContent this:grumpy_r1 ;
+                          co:nextItem
+                                  [ co:itemContent this:grumpy_r3 ;
+                                    co:nextItem
+                                            [ co:itemContent this:grumpy_r5
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:happy_docuverse
+      earmark:hasContent " is my favorite"^^xs:string .
+
+this:happy_r2
+      a       _:b1 ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "25"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:sleepy_docuverse .
+
+<http://www.essepuntato.it/2011/jasist/Dwarfs>
+      a       owl:Ontology .
+
+this:grumpy_docuverse
+      earmark:hasContent " the"^^xs:string .
+
+this:doc_r
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "70"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:sneezy
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:sneezy_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:happy
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:happy_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:sneezy_docuverse
+      earmark:hasContent " movie"^^xs:string .
+
+this:sleepy_r3
+      earmark:begins "69"^^xs:nonNegativeInteger ;
+      earmark:ends "70"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:sleepy_docuverse
+      earmark:hasContent ", based on the homonymous fairy tale"^^xs:string .
+
+this:grumpy_r2
+      a       _:b1 ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "6"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:sneezy_r1
+      a       _:b1 ;
+      a       [ a       op:Insertion ;
+                dc:creator "Silvio Peroni" ;
+                dc:date "2010-09-28T12:28:00"
+              ] ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "6"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:sneezy_docuverse .
+
+this:happy_r3
+      earmark:begins "25"^^xs:nonNegativeInteger ;
+      earmark:ends "36"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:sleepy_docuverse .
+
+this:doc_docuverse
+      earmark:hasContent "I like fairy tales. My favourite is ‘Snow White and the Seven Dwarfs’."^^xs:string .
+
+this:sleepy_r2
+      earmark:begins "35"^^xs:nonNegativeInteger ;
+      earmark:ends "69"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:doc_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:doc_r
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+_:b1  a       op:Deletion ;
+      dc:creator "Angelo Di Iorio" ;
+      dc:date "2010-09-28T12:30:00" .
+
+this:happy_r5
+      earmark:begins "36"^^xs:nonNegativeInteger ;
+      earmark:ends "69"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:doc
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:doc_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:grumpy_r5
+      earmark:begins "35"^^xs:nonNegativeInteger ;
+      earmark:ends "70"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:grumpy_r1
+      a       _:b1 ;
+      a       [ a       op:Insertion ;
+                dc:creator "Fabio Vitali" ;
+                dc:date "2010-09-28T12:24:00"
+              ] ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "4"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:grumpy_docuverse .
+
+this:sleepy_r1
+      a       [ a       op:Insertion ;
+                dc:creator "Angelo Di Iorio" ;
+                dc:date "2010-09-28T12:30:00"
+              ] ;
+      a       [ a       op:Insertion ;
+                dc:creator "Fabio Vitali" ;
+                dc:date "2010-09-28T12:29:00"
+              ] ;
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "36"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:sleepy_docuverse .
+
+this:sleepy_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:grumpy_r2 ;
+                co:nextItem
+                        [ co:itemContent this:grumpy_r1 ;
+                          co:nextItem
+                                  [ co:itemContent this:sneezy_r1 ;
+                                    co:nextItem
+                                            [ co:itemContent this:sleepy_r2 ;
+                                              co:nextItem
+                                                      [ co:itemContent this:sleepy_r1 ;
+                                                        co:nextItem
+                                                                [ co:itemContent this:sleepy_r3
+                                                                ]
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:happy_r1
+      earmark:begins "0"^^xs:nonNegativeInteger ;
+      earmark:ends "15"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:happy_docuverse .
+
+this:grumpy
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:grumpy_p
+              ] ;
+      earmark:hasGeneralIdentifier
+              "text"^^xs:string .
+
+this:happy_r4
+      a       _:b1 ;
+      earmark:begins "35"^^xs:nonNegativeInteger ;
+      earmark:ends "36"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .
+
+this:sneezy_p
+      a       earmark:Element ;
+      co:firstItem
+              [ co:itemContent this:grumpy_r2 ;
+                co:nextItem
+                        [ co:itemContent this:grumpy_r1 ;
+                          co:nextItem
+                                  [ co:itemContent this:sneezy_r1 ;
+                                    co:nextItem
+                                            [ co:itemContent this:grumpy_r5
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      earmark:hasGeneralIdentifier
+              "p"^^xs:string .
+
+this:grumpy_r4
+      a       [ a       op:Deletion ;
+                dc:creator "Fabio Vitali" ;
+                dc:date "2010-09-28T12:24:00"
+              ] ;
+      earmark:begins "17"^^xs:nonNegativeInteger ;
+      earmark:ends "35"^^xs:nonNegativeInteger ;
+      earmark:refersTo this:doc_docuverse .

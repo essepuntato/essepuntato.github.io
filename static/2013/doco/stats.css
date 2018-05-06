@@ -1,0 +1,12 @@
+table,tr,th,td {
+    border:1px solid black;
+}
+
+tr:nth-child(2) {
+    background-color:yellow;
+}
+
+tr:first-child {
+    color:white;
+    background-color:black;
+}

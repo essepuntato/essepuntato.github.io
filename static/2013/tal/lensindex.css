@@ -1,0 +1,94 @@
+	div#div_side {
+		font-family: Georgia, Times New Roman, serif;
+	}
+	
+	div#amoIndex a:visited, div#amoIndex a:hover, div#amoIndex a:active, div#amoIndex a:link {
+		color: blue;
+	}
+
+
+	div#div_side h2 {
+		margin-bottom: 2px;
+		padding: 1px;
+		text-align: left;
+		padding-left: 1.5em;
+		cursor: pointer;
+	}
+	div#div_side span.indextitlefold, div#div_side span.indexcitofold {
+		font-size: small;
+		font-weight: lighter;
+		font-style: italic;
+	}
+	
+	div.argument p.other {
+/* 		display:none; */
+		background:#F0F0F0;
+		margin:0;
+		padding-bottom:8px;
+		padding-top:2px;
+	}
+	li.argli {
+		margin-left: 1.2em;
+	}
+	
+	.other:hover {
+	/* background something? */
+	}
+	
+	.claims {
+		padding-top: 5px;
+		font-weight:bold;
+	}
+	
+	.claims a {
+		text-decoration: none;
+	}
+	.claims:hover a {
+		text-decoration: none;
+		background: transparent;
+		outline: none;
+	}
+	
+	.claimtext {
+	}
+	li {
+		margin-bottom: 1.2em;
+	}
+	.Rebuttal, .Rebuttal a:link, .Rebuttal a:visited {
+		color: red;
+	}
+	.Warrant, .Warrant a:link, .Warrant a:visited {
+		color: green;
+	}
+	.Backing, .Backing a:link, .Backing a:visited {
+		color: teal;
+	}
+	.Qualifier, .Qualifier a:link, .Qualifier a:visited {
+		color: #816000;
+	}
+	.Evidence, .Evidence a:link, .Evidence a:visited {
+		color: orange;
+	}
+	.Rebuttal:hover, .Warrant:hover, .Backing:hover, .Qualifier:hover, .Evidence:hover {
+		background: #D4E6C1;
+	}
+	
+	
+	div#citoIndex span.property_text {
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+	div#citoIndex ul.internalReference {
+		font-size: normal;
+		font-weight: normal;
+	}
+	li.property {
+		margin-left: 1.2em;
+	}
+	span.property_main {
+		cursor: pointer;
+	}
+	li.occurence {
+		margin-bottom: 0;
+	}
+	

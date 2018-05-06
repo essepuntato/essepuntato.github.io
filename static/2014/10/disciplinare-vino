@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY vino "http://www.essepuntato.it/2014/10/disciplinare-vino/" >
+    <!ENTITY upper "http://www.essepuntato.it/2014/10/disciplinare-upper/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/2014/10/disciplinare-vino/"
+     xml:base="http://www.essepuntato.it/2014/10/disciplinare-vino/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:upper="http://www.essepuntato.it/2014/10/disciplinare-upper/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vino="http://www.essepuntato.it/2014/10/disciplinare-vino/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2014/10/disciplinare-vino">
+        <dc:contributor>Aldo Gangemi</dc:contributor>
+        <dc:creator>Silvio Peroni</dc:creator>
+        <dc:contributor>Giorgia Lodi</dc:contributor>
+        <dc:date>2014-10-29</dc:date>
+        <dc:title>Ontologia dei Disciplinari sul vino</dc:title>
+        <owl:imports rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="&rdf;PlainLiteral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/haDenominazione -->
+
+    <owl:ObjectProperty rdf:about="&upper;haDenominazione">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/haDescrizione -->
+
+    <owl:ObjectProperty rdf:about="&upper;haDescrizione">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/haMateriaPrima -->
+
+    <owl:ObjectProperty rdf:about="&upper;haMateriaPrima">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/haTipologia -->
+
+    <owl:ObjectProperty rdf:about="&upper;haTipologia">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/siRiferisceA -->
+
+    <owl:ObjectProperty rdf:about="&upper;siRiferisceA">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/Denominazione -->
+
+    <owl:Class rdf:about="&upper;Denominazione">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/DescrizioneMateriaPrima -->
+
+    <owl:Class rdf:about="&upper;DescrizioneMateriaPrima">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/MateriaPrima -->
+
+    <owl:Class rdf:about="&upper;MateriaPrima">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/Prodotto -->
+
+    <owl:Class rdf:about="&upper;Prodotto">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-upper/Tipologia -->
+
+    <owl:Class rdf:about="&upper;Tipologia">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-upper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-vino/DenominazioneOrigineControllata -->
+
+    <owl:Class rdf:about="&vino;DenominazioneOrigineControllata">
+        <rdfs:label>denominazione di origine controllata</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&vino;DenominazioneVino"/>
+        <rdfs:comment>La denominazione di origine controllata (DOC) è un marchio di origine italiano utilizzato in enologia che certifica la zona di origine e delimitata della raccolta delle uve utilizzate per la produzione del prodotto sul quale è apposto il marchio. Esso viene utilizzato per designare un prodotto di qualità e rinomato, le cui caratteristiche sono connesse all&apos;ambiente naturale ed ai fattori umani.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-vino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-vino/DenominazioneOrigineControllataGarantita -->
+
+    <owl:Class rdf:about="&vino;DenominazioneOrigineControllataGarantita">
+        <rdfs:label>denominazione di origine controllata e garantita</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&vino;DenominazioneVino"/>
+        <rdfs:comment>La denominazione di origine controllata e garantita (DOCG) è un marchio di origine italiano che indica al consumatore l&apos;origine geografica di un vino. In particolare, la DOCG consiste o semplicemente nel nome geografico di una zona viticola (ad esempio Barolo, comune in provincia di Cuneo o Carmignano, comune in Provincia di Prato), o nella combinazione del nome storico di un prodotto e della relativa zona di produzione (ad esempio Vino Nobile di Montepulciano, il nome con cui è noto storicamente il vino prodotto a Montepulciano, in provincia di Siena).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-vino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-vino/DenominazioneVino -->
+
+    <owl:Class rdf:about="&vino;DenominazioneVino">
+        <rdfs:label>denominazioni vino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&upper;Denominazione"/>
+        <rdfs:comment>Descrive le varie denominazioni che regolano i vini.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-vino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-vino/IndicazioneGeograficaTipica -->
+
+    <owl:Class rdf:about="&vino;IndicazioneGeograficaTipica">
+        <rdfs:label>indicazione geografica tipica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&vino;DenominazioneVino"/>
+        <rdfs:comment>L&apos;indicazione geografica tipica (IGT) è una delle possibili classificazioni dei vini recepite in Italia e indica vini prodotti in aree generalmente ampie ma secondo dei requisiti specificati.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-vino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-vino/TipologiaVino -->
+
+    <owl:Class rdf:about="&vino;TipologiaVino">
+        <rdfs:label>tipologia vino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&upper;Tipologia"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&upper;siRiferisceA"/>
+                <owl:allValuesFrom rdf:resource="&vino;DenominazioneVino"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Descrive le varie tipologie di vino (ad esempio, &quot;rosso&quot;, &quot;bianco&quot;, &quot;spumante&quot;).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-vino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-vino/Vino -->
+
+    <owl:Class rdf:about="&vino;Vino">
+        <rdfs:label>vino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&upper;Prodotto"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&upper;haDenominazione"/>
+                <owl:allValuesFrom rdf:resource="&vino;DenominazioneVino"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&upper;haTipologia"/>
+                <owl:allValuesFrom rdf:resource="&vino;TipologiaVino"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&upper;haDescrizione"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&upper;DescrizioneMateriaPrima"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&upper;haMateriaPrima"/>
+                                <owl:someValuesFrom rdf:resource="&vino;Vitigno"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Descrive l&apos;insieme di tutti i vini, che possono essere associati ad una certa denominazione (ad esempio, &quot;Abruzzo&quot;) e tipologia (ad esempio, &quot;rosso&quot;).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-vino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/2014/10/disciplinare-vino/Vitigno -->
+
+    <owl:Class rdf:about="&vino;Vitigno">
+        <rdfs:label>vitigno</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&upper;MateriaPrima"/>
+        <rdfs:comment>Descrive una particolare tipologia di materia prima che si riferisce ai possibili vitigni (ad esempio, Montepulciano, Malvasia, Moscato) usati per la produzione di un certo vino.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2014/10/disciplinare-vino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

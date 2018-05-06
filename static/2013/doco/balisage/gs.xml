@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assign>
+	<table>
+		<to>tbody</to>
+		<to>informaltable</to>
+		<to>variablelist</to>
+	</table>
+	<list>
+		<to>itemizedlist</to>
+        <to>orderedlist</to>
+        <to>keywordset</to>
+	</list>
+	<tablebox>
+		<to>table</to>
+	</tablebox>
+	<paragraph>
+		<to>para</to>
+	</paragraph>
+	<section>
+		<to>section</to>
+		<to>appendix</to>
+		<to>bibliography</to>
+		<to>abstract</to>
+	</section>
+	<sectiontitle>
+		<to parent="section">title</to>
+	</sectiontitle>
+	<figure>
+		<to>imagedata</to>
+	</figure>
+	<figurebox>
+		<to>figure</to>
+		<to parent="para">mediaobject</to>
+		<to parent="section">mediaobject</to>
+		<to parent="para">imageobject</to>
+		<to parent="section">imageobject</to>
+	</figurebox>
+	<bodymatter>
+		<to></to>
+	</bodymatter>
+	<frontmatter>
+		<to parent="article">info</to>
+	</frontmatter>
+	<title>
+		<to parent="article">title</to>
+	</title>
+	<reference>
+		<to>xref</to>
+	</reference>
+	<bibliographicreferencelist>
+		<to></to>
+	</bibliographicreferencelist>
+	<bibliographicreference>
+		<to>bibliomixed</to>
+	</bibliographicreference>
+	<bibliography>
+		<to>bibliography</to>
+	</bibliography>
+	<footnote>
+		<to>footnote</to>
+	</footnote>
+</assign>

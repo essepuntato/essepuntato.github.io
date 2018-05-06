@@ -1,0 +1,578 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:earmark="http://www.essepuntato.it/2008/12/earmark#"
+    xmlns:ex="http://www.essepuntato.it/2010/04/SWWEx#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:collections="http://swan.mindinformatics.org/ontologies/1.2/collections/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.essepuntato.it/2010/04/SWWEx">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.w3.org/2003/11/swrl"/>
+    <owl:imports rdf:resource="http://www.essepuntato.it/2008/12/earmark"/>
+  </owl:Ontology>
+  <earmark:Element rdf:ID="e_test_1">
+    <collections:firstItem>
+      <collections:ListItem rdf:ID="a_lang_1_li1_of_e_test_1">
+        <collections:nextItem>
+          <collections:ListItem rdf:ID="c_1_li2_of_e_test_1">
+            <collections:nextItem>
+              <collections:ListItem rdf:ID="e_p_1_li3_of_e_test_1">
+                <collections:nextItem>
+                  <collections:ListItem rdf:ID="c_2_li4_of_e_test_1">
+                    <collections:nextItem>
+                      <collections:ListItem rdf:ID="e_div_1_li5_of_e_test_1">
+                        <earmark:markupContent>
+                          <collections:List rdf:ID="e_div_1">
+                            <earmark:actualSize rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#int"
+                            >4</earmark:actualSize>
+                            <collections:item>
+                              <collections:ListItem rdf:ID="e_p_2_li3_of_e_div_1">
+                                <collections:nextItem>
+                                  <collections:ListItem rdf:ID="e_p_3_li4_of_e_div_1">
+                                    <earmark:markupContent>
+                                      <collections:List rdf:ID="e_p_3">
+                                        <earmark:actualSize rdf:datatype=
+                                        "http://www.w3.org/2001/XMLSchema#int"
+                                        >3</earmark:actualSize>
+                                        <collections:item>
+                                          <collections:ListItem rdf:ID="e_strong_2_li2_of_e_p_3">
+                                            <collections:nextItem>
+                                              <collections:ListItem rdf:ID="r_260-292_li3_of_e_p_3">
+                                                <earmark:markupContent>
+                                                  <earmark:Range rdf:ID="r_260-292">
+                                                    <earmark:ends>
+                                                      <earmark:CharNumberLocation rdf:ID="l_292">
+                                                        <earmark:refersTo>
+                                                          <earmark:StringDocuverse rdf:ID="d_text">
+                                                            <earmark:hasText
+                                                            >en  Un primo paragrafo con namespace settato  Questo è un primo e semplice esempio di documento  EARMARK  Altri elementi e attributi, con namespace diversi  sec Title Un paragrafo dentro una sezione  con enfasi . EARMARK riesce anche descrivere l' overlapping  in modo completamente naturale.</earmark:hasText>
+                                                          </earmark:StringDocuverse>
+                                                        </earmark:refersTo>
+                                                        <earmark:at
+                                                        >292</earmark:at>
+                                                      </earmark:CharNumberLocation>
+                                                    </earmark:ends>
+                                                    <earmark:begins>
+                                                      <earmark:CharNumberLocation rdf:ID="l_260">
+                                                        <earmark:refersTo rdf:resource="#d_text"/>
+                                                        <earmark:at
+                                                        >260</earmark:at>
+                                                      </earmark:CharNumberLocation>
+                                                    </earmark:begins>
+                                                  </earmark:Range>
+                                                </earmark:markupContent>
+                                              </collections:ListItem>
+                                            </collections:nextItem>
+                                            <earmark:markupContent>
+                                              <collections:List rdf:ID="e_strong_2">
+                                                <earmark:actualSize
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#int"
+                                                >1</earmark:actualSize>
+                                                <collections:firstItem>
+                                                  <collections:ListItem rdf:ID="r_248-259_li1_of_e_strong_2">
+                                                    <earmark:markupContent>
+                                                      <earmark:Range rdf:ID="r_248-259">
+                                                        <earmark:ends>
+                                                          <earmark:CharNumberLocation rdf:ID="l_259">
+                                                            <earmark:refersTo rdf:resource="#d_text"/>
+                                                            <earmark:at
+                                                            >259</earmark:at>
+                                                          </earmark:CharNumberLocation>
+                                                        </earmark:ends>
+                                                        <earmark:begins>
+                                                          <earmark:CharNumberLocation rdf:ID="l_248">
+                                                            <earmark:refersTo rdf:resource="#d_text"/>
+                                                            <earmark:at
+                                                            >248</earmark:at>
+                                                          </earmark:CharNumberLocation>
+                                                        </earmark:begins>
+                                                      </earmark:Range>
+                                                    </earmark:markupContent>
+                                                  </collections:ListItem>
+                                                </collections:firstItem>
+                                                <collections:lastItem rdf:resource="#r_248-259_li1_of_e_strong_2"/>
+                                                <earmark:hasNamespace
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                                >http://www.cs.unibo.it/2006/iml</earmark:hasNamespace>
+                                                <earmark:hasGeneralIdentifier
+                                                >strong</earmark:hasGeneralIdentifier>
+                                                <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                                              </collections:List>
+                                            </earmark:markupContent>
+                                          </collections:ListItem>
+                                        </collections:item>
+                                        <collections:firstItem>
+                                          <collections:ListItem rdf:ID="r_213-247_li1_of_e_p_3">
+                                            <collections:nextItem rdf:resource="#e_strong_2_li2_of_e_p_3"/>
+                                            <earmark:markupContent>
+                                              <earmark:Range rdf:ID="r_213-247">
+                                                <earmark:ends>
+                                                  <earmark:CharNumberLocation rdf:ID="l_247">
+                                                    <earmark:refersTo rdf:resource="#d_text"/>
+                                                    <earmark:at
+                                                    >247</earmark:at>
+                                                  </earmark:CharNumberLocation>
+                                                </earmark:ends>
+                                                <earmark:begins>
+                                                  <earmark:CharNumberLocation rdf:ID="l_213">
+                                                    <earmark:refersTo rdf:resource="#d_text"/>
+                                                    <earmark:at
+                                                    >213</earmark:at>
+                                                  </earmark:CharNumberLocation>
+                                                </earmark:begins>
+                                              </earmark:Range>
+                                            </earmark:markupContent>
+                                          </collections:ListItem>
+                                        </collections:firstItem>
+                                        <collections:lastItem rdf:resource="#r_260-292_li3_of_e_p_3"/>
+                                        <earmark:hasNamespace
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                                        >http://www.cs.unibo.it/2006/iml</earmark:hasNamespace>
+                                        <earmark:hasGeneralIdentifier
+                                        >p</earmark:hasGeneralIdentifier>
+                                        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                                      </collections:List>
+                                    </earmark:markupContent>
+                                  </collections:ListItem>
+                                </collections:nextItem>
+                                <earmark:markupContent>
+                                  <collections:List rdf:ID="e_p_2">
+                                    <earmark:actualSize rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#int"
+                                    >3</earmark:actualSize>
+                                    <collections:item>
+                                      <collections:ListItem rdf:ID="e_em_1_li2_of_e_p_2">
+                                        <collections:nextItem>
+                                          <collections:ListItem rdf:ID="r_211-212_li3_of_e_p_2">
+                                            <earmark:markupContent>
+                                              <earmark:Range rdf:ID="r_211-212">
+                                                <earmark:ends>
+                                                  <earmark:CharNumberLocation rdf:ID="l_212">
+                                                    <earmark:refersTo rdf:resource="#d_text"/>
+                                                    <earmark:at
+                                                    >212</earmark:at>
+                                                  </earmark:CharNumberLocation>
+                                                </earmark:ends>
+                                                <earmark:begins>
+                                                  <earmark:CharNumberLocation rdf:ID="l_211">
+                                                    <earmark:refersTo rdf:resource="#d_text"/>
+                                                    <earmark:at
+                                                    >211</earmark:at>
+                                                  </earmark:CharNumberLocation>
+                                                </earmark:begins>
+                                              </earmark:Range>
+                                            </earmark:markupContent>
+                                          </collections:ListItem>
+                                        </collections:nextItem>
+                                        <earmark:markupContent>
+                                          <collections:List rdf:ID="e_em_1">
+                                            <earmark:actualSize
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                                            >1</earmark:actualSize>
+                                            <collections:firstItem>
+                                              <collections:ListItem rdf:ID="r_200-210_li1_of_e_em_1">
+                                                <earmark:markupContent>
+                                                  <earmark:Range rdf:ID="r_200-210">
+                                                    <earmark:ends>
+                                                      <earmark:CharNumberLocation rdf:ID="l_210">
+                                                        <earmark:refersTo rdf:resource="#d_text"/>
+                                                        <earmark:at
+                                                        >210</earmark:at>
+                                                      </earmark:CharNumberLocation>
+                                                    </earmark:ends>
+                                                    <earmark:begins>
+                                                      <earmark:CharNumberLocation rdf:ID="l_200">
+                                                        <earmark:refersTo rdf:resource="#d_text"/>
+                                                        <earmark:at
+                                                        >200</earmark:at>
+                                                      </earmark:CharNumberLocation>
+                                                    </earmark:begins>
+                                                  </earmark:Range>
+                                                </earmark:markupContent>
+                                              </collections:ListItem>
+                                            </collections:firstItem>
+                                            <collections:lastItem rdf:resource="#r_200-210_li1_of_e_em_1"/>
+                                            <earmark:hasNamespace
+                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                                            >http://www.w3.org/1999/xhtml</earmark:hasNamespace>
+                                            <earmark:hasGeneralIdentifier
+                                            >em</earmark:hasGeneralIdentifier>
+                                            <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                                          </collections:List>
+                                        </earmark:markupContent>
+                                      </collections:ListItem>
+                                    </collections:item>
+                                    <collections:firstItem>
+                                      <collections:ListItem rdf:ID="r_167-199_li1_of_e_p_2">
+                                        <collections:nextItem rdf:resource="#e_em_1_li2_of_e_p_2"/>
+                                        <earmark:markupContent>
+                                          <earmark:Range rdf:ID="r_167-199">
+                                            <earmark:ends>
+                                              <earmark:CharNumberLocation rdf:ID="l_199">
+                                                <earmark:refersTo rdf:resource="#d_text"/>
+                                                <earmark:at>199</earmark:at>
+                                              </earmark:CharNumberLocation>
+                                            </earmark:ends>
+                                            <earmark:begins>
+                                              <earmark:CharNumberLocation rdf:ID="l_167">
+                                                <earmark:refersTo rdf:resource="#d_text"/>
+                                                <earmark:at>167</earmark:at>
+                                              </earmark:CharNumberLocation>
+                                            </earmark:begins>
+                                          </earmark:Range>
+                                        </earmark:markupContent>
+                                      </collections:ListItem>
+                                    </collections:firstItem>
+                                    <collections:lastItem rdf:resource="#r_211-212_li3_of_e_p_2"/>
+                                    <earmark:hasNamespace rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >http://www.cs.unibo.it/2006/iml</earmark:hasNamespace>
+                                    <earmark:hasGeneralIdentifier
+                                    >p</earmark:hasGeneralIdentifier>
+                                    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                                  </collections:List>
+                                </earmark:markupContent>
+                              </collections:ListItem>
+                            </collections:item>
+                            <collections:item>
+                              <collections:ListItem rdf:ID="e_h1_1_li2_of_e_div_1">
+                                <collections:nextItem rdf:resource="#e_p_2_li3_of_e_div_1"/>
+                                <earmark:markupContent>
+                                  <collections:List rdf:ID="e_h1_1">
+                                    <earmark:actualSize rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#int"
+                                    >1</earmark:actualSize>
+                                    <collections:firstItem>
+                                      <collections:ListItem rdf:ID="r_161-166_li1_of_e_h1_1">
+                                        <earmark:markupContent>
+                                          <earmark:Range rdf:ID="r_161-166">
+                                            <earmark:ends>
+                                              <earmark:CharNumberLocation rdf:ID="l_166">
+                                                <earmark:refersTo rdf:resource="#d_text"/>
+                                                <earmark:at>166</earmark:at>
+                                              </earmark:CharNumberLocation>
+                                            </earmark:ends>
+                                            <earmark:begins>
+                                              <earmark:CharNumberLocation rdf:ID="l_161">
+                                                <earmark:refersTo rdf:resource="#d_text"/>
+                                                <earmark:at>161</earmark:at>
+                                              </earmark:CharNumberLocation>
+                                            </earmark:begins>
+                                          </earmark:Range>
+                                        </earmark:markupContent>
+                                      </collections:ListItem>
+                                    </collections:firstItem>
+                                    <collections:lastItem rdf:resource="#r_161-166_li1_of_e_h1_1"/>
+                                    <earmark:hasNamespace rdf:datatype=
+                                    "http://www.w3.org/2001/XMLSchema#anyURI"
+                                    >http://www.w3.org/1999/xhtml</earmark:hasNamespace>
+                                    <earmark:hasGeneralIdentifier
+                                    >h1</earmark:hasGeneralIdentifier>
+                                    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                                  </collections:List>
+                                </earmark:markupContent>
+                              </collections:ListItem>
+                            </collections:item>
+                            <collections:firstItem>
+                              <collections:ListItem rdf:ID="a_class_1_li1_of_e_div_1">
+                                <collections:nextItem rdf:resource="#e_h1_1_li2_of_e_div_1"/>
+                                <earmark:markupContent>
+                                  <rdf:Description rdf:ID="a_class_1">
+                                    <rdf:type>
+                                      <owl:Restriction>
+                                        <owl:onDataRange rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/earmark#hasNamespace"/>
+                                      </owl:Restriction>
+                                    </rdf:type>
+                                    <collections:element>
+                                      <earmark:Range rdf:ID="a_class_1_r">
+                                        <earmark:ends>
+                                          <earmark:CharNumberLocation rdf:ID="l_160">
+                                            <earmark:refersTo rdf:resource="#d_text"/>
+                                            <earmark:at>160</earmark:at>
+                                          </earmark:CharNumberLocation>
+                                        </earmark:ends>
+                                        <earmark:begins>
+                                          <earmark:CharNumberLocation rdf:ID="l_157">
+                                            <earmark:refersTo rdf:resource="#d_text"/>
+                                            <earmark:at>157</earmark:at>
+                                          </earmark:CharNumberLocation>
+                                        </earmark:begins>
+                                      </earmark:Range>
+                                    </collections:element>
+                                    <rdf:type rdf:resource="http://swan.mindinformatics.org/ontologies/1.2/collections/Set"/>
+                                    <collections:size>1</collections:size>
+                                    <earmark:hasGeneralIdentifier
+                                    >class</earmark:hasGeneralIdentifier>
+                                    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Attribute"/>
+                                  </rdf:Description>
+                                </earmark:markupContent>
+                              </collections:ListItem>
+                            </collections:firstItem>
+                            <collections:lastItem rdf:resource="#e_p_3_li4_of_e_div_1"/>
+                            <earmark:hasNamespace rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#anyURI"
+                            >http://www.w3.org/1999/xhtml</earmark:hasNamespace>
+                            <earmark:hasGeneralIdentifier>div</earmark:hasGeneralIdentifier>
+                            <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                          </collections:List>
+                        </earmark:markupContent>
+                      </collections:ListItem>
+                    </collections:nextItem>
+                    <earmark:markupContent>
+                      <collections:List rdf:ID="c_2">
+                        <collections:size>1</collections:size>
+                        <collections:lastItem>
+                          <collections:ListItem rdf:ID="c_2_r_li">
+                            <collections:itemContent>
+                              <earmark:Range rdf:ID="c_2_r">
+                                <earmark:ends>
+                                  <earmark:CharNumberLocation rdf:ID="l_156">
+                                    <earmark:refersTo rdf:resource="#d_text"/>
+                                    <earmark:at>156</earmark:at>
+                                  </earmark:CharNumberLocation>
+                                </earmark:ends>
+                                <earmark:begins>
+                                  <earmark:CharNumberLocation rdf:ID="l_105">
+                                    <earmark:refersTo rdf:resource="#d_text"/>
+                                    <earmark:at>105</earmark:at>
+                                  </earmark:CharNumberLocation>
+                                </earmark:begins>
+                              </earmark:Range>
+                            </collections:itemContent>
+                          </collections:ListItem>
+                        </collections:lastItem>
+                        <collections:firstItem rdf:resource="#c_2_r_li"/>
+                        <rdf:type>
+                          <owl:Restriction>
+                            <owl:cardinality rdf:datatype="xsd:nonNegativeInteger"
+                            >0</owl:cardinality>
+                            <owl:onProperty rdf:resource="earmark:hasNamespace"/>
+                          </owl:Restriction>
+                        </rdf:type>
+                        <rdf:type>
+                          <owl:Restriction>
+                            <owl:cardinality rdf:datatype="xsd:nonNegativeInteger"
+                            >0</owl:cardinality>
+                            <owl:onProperty rdf:resource="earmark:hasGeneralIdentifier"/>
+                          </owl:Restriction>
+                        </rdf:type>
+                        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Comment"/>
+                      </collections:List>
+                    </earmark:markupContent>
+                  </collections:ListItem>
+                </collections:nextItem>
+                <earmark:markupContent>
+                  <collections:List rdf:ID="e_p_1">
+                    <earmark:actualSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                    >2</earmark:actualSize>
+                    <collections:firstItem>
+                      <collections:ListItem rdf:ID="r_46-96_li1_of_e_p_1">
+                        <collections:nextItem>
+                          <collections:ListItem rdf:ID="e_strong_1_li2_of_e_p_1">
+                            <earmark:markupContent>
+                              <collections:List rdf:ID="e_strong_1">
+                                <earmark:actualSize rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#int"
+                                >1</earmark:actualSize>
+                                <collections:firstItem>
+                                  <collections:ListItem rdf:ID="r_97-104_li1_of_e_strong_1">
+                                    <earmark:markupContent>
+                                      <earmark:Range rdf:ID="r_97-104">
+                                        <earmark:ends>
+                                          <earmark:CharNumberLocation rdf:ID="l_104">
+                                            <earmark:refersTo rdf:resource="#d_text"/>
+                                            <earmark:at>104</earmark:at>
+                                          </earmark:CharNumberLocation>
+                                        </earmark:ends>
+                                        <earmark:begins>
+                                          <earmark:CharNumberLocation rdf:ID="l_97">
+                                            <earmark:refersTo rdf:resource="#d_text"/>
+                                            <earmark:at>97</earmark:at>
+                                          </earmark:CharNumberLocation>
+                                        </earmark:begins>
+                                      </earmark:Range>
+                                    </earmark:markupContent>
+                                  </collections:ListItem>
+                                </collections:firstItem>
+                                <collections:lastItem rdf:resource="#r_97-104_li1_of_e_strong_1"/>
+                                <earmark:hasNamespace rdf:datatype=
+                                "http://www.w3.org/2001/XMLSchema#anyURI"
+                                >http://www.cs.unibo.it/2006/iml</earmark:hasNamespace>
+                                <earmark:hasGeneralIdentifier
+                                >strong</earmark:hasGeneralIdentifier>
+                                <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                              </collections:List>
+                            </earmark:markupContent>
+                          </collections:ListItem>
+                        </collections:nextItem>
+                        <earmark:markupContent>
+                          <earmark:Range rdf:ID="r_46-96">
+                            <earmark:ends>
+                              <earmark:CharNumberLocation rdf:ID="l_96">
+                                <earmark:refersTo rdf:resource="#d_text"/>
+                                <earmark:at>96</earmark:at>
+                              </earmark:CharNumberLocation>
+                            </earmark:ends>
+                            <earmark:begins>
+                              <earmark:CharNumberLocation rdf:ID="l_46">
+                                <earmark:refersTo rdf:resource="#d_text"/>
+                                <earmark:at>46</earmark:at>
+                              </earmark:CharNumberLocation>
+                            </earmark:begins>
+                          </earmark:Range>
+                        </earmark:markupContent>
+                      </collections:ListItem>
+                    </collections:firstItem>
+                    <collections:lastItem rdf:resource="#e_strong_1_li2_of_e_p_1"/>
+                    <earmark:hasNamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+                    >http://www.cs.unibo.it/2006/iml</earmark:hasNamespace>
+                    <earmark:hasGeneralIdentifier>p</earmark:hasGeneralIdentifier>
+                    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+                  </collections:List>
+                </earmark:markupContent>
+              </collections:ListItem>
+            </collections:nextItem>
+            <earmark:markupContent>
+              <collections:List rdf:ID="c_1">
+                <collections:size>1</collections:size>
+                <collections:lastItem>
+                  <collections:ListItem rdf:ID="c_1_r_li">
+                    <collections:itemContent>
+                      <earmark:Range rdf:ID="c_1_r">
+                        <earmark:ends>
+                          <earmark:CharNumberLocation rdf:ID="l_45">
+                            <earmark:refersTo rdf:resource="#d_text"/>
+                            <earmark:at>45</earmark:at>
+                          </earmark:CharNumberLocation>
+                        </earmark:ends>
+                        <earmark:begins>
+                          <earmark:CharNumberLocation rdf:ID="l_3">
+                            <earmark:refersTo rdf:resource="#d_text"/>
+                            <earmark:at>3</earmark:at>
+                          </earmark:CharNumberLocation>
+                        </earmark:begins>
+                      </earmark:Range>
+                    </collections:itemContent>
+                  </collections:ListItem>
+                </collections:lastItem>
+                <collections:firstItem rdf:resource="#c_1_r_li"/>
+                <rdf:type>
+                  <owl:Restriction>
+                    <owl:cardinality rdf:datatype="xsd:nonNegativeInteger"
+                    >0</owl:cardinality>
+                    <owl:onProperty rdf:resource="earmark:hasNamespace"/>
+                  </owl:Restriction>
+                </rdf:type>
+                <rdf:type>
+                  <owl:Restriction>
+                    <owl:cardinality rdf:datatype="xsd:nonNegativeInteger"
+                    >0</owl:cardinality>
+                    <owl:onProperty rdf:resource="earmark:hasGeneralIdentifier"/>
+                  </owl:Restriction>
+                </rdf:type>
+                <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Comment"/>
+              </collections:List>
+            </earmark:markupContent>
+          </collections:ListItem>
+        </collections:nextItem>
+        <earmark:markupContent>
+          <collections:Set rdf:ID="a_lang_1">
+            <collections:size>1</collections:size>
+            <collections:element>
+              <earmark:Range rdf:ID="a_lang_1_r">
+                <earmark:ends>
+                  <earmark:CharNumberLocation rdf:ID="l_2">
+                    <earmark:refersTo rdf:resource="#d_text"/>
+                    <earmark:at>2</earmark:at>
+                  </earmark:CharNumberLocation>
+                </earmark:ends>
+                <earmark:begins>
+                  <earmark:CharNumberLocation rdf:ID="l_0">
+                    <earmark:refersTo rdf:resource="#d_text"/>
+                    <earmark:at>0</earmark:at>
+                  </earmark:CharNumberLocation>
+                </earmark:begins>
+              </earmark:Range>
+            </collections:element>
+            <earmark:hasNamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://www.w3.org/XML/1998/namespace</earmark:hasNamespace>
+            <earmark:hasGeneralIdentifier>lang</earmark:hasGeneralIdentifier>
+            <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Attribute"/>
+          </collections:Set>
+        </earmark:markupContent>
+      </collections:ListItem>
+    </collections:firstItem>
+    <collections:item rdf:resource="#c_1_li2_of_e_test_1"/>
+    <earmark:actualSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >5</earmark:actualSize>
+    <earmark:hasGeneralIdentifier>test</earmark:hasGeneralIdentifier>
+    <earmark:hasNamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+    >http://www.cs.unibo.it/2006/iml</earmark:hasNamespace>
+    <collections:item rdf:resource="#c_2_li4_of_e_test_1"/>
+    <rdf:type rdf:resource="http://swan.mindinformatics.org/ontologies/1.2/collections/List"/>
+    <collections:item rdf:resource="#e_p_1_li3_of_e_test_1"/>
+    <collections:lastItem rdf:resource="#e_div_1_li5_of_e_test_1"/>
+  </earmark:Element>
+  <rdf:Description rdf:ID="keywords">
+    <collections:element>
+      <rdf:Description rdf:ID="keyword2">
+        <collections:element rdf:resource="#r_248-259"/>
+        <rdf:type>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+            >0</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/earmark#hasNamespace"/>
+          </owl:Restriction>
+        </rdf:type>
+        <earmark:hasGeneralIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >keyword</earmark:hasGeneralIdentifier>
+        <earmark:actualSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</earmark:actualSize>
+        <rdf:type rdf:resource="http://swan.mindinformatics.org/ontologies/1.2/collections/Set"/>
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+      </rdf:Description>
+    </collections:element>
+    <earmark:actualSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2</earmark:actualSize>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:cardinality>
+        <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/earmark#hasNamespace"/>
+      </owl:Restriction>
+    </rdf:type>
+    <collections:element>
+      <rdf:Description rdf:ID="keyword1">
+        <collections:element rdf:resource="#r_97-104"/>
+        <earmark:hasGeneralIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >keyword</earmark:hasGeneralIdentifier>
+        <earmark:actualSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</earmark:actualSize>
+        <rdf:type>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+            >0</owl:cardinality>
+            <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/earmark#hasNamespace"/>
+          </owl:Restriction>
+        </rdf:type>
+        <rdf:type rdf:resource="http://swan.mindinformatics.org/ontologies/1.2/collections/Set"/>
+        <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+      </rdf:Description>
+    </collections:element>
+    <earmark:hasGeneralIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >keywords</earmark:hasGeneralIdentifier>
+    <rdf:type rdf:resource="http://swan.mindinformatics.org/ontologies/1.2/collections/Set"/>
+    <rdf:type rdf:resource="http://www.essepuntato.it/2008/12/earmark#Element"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

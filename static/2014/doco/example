@@ -1,0 +1,246 @@
+@prefix : <http://www.essepuntato.it/2014/doco/example/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix co: <http://purl.org/co/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+
+# This is the DoCO characterisation of the paper entitled "The Document Components Ontology 
+# (DoCO)", submitted to the Semantic Web Journal.
+# The main container (i.e., the paper) has been described through the
+# FRBR-align Bibliographic Ontology (FaBiO, http://purl.org/spar/fabio), while
+# the order among the various component has been described by means of the
+# Collections Ontology (CO, http://purl.org/co). The actual textual content of
+# each component has been specified through the property "c4o:hasContent" of the
+# Citation Counting and Context Characterisation Ontology (C4O, http://purl.org/spar/c4o).
+
+:paper a fabio:JournalArticle ;
+	po:contains 
+		:front-matter ,
+		:body-matter ,
+		:back-matter ;
+	co:firstItem [ co:itemContent :front-matter ;
+		co:nextItem [ co:itemContent :body-matter ;
+			co:nextItem [ co:itemContent :back-matter ] ] ] .
+
+:front-matter a doco:FrontMatter ;
+	po:contains 
+		:title , 
+		:abstract ;
+	co:firstItem [ co:itemContent :title ;
+		co:nextItem [ co:itemContent :abstract ] ] .
+
+:title a doco:Title ;
+	c4o:hasContent "Describing document components in RDF" .
+
+:abstract a sro:Abstract ;
+	c4o:hasContent "The description of document layers, as well as of the document discourse (e.g. the scientific discourse in scholarly articles) in machine-readable forms is crucial in facilitating semantic publishing and overall comprehension of documents by both users and machines. In this paper we introduce DoCO, the Document Components Ontology, i.e., an OWL 2 DL ontology that provides a general-purpose structured vocabulary of document elements to describe document parts in RDF. In addition to the formal description of the ontology, its utility in practice is showcased through several in-house solutions and other works of the Semantic Publishing community that rely on DoCO to annotate and retrieve document components of scholarly articles." .
+
+:body-matter a doco:BodyMatter ;
+	po:contains 
+		:section-introduction ,
+		:section-related-work ,
+		:section-document-components ,
+		:section-adoption ,
+		:section-conclusions ;
+	co:firstItem [ co:itemContent :section-introduction ;
+		co:nextItem [ co:itemContent :section-related-work ;
+			co:nextItem [ co:itemContent :section-document-components ;
+				co:nextItem [ co:itemContent :section-adoption ;
+					co:nextItem [ co:itemContent :section-conclusions ] ] ] ] ] .
+
+# Note that, in this example, the composition in paragraphs 
+# has been defined only for this section.
+:section-introduction a doco:Section , deo:Introduction ;
+	po:containsAsHeader :section-introduction-title ;
+	po:contains
+		:paragraph-1 ,
+		:paragraph-2 ,
+		:paragraph-3 ,
+		:paragraph-4 ;
+	co:firstItem [ co:itemContent :section-introduction-title ;
+		co:nextItem [ co:itemContent :paragraph-1 ;
+			co:nextItem [ co:itemContent :paragraph-2 ;
+				co:nextItem [ co:itemContent :paragraph-3 ;
+					co:nextItem [ co:itemContent :paragraph-4 ] ] ] ] ] .
+
+section-introduction-title a doco:SectionTitle ;
+	c4o:hasContent "Introduction" .
+
+# Note that, in this example, the composition in sentences 
+# has been defined only for this paragraph.
+:paragraph-1 a doco:Paragraph ;
+	po:contains
+		:sentence-1 ,
+		:sentence-2 ,
+		:sentence-3 ,
+		:sentence-4 ,
+		:sentence-5 ,
+		:sentence-6 ;
+	co:firstItem [ co:itemContent :sentence-1 ;
+		co:nextItem [ co:itemContent :sentence-2 ;
+			co:nextItem [ co:itemContent :sentence-3 ;
+				co:nextItem [ co:itemContent :sentence-4 ;
+					co:nextItem [ co:itemContent :sentence-5 ;
+						co:nextItem [ co:itemContent :sentence-6 ] ] ] ] ] ] .
+
+:sentence-1 a doco:Sentence ;
+	c4o:hasContent "One of the most important criteria for the evaluation of a scientific contribution is the coherent organisation of the textual narrative that describes it, most often published as a scientific article or book." .
+
+:sentence-2 a doco:Sentence ;
+	c4o:hasContent "In most academic disciplines, such writings have well-established models of organisation and rhetorical structure, to which all scholars and contributors generally abide." .
+
+:sentence-3 a doco:Sentence ;
+	c4o:hasContent "These expectations are shared by academic publishers, who ask for standardised models in the submissions they receive, that efficiently describe the content's organisation over logical components." .
+
+:sentence-4 a doco:Sentence ;
+	c4o:hasContent "This in turn corresponds to publishers' quest for a structural model that can best express the expected structure, describe the article's parts correctly, and identify at a glance any omissions, redundancies or incorrect sequences." .
+
+:sentence-5 a doco:Sentence ;
+	c4o:hasContent "Unfortunately, the number of distinct vocabularies adopted by publishers to describe these requirements is quite large, and a need arises to integrate or map these different languages into a single, unifying framework that may be used for all content, regardless of provenance and scientific context." .
+
+# Note that, in this example, the composition in additional components
+# (without specifying any order) has been defined only for this sentence.
+:sentence-6 a doco:Sentence ;
+	c4o:hasContent "For instance, in [3] the author explains the requirements for an XML vocabulary of scientific journals to be acceptable for inclusion in PubMed Central." ;
+	po:contains :reference-to-3 .
+
+:reference-to-3 a deo:Reference ;
+	c4o:hasContent "[3]" ;
+	dcterms:references :bibliographic-reference-3 .
+
+# In this example, for the following section we have specified only
+# their related title (without providing any particular order)
+:section-related-work a doco:Section, deo:RelatedWork ;
+	po:containsAsHeader :section-related-work-title .
+
+:section-related-work-title a doco:SectionTitle ;
+	c4o:hasContent "Related Work" .
+
+# In this example, for the following section we have specified only
+# one figure it contains (without providing any particular order)
+:section-document-components a doco:Section , deo:Model ;
+	po:containsAsHeader :section-document-components-title ;
+	po:contains :figurebox-doco .
+
+:figurebox-doco a doco:FigureBox ;
+	po:contains 
+		:figure-doco ,
+		:descriptive-paragraph ;
+	co:firstItem [ co:itemContent :figure-doco ;
+		co:nextItem [ co:itemContent :descriptive-paragraph ] ] .
+
+:figure-doco a doco:Figure .
+
+:descriptive-paragraph a doco:Paragraph ;
+	po:contains 
+		:label ,
+		:caption ;
+	co:firstItem [ co:itemContent :label ;
+		co:nextItem [ co:itemContent :caption ] ] .
+
+:label a doco:TextChunk , doco:FigureLabel ;
+	c4o:hasContent "Fig. 1" .
+
+:caption a doco:Sentence , deo:Caption ;
+	c4o:hasContent "Diagram describing the composition and the classes of the Document Components Ontology (DoCO)." .
+
+:section-document-components-title a doco:SectionTitle ;
+	c4o:hasContent "Document Components" .
+
+:section-adoption doco:Section, sro:Evaluation , sro:Discussion ;
+	po:containsAsHeader :section-adoption-title .
+
+:section-adoption-title a doco:SectionTitle ;
+	c4o:hasContent "Adoption and uses of DoCO" .
+	
+:section-conclusions sro:Conclusion ;
+	po:containsAsHeader :section-conclusions-title .
+
+:section-conclusions-title a doco:SectionTitle ;
+	c4o:hasContent "Conclusions" .
+
+:back-matter a doco:BackMatter ;
+	po:contains
+		:acknowledgments ,
+		:bibliography ;
+	co:firstItem [ co:itemContent :acknowledgments ;
+		co:nextItem [ co:itemContent :bibliography ] ] .
+
+:acknowledgments a doco:Section , deo:Acknowledgements ;
+	c4o:hasContent "Acknowledgements. We would like to thank Angelo Di Iorio and Francesco Poggi for their support and contribution for the development of the structural pattern theory summarised in Section 3.1 and the algorithm for retrieving the structural characterisation of document components introduced in Section 4.3." .
+	
+:bibliography a doco:Bibliography ;
+	po:containsAsHeader :bibliography-title ;
+	po:contains :bibliographic-reference-list .
+
+:bibliography-title a doco:SectionTitle ;
+	c4o:hasContent "References" .
+
+:bibliographic-reference-list a doco:BibliographicReferenceList ;
+	po:contains
+		:bibliographic-reference-1 ,
+		:bibliographic-reference-2 ,
+		:bibliographic-reference-3 ,
+		:bibliographic-reference-4 ,
+		:bibliographic-reference-5 ,
+		:bibliographic-reference-6 ,
+		:bibliographic-reference-7 ,
+		:bibliographic-reference-8 ,
+		:bibliographic-reference-9 ,
+		:bibliographic-reference-10 ,
+		:bibliographic-reference-11 ,
+		:bibliographic-reference-12 ,
+		:bibliographic-reference-13 ,
+		:bibliographic-reference-14 ,
+		:bibliographic-reference-15 ,
+		:bibliographic-reference-16 ,
+		:bibliographic-reference-17 ,
+		:bibliographic-reference-18 ,
+		:bibliographic-reference-19 ,
+		:bibliographic-reference-20 ,
+		:bibliographic-reference-21 ,
+		:bibliographic-reference-22 ,
+		:bibliographic-reference-23 ,
+		:bibliographic-reference-24 ,
+		:bibliographic-reference-25 ,
+		:bibliographic-reference-26 ,
+		:bibliographic-reference-27 ,
+		:bibliographic-reference-28 ;
+	co:firstItem [ co:itemContent :bibliographic-reference-1 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-2 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-3 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-4 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-5 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-6 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-7 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-8 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-9 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-10 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-11 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-12 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-13 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-14 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-15 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-16 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-17 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-18 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-19 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-20 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-21 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-22 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-23 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-24 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-25 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-26 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-27 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-28 ;
+	co:nextItem [ co:itemContent :bibliographic-reference-29 ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] ] .
+
+# This is an exemplar description of a bibliographic reference, that
+applies also to all the others.
+:bibliographic-reference-3 deo:BibliographicReference ;
+	c4o:hasContent "3. Beck, J. (2010). Report from the Field: PubMed Central, an XML-based Archive of Life Sciences Journal Articles. In Proceedings of the International Symposium on XML for the Long Haul: Issues in the Long-term Preservation of XML. DOI: 10.4242/BalisageVol6.Beck01" .

@@ -1,0 +1,424 @@
+Source: BalisageVol7-Seinturier01
+Sentence: This work stands in the context of the OTIM project which aims at developing conventions and tools for multimodal annotation of a large conversational French speech corpus X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Seinturier01
+Sentence: See X for a review about the problem of overlapping and about multiple hierarchies.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Seinturier01
+Sentence: We use the XML Query Language XQuery that we have extended to multistructured XML documents X, in particular in order to take into account Allen‚Äôs temporal relations.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/extends, http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsMetadataDocument
+
+Source: BalisageVol7-Seinturier01
+Sentence: From a linguistic point of view, this set can be seen as the third component mentioned as a perspective in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Seinturier01
+Sentence: We currently work to propose a knowledge representation formalism which be an alternative to TFS: an ontological approach based on Description Logics X and on semantic web technologies for the development of a linguistic Knowledge-based Information System.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Seinturier01
+Sentence: An applicative framework is under development, it is based on semantic web proposals such as OWL DL for the representation of this ontology and SPARQL X the querying language of semantic web for its manipulation.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Rennau01
+Sentence: Our prototypic implementation expects an XQSequence object, which is the XQJ representation X of an XDM value.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Rennau01
+Sentence: XProc X addresses the first two limitations: it integrates the major XML technologies into a single script language, provides openness to other technologies and enables to combine side-effect free processing with actions in a well-controlled way.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Johnsen01
+Sentence: Some notable examples are SGML CONCUR X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Johnsen01
+Sentence: Some notable examples are (as an interesting limiting case) Multix X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Johnsen01
+Sentence: Requests and proposals for transformation tools are abundant in the literature, but we know of only one proposal which recommends the establishment of a common framework of transformation algorithms as a general solution: X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Johnsen01
+Sentence: For all relevant purposes, therefore, O-XML is equivalent to what Yves Marcoux termed "overlap-only TexMECS" in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Johnsen01
+Sentence: We believe that lattice theory X may usefully be applied to the construction of document models from marked-up documents.
+CiTO properties: http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsMetadataDocument
+
+Source: BalisageVol7-Johnsen01
+Sentence: Closure models may be help in representing certain cases so-called spurious overlap as discussed in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Vion-Dury01
+Sentence: The W3C recommendation describes encryption processing X in a way that preserve compatibility with XML requirement, but doesn't change the fundamental issue we address.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Vion-Dury01
+Sentence: See X for examples of document services in this area today.
+CiTO properties: http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsMetadataDocument
+
+Source: BalisageVol7-Vion-Dury01
+Sentence: See X for a general presentation.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Vion-Dury01
+Sentence: See eXist structural indexes X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Vion-Dury01
+Sentence: A solution is using optimal asymmetric encryption padding X its more recent amelioration.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Vion-Dury01
+Sentence: In X, Mittal and Srivastava propose a somehow similar approach.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Hennum01
+Sentence: Existing projects such as XSLTdoc X may be adaptable for this purpose.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Lee01
+Sentence: Other schemas and tools could just as easily be used as long as they provide a precise representation of the JSON object model in XML (such as JSONx X).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Lee01
+Sentence: Ideally native support for RelaxNG will be built into the project but for now support is by means of the trang X converter and a transformation which converts XSD comments into XSD Annotations.
+CiTO properties: http://purl.org/spar/cito/obtainsSupportFrom
+
+Source: BalisageVol7-Broeder01
+Sentence: The topic of the semantics of markup has been mostly discussed from an academic point of view, see for instance X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Broeder01
+Sentence: This is also consistent with the approaches described by X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Davis01
+Sentence: We have found it rather easy to implement these patterns using XProc X.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Davis01
+Sentence: This implementation was taken to the IHE Connectathon X event in January 2011 where EMC received certification. 
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Davis01
+Sentence: While we have found some prior work on XML-centric application development X, we have found little that addresses how the XML technology stack addresses the unique needs of RESTful service construction.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Davis01
+Sentence: The XML REST Framework is available, along with a sample application, from the EMC Developer Network X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Davis01
+Sentence: First, while there is a technology, Servlex, that does provide a capability for producing web applications with only XML technologies, we were concerned that the uptake of the EXPath Webapp X approach has been slow and the community activity is marginal.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Durand01
+Sentence: For example, a trace of exchanges between a Web client application and a Web service can be formatted in XML as done in [[x]], including HTTP headers.
+CiTO properties: http://purl.org/spar/cito/includesQuotationFrom, http://purl.org/spar/cito/includesExcerptFrom
+
+Source: BalisageVol7-Durand01
+Sentence: XTemp is workflow-capable in the sense that it provides a minimal set of operators that enable most workflow patterns, of which a good account has been provided in [[x]] (see also http://www.workflowpatterns.com/).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Durand01
+Sentence: A more complete definition of XTemp can be found in X along with an XSLT translator for "core" XTemp and a set of use cases on the Web page from the OASIS TaMIE TC.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Durand01
+Sentence: A set of typical workflow patterns, several of them involving concurrency can be found in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Durand01
+Sentence: Among the features of XTemp beyond the 'core' subset (as defined by the 'core' conformance level in X) and considered challenging or impossible using conventional XSLT engines, are: Event posting, as this provides ways for concurrent paths to depend on each other (event communication) that would require a level of concurrency control beyond what XSLT allows to emulate.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Durand01
+Sentence: The latter being a recent implementation of a test assertion language proposed in X by one of the authors.
+CiTO properties: http://purl.org/spar/cito/containsAssertionFrom
+
+Source: BalisageVol7-Durand01
+Sentence: Two of the authors have been involved in an earlier, very limited version of XTemp X that did not have the same algorithmic capabilities nor leveraged XPath to the same extent.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Sperberg-McQueen02
+Sentence: This pronouncement (cited from memory) appeared in an early draft of the paper ultimately published as X; from a rhetorical point of viuew, it's a bit of a shame that they took this sentence out before they actually published the paper, but perhaps they thought it was too inflammatory.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: We reconsider the definition of a directed graph stated in X.
+CiTO properties: http://purl.org/spar/cito/containsAssertionFrom
+
+Source: BalisageVol7-Jettka01
+Sentence: For example multi-word idioms discussed in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: For example the Alice in Wonderland example quoted in X.
+CiTO properties: http://purl.org/spar/cito/includesQuotationFrom
+
+Source: BalisageVol7-Jettka01
+Sentence: Since one of the main driving forces behind the creation of multi-dimensionally annotated documents are linguistic corpora, the TEI Guidelines X have not only improved the awareness of scholars of the Digital Humanities for the problems regarding this special field of research, but also provided some solutions to it.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: The related approach of twin documents shown in X in addition to the primary data redundantly stores the so-called sacred markup, that is markup which is shared between different annotation layers (in contrast to profane markup that is related to a single layer).
+CiTO properties: http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsMetadataDocument, http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Jettka01
+Sentence: Although redundancy may lead to an improved sustainability (according to X) we tend to follow the Guidelines in believing that the price in form of possible inconsistencies is too high.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Again, first proposals for the XML representation of graphs can be found in the TEI Guidelines X in Chapter 18 by introducing feature structures.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Another alternative formal model for markup languages that has received much attention is the General Ordered-Descendant Directed Acyclic Graph (GODDAG) which was introduced in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: See X for a more recent discussion.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: The latter two have been introduced in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Figure 1 (taken from X) shows a GODDAG representing the aforementioned Alice in Wonderland example.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: See X for a detailed discussion about the relationships between GODDAG sub-class and TexMECS serialization.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Especially the work done by X is of interest, since they have shown that a data structure based on RDF, called EARMARK (Extreme Annotational RDF Markup), not only fully supports the expressiveness of GODDAGs but additionally introduces a new sub-type, called e-GODDAG (extended GODDAG) that adds anonymous non-terminal nodes (for establishing multiple arcs between two nodes and therefore allowing repetitive structures).
+CiTO properties: http://purl.org/spar/cito/extends, http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Jettka01
+Sentence: Even self-overlap (that is overlapping of elements, or ranges that bear the same generic identifier, see X for an example) is supported, as well as anonymous ranges (similar to the aforementioned e-GODDAGs).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Other approaches that shall be mentioned here for the sake of completeness are multi-colored XML X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Other approaches that shall be mentioned here for the sake of completeness are the use of delay nodes X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Other approaches that shall be mentioned here for the sake of completeness are the tabling approach described by X
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Other approaches that shall be mentioned here for the sake of completeness are XCONCUR by X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: Together with the standoff approach mentioned both in the TEI Guidelines and X, this expressive power can be used to capture multiple annotated data.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: In X the authors discuss the XStandoff meta annotation format which is capable of representing discontinuous elements, multiple parentage and virtual elements (amongst others).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: The format is a successor of the Sekimo Generic Format (see X) and was presented in detail at the Balisage 2009.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: The format was presented in detail at the Balisage 2009 (see X).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: See the Alice in Wonderland example in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: This can be shown by a visualization method implemented by X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Jettka01
+Sentence: The creation of two-dimensional SVG-based visualizations for XStandoff instances is to a great extent inspired by the approach of X discussed in the previous section.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Bauman01
+Sentence: The second goal (analysis) can be met by sticking to what we used to call "descriptive markup" X but is now better described as 'indicative logical markup' and developing a sufficiently detailed description of your data for the purposes envisioned.
+CiTO properties: http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn
+
+Source: BalisageVol7-Bauman01
+Sentence: But with the advent of X, the focus, I claim, has been more on interoperability than on interchange.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Bauman01
+Sentence: But in a 2009 talk X Norm Walsh presented the results of a study counting which steps were used in XProc pipelines.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Bauman01
+Sentence: For example, it may be quite easy to take documents in X and use them in an application other than the one for which they were originally written.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsMetadataDocument
+
+Source: BalisageVol7-Maloney01
+Sentence: The expath-pkg.xml file format is described in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Maloney01
+Sentence: They are authored by Wendell Piez, and are described very nicely in X, from the Proceedings of JATS-Con, 2010.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Maloney01
+Sentence: At the JATS-Con last year, Laura Kelly gave an excellent presentation on the EPUB format and a set of transformations for converting JATS documents into EPUB (X).
+CiTO properties: http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsMetadataDocument
+
+Source: BalisageVol7-Maloney01
+Sentence: TaxPub is a customization of JATS in DTD form, which was described in a paper presented at last year's JATS-Con (X).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Maloney01
+Sentence: For this, I highly recommend X.
+CiTO properties: http://purl.org/spar/cito/citesAsRecommendedReading
+
+Source: BalisageVol7-Maloney01
+Sentence: According to X, the results of a survey of publishers indicated that, "Half of the respondents said that they impose rules other than schema validation on their content."
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Maloney01
+Sentence: That this is a problem was eloquently described by Norman Walsh in his blog post from 2004 titled, "On the Web, My Name is 266 North Pleasant Street" (X).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Maloney01
+Sentence: The "phase 2" implementation of JATSPAN will copy the Servlex/eXist architecture of the CXAN site as described in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Maloney01
+Sentence: The next-phase implementation of JATSPAN will copy the Servlex/eXist architecture of the CXAN site as described in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Mercier01
+Sentence: The precise way to write XSpec document is described in the official documentation X.
+CiTO properties: http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsMetadataDocument
+
+Source: BalisageVol7-Delpratt01
+Sentence: One of the present authors X argued that high-level optimizations are more important, and that compiling expressions to bytecode might reduce the scope for high-level optimizations, if only by making them more complex to implement and debug.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Delpratt01
+Sentence: Detail of these are provided in the literature X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Delpratt01
+Sentence: In X there is a detailed study of the main optimization techniques, some of which are used in Saxon.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Delpratt01
+Sentence: There are a number of Java class manipulation tools available (see X).
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Delpratt01
+Sentence: We chose instead to use the ASM X framework library tool to generate bytecode for queries.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Delpratt01
+Sentence: There are other Java class manipulation tools which we only mention here such as SERP, JIOE: these are described in X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Delpratt01
+Sentence: Nevertheless, we have chosen the ASM library based upon X, due to the simplicity of the tool and our requirement which only relied upon a small part of the library to dynamically generate bytecode in the runtime of queries.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Delpratt01
+Sentence: As discussed in X, Saxon can execute internally in both pull and push mode.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Delpratt01
+Sentence: The experiments are based on the XMark benchmark X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Delpratt01
+Sentence: We use the XMark XQuery queries numbered q1 to q20, and synthetically generate several XML data files from X, these being of sizes in the range 1MB to 64MB.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/citesAsDataSource
+
+Source: BalisageVol7-Piez01
+Sentence: This reduction of differences to (supposed) essentials reflects the way, in information processing systems, everything we do is on the basis of the differences and differentiations (and similarities) we can register and retain within and between different data objects, as is well established in information theory from Saussure X to Shannon.
+CiTO properties: http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Piez01
+Sentence: This reduction of differences to (supposed) essentials reflects the way, in information processing systems, everything we do is on the basis of the differences and differentiations (and similarities) we can register and retain within and between different data objects, as is well established in information theory from Saussure to Shannon X.
+CiTO properties: http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Piez01
+Sentence: That is, the issue is not that more properly descriptive markup is not possible or useful for tables (see X), but that to design, deploy and support correct, descriptive markup ad hoc for every table (or even most sets of tables) is simply impractical.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Piez01
+Sentence: As demonstrated in X, RelaxNG can be used to specify microformats by asserting attribute bindings along with element types.
+CiTO properties: http://purl.org/spar/cito/containsAssertionFrom, http://purl.org/spar/cito/citesAsEvidence, http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Piez01
+Sentence: See in particular X on this topic.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Piez01
+Sentence: Also see X for more on the distinction between descriptive tagging and applications of markup to application-centric data modeling.
+CiTO properties: http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Dubin01
+Sentence: This work is part of the Data Conservancy, an ongoing scientific data management project funded by the National Science Foundation's Office of Cyberinfrastructure X.
+CiTO properties: http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Dubin01
+Sentence: Our proposed formalizations are expressed as terminological axioms in the Description Logic ALC X.
+CiTO properties: http://purl.org/spar/cito/containsAssertionFrom
+
+Source: BalisageVol7-Dubin01
+Sentence: This representation information is intended to give "information necessary to render and understand the bit sequences constituting the Content Data Object" X.
+CiTO properties: http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Dubin01
+Sentence: On our view, interpretative frames are abstract mappings that correspond roughly to a situation X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Dubin01
+Sentence: Most of the observations we offer here can be found stated either directly or indirectly by proponents of semantic documentation and enrichment frameworks like Formal Tag Set Definition and Intertextual Semantics X.
+CiTO properties: http://purl.org/spar/cito/containsAssertionFrom
+
+Source: BalisageVol7-Sall01
+Sentence: According to X, Clapton released 41 albums (including reissues) from 1970 to 2005.
+CiTO properties: http://purl.org/spar/cito/includesQuotationFrom, http://purl.org/spar/cito/includesExcerptFrom
+
+Source: BalisageVol7-Sall01
+Sentence: For example, Wikipedia tells us that Eric Clapton X is associated with: Dire Straits, The Yardbirds, John Mayall and the Bluesbreakers, Powerhouse, Cream, Free Creek, The Dirty Mac, Blind Faith, J.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Sall01
+Sentence: For a much more complete explanation of the Wikipedia extraction process employed by DBpedia including a discussion of the design and development of infobox templates, see X.
+CiTO properties: http://purl.org/spar/cito/includesQuotationFrom, http://purl.org/spar/cito/includesExcerptFrom, http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Sall01
+Sentence: We initially used a simple SPARQL query X to determine what properties are relevant to a musician as shown in the following two listings.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+
+Source: BalisageVol7-Sall01
+Sentence: Initially we considered using music data from Freebase X, an open, community-based, Creative Commons licensed repository of structured data describing millions of entities which are connected as a graph.
+CiTO properties: http://purl.org/spar/cito/citesAsDataSource, http://purl.org/spar/cito/usesDataFrom, http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn
+
+Source: BalisageVol7-Sall01
+Sentence: Our RDF store was the open source (freely-available) version of OpenLink Virtuoso Universal Server X running in "Full Mode".
+CiTO properties: http://purl.org/spar/cito/citesAsSourceDocument, http://purl.org/spar/cito/citesAsDataSource
+
+Source: BalisageVol7-Sall01
+Sentence: The definition list below presents our current thinking about several key concepts that are covered in details in later sections; some refer to X.
+CiTO properties: http://purl.org/spar/cito/citesForInformation
+
+Source: BalisageVol7-Sall01
+Sentence: We employed the OpenLink Virtuoso Universal Server X as an RDF store.
+CiTO properties: http://purl.org/spar/cito/usesConclusionsFrom, http://purl.org/spar/cito/usesMethodIn, http://purl.org/spar/cito/usesDataFrom
+

@@ -1,0 +1,221 @@
+@prefix : <http://www.example.com/resource/> .
+@prefix lens: <http://www.essepuntato.it/2011/03/lens/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix co: <http://purl.org/co/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix la: <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix earmark: <http://www.essepuntato.it/2008/12/earmark#> .
+@prefix amo: <http://www.essepuntato.it/2011/02/argumentmodel/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+# Research context lens
+:research-context a lens:ResearchContextLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+	
+:research-context {
+	:vua a frapo:University ;
+		foaf:name "VU University Amsterdam" ;
+		frapo:awards [ a frapo:Grant ;
+			rdfs:label "Ph.D. Scholarship 2004" ;
+			frapo:funds :investigation ] .
+	:investigation a frapo:Investigation ;
+		frapo:hasOutput :ontologies-are-us .
+}
+
+
+# Contributions and roles lens
+:contributions-and-roles a lens:ContributionsAndRolesLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+
+:contributions-and-roles {
+	:mika a foaf:Person ;
+		foaf:name "Peter Mika" ;
+		pro:holdsRoleInTime [
+			a scoro:OrganizationalRole ;
+			pro:withRole scoro:affiliate ;
+			pro:relatesToOrganization :vua ;
+			pro:relatesToDocument :ontologies-are-us ],
+		scoro:makesContribution [
+			a scoro:ContributionSituation ;
+			scoro:withContribution scoro:writes-paper ;
+			scoro:withContributionEffort 
+				scoro:solo-effort ;
+			scoro:relatesToEntity :ontologies-are-us ] .
+}
+		
+
+# Publication lens
+:publication-context a lens:PublicationContextLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+	
+:publication-context {
+	# The textual realisation of the paper
+	:version-of-record a fabio:JournalArticle ;
+		frbr:realisationOf :ontologies-are-us ;
+		frbr:partOf [ a fabio:JournalIssue ;
+			 prism:issueIdentifier "1" ;
+			frbr:partOf [ a fabio:JournalVolume ;
+				prism:volume "5" ;
+				frbr:partOf [ a fabio:Journal ;
+					dcterms:title "Web Semantics" ] ] ] ;
+		frbr:part [ a biro:ReferenceList ;
+			co:element [ biro:references 
+				<http://dx.doi.org/10.1007/978-3-540-24571-1_2> ] # ...
+		] .
+}
+
+
+# Structure lens
+:structure a lens:StructureLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+
+:structure {
+	# Main body
+	:div a earmark:Element
+		la:expresses pattern:Container ;
+		earmark:hasGeneralIdentifier "div" ;
+		co:firstItem [ co:itemContent [
+				# ...
+			] ; 
+			co:nextItem [ 
+				co:itemContent :h-sec-2 ;  
+				co:nextItem [ 
+					# ... 
+					co:itemContent :p4-sec-2 ;
+					# ... 
+				] 
+			] 
+		] .
+	
+	# Heading in :div
+	:h-sec-2 a earmark:Element 
+		la:expresses pattern:Block ;
+		earmark:hasGeneralIdentifier "h1" ;
+		co:firstItem [ co:itemContent :r-h-sec-2 ] .
+		
+	# Text node within :h-sec-2
+	:r-h-sec-2 a earmark:PointerRange . 
+	# ...
+	
+	# Section 2, Paragraph 4
+	:p4-sec-2 a earmark:Element 
+		la:expresses pattern:Block ;
+		earmark:hasGeneralIdentifier "p" . 
+	# ... 
+}
+
+
+# Rhetoric lens
+:rhetoric a lens:RhetoricLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+
+:rhetoric {
+	# The :div defined in the structure lens is the main body
+	:div la:expresses doco:BodyMatter .
+	
+	# The :div defined in the structure lens is a section title
+	:h-sec-2 la:expresses doco:SectionTitle .
+	
+	# The :div defined in the structure lens is a paragraph
+	# that introduces some background material
+	:p4-sec-2 la:expresses doco:Paragraph , deo:Background .
+}
+
+
+# Citation lens
+:citation a lens:CitationLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+	
+:citation {
+	:ontologies-are-us
+		# citation to [5] in Sec 2, Par 4
+		cito:citesAsAuthority
+			<http://dx.doi.org/10.1002/047084289X> ;
+		# citation to [3] in Sec 2, Par 4
+		cito:obtainsBackgroundFrom
+			<http://dx.doi.org/10.1007/978-3-540-24571-1_2> .
+	
+	# ...
+}
+
+
+# Argumentation lens
+:argumentation a lens:ArgumentationLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+	
+:argumentation {
+	:argument a amo:Argument ;
+		# It is important to note that in terms of knowledge representation, 
+		# the set of these keywords cannot even be considered as vocabularies, 
+		# the simplest possible form of an ontology on the continuous scale of 
+		# Smith and Welty [5] .
+		amo:hasClaim :r-claim-p4 ;
+		
+		# even
+		amo:hasQualifier :r-qualifier-p4 ;
+		
+		amo:hasEvidence 
+			#  First, the set of words is not fixed.
+			:r-evidence-1-p4 , 
+			
+			# Second, although we use the term concept in the following, it 
+			# is clear that there is no one-to-one correspondence between 
+			# concepts and keywords.
+			:r-evidence-2-p4 , 
+			
+			# Lastly, the instances of folksonomies are instances only in the 
+			# sense of classification.
+			:r-evidence-3-p4 ; 
+		
+		amo:hasWarrant 
+			#  In fact, the users form no explicit agreement at all about 
+			# the use of words,
+			:r-warrant-1-p4 , 
+			
+			# It is not always possible for the users to express a complex 
+			# concept with a single keyword
+			:r-warrant-2-p4 ; 
+		
+		# Paper referenced by [3]
+		amo:hasBacking 
+			<http://dx.doi.org/10.1007/978-3-540-24571-1_2> .
+	
+	:r-qualifier-p4 amo:forces :r-claim-p4 .
+	
+	:r-evidence-1-p4 amo:proves :r-claim-p4 ;
+		amo:supports :r-warrant-1-p4 .
+	
+	:r-warrant-1-p4 amo:leadsTo :r-claim-p4 .
+	
+	<http://dx.doi.org/10.1007/978-3-540-24571-1_2> 
+		amo:backs :r-warrant-1-p4 .
+	
+	:r-evidence-2-p4 amo:proves :r-claim-p4 ;
+		amo:supports :r-warrant-2-p4 .
+	
+	:r-warrant-2-p4 amo:leadsTo :r-claim-p4 .
+	
+	:r-evidence-3-p4 amo:proves :r-claim-p4 
+}
+
+
+# Semantics lens
+:semantics a lens:SemanticsLens ;
+	prov:wasAttributedTo <http://www.essepuntato.it/me> .
+	
+:semantics {
+	:my-keywords a dbpedia:Set_(mathematics) ,
+		[ a owl:Class ;
+			owl:complementOf dbpedia:Vocabulary ] 
+}

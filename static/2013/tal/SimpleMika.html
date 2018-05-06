@@ -1,0 +1,1937 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Semantic Index generated for the paper</title>
+<link href="basestyle.css" rel="stylesheet" type="text/css"> 
+</link>
+<link href="lensindex.css" rel="stylesheet" type="text/css"> 
+</link>
+<link href="bibliotips.css" rel="stylesheet" type="text/css"> 
+</link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script><script src="lens_script.js"></script>
+</head>
+
+<body>
+	
+<div aria-label="Article" class="centerPane svBigBox js" id="e_div_1" role="main">
+		
+<h1 class="svTitle" id="e_h1_1">Ontologies are us: A unified model of social networks and semantics</h1>
+		
+<ul class="authorGroup">
+			
+<li id="e_li_1">
+<a class="authHoverAnchor" href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=outwardLink&amp;_partnerName=27983&amp;_origin=article&amp;_zone=art_page&amp;_linkType=scopusAuthorDocuments&amp;_targetURL=http%3A%2F%2Fwww.scopus.com%2Fscopus%2Finward%2Fauthor.url%3FpartnerID%3D10%26rel%3D3.0.0%26sortField%3Dcited%26sortOrder%3Dasc%26author%3DMika,%2520Peter%26authorID%3D6603074009%26md5%3D4ee1c7ff02779f90885a761926a1757a&amp;_acct=C000031398&amp;_version=1&amp;_userid=606145&amp;md5=83ec7966dd31596f38ea7c7e7644adca" id="authname_1">Peter Mika</a>
+</li>
+		
+</ul>
+		
+<ul class="affiliation">
+			
+<li id="e_li_2">Department of Computer Science, Vrije Universiteit Amsterdam, 1081 HV Amsterdam, The Netherlands</li>
+		
+</ul>
+		
+<ul class="articleDates">
+			
+<li id="e_li_3">Received 22 June 2006. Revised 27 November 2006. Accepted 30 November 2006. Available online 1 February 2007.</li>
+		
+</ul>
+		
+<ul class="articleDoi">
+			
+<li id="e_li_4">
+<a href="http://dx.doi.org/10.1016/j.websem.2006.11.002" id="ddDoi" target="doilink">http://dx.doi.org/10.1016/j.websem.2006.11.002</a>,
+				<a href="http://www.sciencedirect.com/science/help/doi.htm" target="sdhelp">How to Cite or Link Using DOI</a>
+</li>
+			
+<li class="citedbyscopus" id="e_li_5">
+<div class="boxLink" id="e_div_2">
+					
+<a class="olSpawnWindow" href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=outwardLink&amp;_partnerName=656&amp;_eid=1-s2.0-S1570826806000552&amp;_pii=S1570826806000552&amp;_origin=article&amp;_zone=art_page&amp;_targetURL=http%3A%2F%2Fwww.scopus.com%2Finward%2Fcitedby.url%3Feid%3D2-s2.0-33847199383%26partnerID%3D10%26rel%3DR3.0.0%26md5%3D181031d566f5aa6a94ff794554344da9&amp;_acct=C000031398&amp;_version=1&amp;_userid=606145&amp;md5=e72a73f817f6bd89f056991eee3a0dac" rel="nofollow" target="outwardLink"><span class="scopus_logo_txt">Cited by in Scopus (151)</span></a>
+				
+</div>
+</li>
+		
+</ul>
+		
+<ul class="articleInfo">
+			
+<li class="permissions" id="e_li_6">
+<div class="boxLink" id="e_div_3">
+					
+<a class="olSpawnWindow" href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=outwardLink&amp;_partnerName=936&amp;_eid=1-s2.0-S1570826806000552&amp;_pii=S1570826806000552&amp;_origin=article&amp;_zone=art_page&amp;_targetURL=https%3A%2F%2Fs100.copyright.com%2FAppDispatchServlet%3FpublisherName%3DELS%26contentID%3DS1570826806000552%26orderBeanReset%3Dtrue&amp;_acct=C000031398&amp;_version=1&amp;_userid=606145&amp;md5=8cfd13804e30f35fa41d5ccb439e61d0" rel="nofollow" target="outwardLink">Permissions &amp; Reprints</a>
+				
+</div>
+</li>
+		
+</ul>
+		
+<hr id="Abstract">
+		
+<div class="abstract svAbstract" id="e_div_4">
+			
+<h2 class="secHeading" id="section_abstract">Abstract</h2>
+			
+<p id="e_p_1">
+In our work the traditional bipartite model of ontologies is extended with the social dimension, leading to a
+				tripartite model of actors, concepts and instances. We demonstrate the application of this representation by showing how
+				community-based semantics emerges from this model through a process of graph transformation. We illustrate ontology emergence
+				by two case studies, an analysis of a large scale folksonomy system and a novel method for the extraction of community-based
+				ontologies from Web pages.</p>
+		
+</div>
+		
+<h2 id="kwd_N48a7b898N827ea714">Keywords</h2>
+		
+<ul class="keyword">
+			
+<li id="e_li_7">Knowledge representation;</li>
+			
+<li id="e_li_8">Folksonomies;</li>
+			
+<li id="e_li_9">Tagging</li>
+		
+</ul>
+		
+<h2 class="svArticle" id="sec1">1. Introduction</h2>
+		
+<p class="svArticle section" id="e_p_2">
+
+			According to the most cited definition of the Semantic Web literature, an ontology is an explicit specification of the
+			conceptualization of a domain <span id="bbib1"><a class="intra_ref" href="#bib1" id="e_a_6">[1]</a>
+. Guarino
+			clarifies Gruber&rsquo;s definition by adding that the AI usage of the term refers to &ldquo;an engineering artifact, constituted by a
+			specific vocabulary used to describe a certain reality, plus a set of explicit assumptions regarding the intended meaning of
+			the vocabulary words&rdquo; <span id="bbib2"><a class="intra_ref" href="#bib2" id="e_a_7">[2]</a>
+. An ontology is thus
+			engineered by &ndash; but often for &ndash; members of a domain by explicating a reality as a set of agreed upon terms and
+			logically-founded constraints on their use.
+		</p>
+		
+<p class="svArticle section" id="e_p_3">
+Conceiving ontologies as engineering artifacts allows us to objectify them, separate them
+			from their original social context of creation and transfer them across the domain. Problems arise with this simplistic view,
+			however, if we consider the temporal extent of knowledge. As the original community evolves through members leaving and
+			entering or their commitments changing, a new consensus may shape up invalidating the knowledge codified in the ontology.</p>
+		
+<p class="svArticle section" id="e_p_4">
+
+			To address the problem of ontology drift, several authors have suggested <em>emergent semantics</em> as a solution <span id="bbib3"><a class="intra_ref" href="#bib3" id="e_a_8">[3]</a>
+. The expectation is that the individual interactions
+			of a large number of rational agents would lead to global effects that could be observed as semantics. Ontologies would thus
+			become an emergent effect of the system as opposed to a fixed, limited contract of the majority. While the idea quickly caught
+			on due to the promise of a more scalable and easily maintainable Semantic Web, the agreement so far only extends to the basic
+			conditions under which emergence would take place. The vision is a community of self-organizing, autonomous, networked and
+			localized agents co-operating in dynamic, open environments, each organizing knowledge (e.g. document instances) according to a
+			self-established ontology, establishing connections and negotiating meaning only when it becomes necessary for co-operation.
+			Beyond the reasonable belief that individual actions in such a semantic-social network would lead to ontology emergence, there
+			is a lack of an abstract model of such a system that could also explain the process of emergence. Thus there appears to be a
+			large conceptual gap in the literature between the vision and the details of implementations of various semantic architectures
+			based on P2P, Grid, MAS and web technology.
+		</p>
+		
+<p class="svArticle section" id="e_p_5">
+
+			In this paper, we take a step back and formulate a generic, abstract model of semantic-social networks (Section <span id="bsec2"><a class="intra_ref" href="#sec2" id="ancbsec2">2</a></span>), which we will call the Actor&ndash;Concept&ndash;Instance model
+			of ontologies. This model is built on an implicit (albeit crucial) realization of emergent semantics, namely that meaning is
+			necessarily dependent on a community of agents. Inspired by social tagging mechanisms, we represent semantic-social networks in
+			the form of a tripartite graph of person, concept and instance associations, extending the traditional concept of ontologies
+			(concepts and instances) with the social dimension. We will show how lightweight ontologies of concepts and social networks of
+			persons emerge from this model through simple graph transformations. In Section <span id="bsec4"><a class="intra_ref" href="#sec4" id="ancbsec4">3</a></span>, we will demonstrate these effects based on two independent, large scale datasets. In
+			Section <span id="bsec7"><a class="intra_ref" href="#sec7" id="ancbsec7">4</a></span>, we evaluate one of our emergent
+			ontologies (the result of a social-network based ontology extraction process) against the results of the traditional method of
+			ontology extraction based on co-occurrence. Lastly, we conclude with a discussion of future work in Section <span id="bsec9"><a class="intra_ref" href="#sec9" id="ancbsec9">6</a></span>.
+		</p>
+		
+<h2 class="svArticle" id="sec2">2. A tripartite model of ontologies</h2>
+		
+<p class="svArticle section" id="e_p_6">
+
+			While expert systems designed for centralized, controlled environments benefit greatly from the increasing expressivity of
+			ontology languages such as OWL, especially in domains that lend naturally to formalization such as engineering and medicine,
+			lightweight ontologies expressed in RDF(S) have spread and caught on in the loosely controlled, distributed environment of the
+			Web <span id="bbib4"><a class="intra_ref" href="#bib4" id="e_a_13">[4]</a>
+.
+		</p>
+		
+<p class="svArticle section" id="e_p_7">
+The tendency towards lightweight, easily accessible mechanism for ontology and metadata
+			creation is best evidenced by the recent appearance of folksonomies. Folksonomy (from folk and taxonomy) is a neologism for a
+			practice of collaborative categorization using freely chosen keywords. Folksonomies (also called social tagging mechanisms)
+			have been implemented in a number of online knowledge sharing environments since the idea was first adopted by social
+			bookmarking site del.icio.us in 2004.</p>
+		
+<p class="svArticle section" id="e_p_8">
+
+			The idea of a folksonomy is to allow the users to describe a set of shared objects with a set of keywords of their own choice.
+			What the objects are depends on the goal of the site: while bookmarks are the object of classification in del.icio.us, photos
+			are shared in Flickr, scientific publications are tagged in CiteULike, while 43Things allows users to share their goals and
+			plans (e.g. to travel or loose weight) by annotating their descriptions with keywords and connecting users with similar
+			pursuits.<span id="bfn1"><a class="intra_ref" href="#fn1" id="ancbfn1"><sup>1</sup></a></span>
+		
+</p>
+		
+<p class="svArticle section" id="e_p_9">
+
+			It is important to note that in terms of knowledge representation, the set of these keywords cannot even be considered as
+			vocabularies, the simplest possible form of an ontology on the continuous scale of Smith and Welty <span id="bbib5"><a class="intra_ref" href="#bib5" id="e_a_15">[5]</a>
+. First, the set of words is not fixed. In fact, the users form no
+			explicit agreement at all about the use of words, not even in the form of incremental, need-based, local and temporary
+			agreements suggested by the research on emergent semantics <span id="bbib3"><a class="intra_ref" href="#bib3" id="e_a_16">[3]</a>
+. Yet, the basic conditions of emergent semantics are given and as we will show there is semantics
+			emerging at the scale of these systems. Second, although we use the term concept in the following, it is clear that there is no
+			one-to-one correspondence between concepts and keywords. It is not always possible for the users to express a complex concept
+			with a single keyword and thus they may use more than one tag to express the concept association that the item brings up in
+			them. Lastly, the instances of folksonomies are instances only in the sense of classification.
+		</p>
+		
+<p class="svArticle section" id="e_p_10">
+
+			In order to model networks of folksonomies at an abstract level, we will represent such a system as a tripartite graph with
+			hyperedges. The set of vertices is partitioned into the three (possibly empty) disjoint sets <span id="mmlsi1" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>A</em>={<em>a</em><sub>1</sub>,&hellip;,<em>a</em><sub><em>k</em></sub>}</span></span>,
+			<span id="mmlsi2" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>C</em>={<em>c</em><sub>1</sub>,&hellip;,<em>c</em><sub><em>l</em></sub>}</span></span>, <span id="mmlsi3" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>I</em>={<em>i</em><sub>1</sub>,&hellip;,<em>i</em><sub><em>m</em></sub>}</span></span>
+			corresponding the set of actors (users), the set of concepts (tags, keywords) and the set of objects annotated (bookmarks,
+			photos, etc.). In effect, we extend the traditional bipartite model of ontologies (concepts and instances) by incorporating
+			actors in the model.
+		</p>
+		
+<p class="svArticle section" id="e_p_11">
+
+			In a social tagging system, users tag objects with concepts, creating ternary associations between the user, the concept and
+			the object. Thus the folksonomy is defined by a set of annotations <span id="mmlsi4" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>T</em>&sube;<em>A</em>&times;<em>C</em>&times;<em>I</em></span></span>. Such a network
+			is most naturally represented as hypergraph with ternary edges, where each edge represents the fact that a given actor
+			associated a certain instance with a certain concept. In particular, we define the representing hypergraph of a folksonomy <em>T</em>
+			as a (simple) tripartite hypergraph <span id="mmlsi5" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>H</em>(<em>T</em>)=〈<em>V</em>,<em>E</em>〉</span></span> where <span id="mmlsi6" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>V</em>=<em>A</em>&cup;<em>C</em>&cup;<em>I</em></span></span>,
+			<span id="mmlsi7" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>E</em>={{<em>a</em>,<em>c</em>,<em>i</em>}|(<em>a</em>,<em>c</em>,<em>i</em>)&isin;<em>T</em>}</span></span>.
+		</p>
+		
+<p class="svArticle section" id="e_p_12">
+
+			Tripartite graphs and hyperedges are rather cumbersome to work with. However, we can reduce such a hypergraph into three
+			bipartite graphs (also called two-mode graphs) with regular edges. These three graphs model the associations between actors and
+			concepts (graph <em>AC</em>), concepts and instances (graph <em>CI</em>) and actors and instances (graph <em>AI</em>). For
+			example, the <em>AC</em> valued bipartite graph is defined as follows:
+		</p>
+		
+<div class="formula" id="e_div_5">
+			
+<div class="mathml" id="e_div_6">
+				
+<span id="mmlsi8" title="Click to view the MathML source"><img border="0" height="43" src="images/1-s2_003.gif" width="381"></span>
+			
+</div>
+		
+</div>
+		
+<p class="svArticle section" id="e_p_13">
+
+			In words, the bipartite graph <em>AC</em> links the persons to the concepts that they have used for tagging at least one
+			object. Each link is weighted by the number of times the person has used that concept as a tag. This kind of graph is known in
+			the social network analysis literature as an affiliation network <span id="bbib6"><a class="intra_ref" href="#bib6" id="e_a_17">[6]</a>
+, linking people to affiliations with weights corresponding to the strength of the affiliation. An
+			affiliation network can be used to generate two simple, weighted graphs (one-mode networks) showing the similarities between
+			actors and events, respectively. (At this point it is recommended to dichotomize the graph by applying some threshold.)
+		</p>
+		
+<p class="svArticle section" id="e_p_14">
+
+			The process of folding a bipartite graph (the extraction of a one-mode network) can be most easily understood by looking at the
+			matrix form of the graph. Let&rsquo;s denote this matrix as <span id="mmlsi9" title="Click to view the MathML source"><img border="0" height="16" src="images/1-s2_010.gif" width="62"></span>. As discussed before,
+			<span id="mmlsi10" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>b</em><sub><em>i</em><em>j</em></sub>=1</span></span> if actor <span id="mmlsi11" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>a</em><sub><em>i</em></sub></span></span>
+			is affiliated with concept <span id="mmlsi12" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>c</em><sub><em>j</em></sub></span></span>. We define a new matrix <span id="mmlsi13" title="Click to view the MathML source"><img border="0" height="17" src="images/1-s2_015.gif" width="58"></span>, where <span id="mmlsi14" title="Click to view the MathML source"><img border="0" height="21" src="images/1-s2_005.gif" width="117"></span>. In matrix notation <span id="mmlsi15" title="Click to view the MathML source"><img border="0" height="13" src="images/1-s2_017.gif" width="57"></span>. This matrix, known as
+			the co-affiliation matrix, defines a social network that connects people based on shared affiliations. In our case the links
+			are between people who have used the same concepts with weights showing the number of concepts they have used in common. The
+			dual matrix, <span id="mmlsi16" title="Click to view the MathML source"><img border="0" height="13" src="images/1-s2_007.gif" width="61"></span> is a similar graph
+			showing the association of concepts, weighted by the number of people who have used both concepts as tags. Note that in both
+			graphs the diagonal of the corresponding matrices contains the counts of how many concepts or persons a given person or concept
+			was affiliated with in the bipartite graph. We can use these values to normalize the association weights (e.g. by calculating
+			the Jaccard-coefficient) and then filtering again based on the relative weights. In case of the <span id="mmlsi17" title="Click to view the MathML source"><img border="0" height="12" src="images/1-s2_018.gif" width="10"></span> social network, for example, this means that we have taken into account the relative
+			importance of the link between persons.
+		</p>
+		
+<p class="svArticle section" id="e_p_15">
+
+			In summary, the <em>AC</em> graph, the affiliation network of people and concepts can be folded into two graphs: a social
+			network of users based on overlapping sets of objects and a lightweight ontology of concepts based on overlapping sets of
+			communities. Thus in this simple model, social networks and semantics are just flip-sides of the same coin: the original
+			bipartite graph contains all the information to generate these networks, while it is not possible to re-generate the original
+			graph from them.
+		</p>
+		
+<p class="svArticle section" id="e_p_16">
+
+			The other two bipartite graphs that we derived from the original tripartite model can also be folded into one-mode networks in
+			a similar fashion. In particular, the <em>CI</em> graph leads to another semantic network, where the links between terms are
+			weighted by the number of instances that are tagged with both terms. This type of semantic network is a much more familiar
+			kind: it mimics the basic method applied in text mining, where terms are commonly associated by their co-occurrence in
+			documents. The <em>AI</em> graph results in another social network of persons, where the weight of a pair is given by the
+			number of items they have both tagged. We also get a network of instances, with associations showing the number of people who
+			have tagged a given pair of instances.
+		</p>
+		
+<p class="svArticle section" id="e_p_17">
+
+			In the following we focus our attention on the two lightweight ontologies based on overlapping communities (<span id="mmlsi18" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span>)
+			and overlapping sets of instances (<span id="mmlsi19" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>).<span id="bfn2"><a class="intra_ref" href="#fn2" id="ancbfn2"><sup>2</sup></a></span> The analysis of the emergent social networks is outside the scope
+			of the current paper.
+		</p>
+		
+<h3 class="svArticle" id="sec3">2.1. Ontology enrichment</h3>
+		
+<p class="svArticle section" id="e_p_18">
+
+			The community-based lightweight ontology <span id="mmlsi30" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span> that we extract
+			from the affiliation network is rather peculiar from a knowledge representation perspective. Unlike the manually constructed
+			thesauri known in the Semantic Web literature (such as Wordnet <span id="bbib7"><a class="intra_ref" href="#bib7" id="e_a_19">[7]</a>
+), it more closely resembles the association thesauri studied in linguistics. An example is the
+			Edinburgh Associative Thesaurus (EAT),<span id="bfn3"><a class="intra_ref" href="#fn3" id="ancbfn3"><sup>3</sup></a></span>
+			which was collected in 1973 via an experiment using a group of university students as subjects <span id="bbib8"><a class="intra_ref" href="#bib8" id="e_a_21">[8]</a>
+. The experiment consisted of handing a list of words to students who were
+			instructed to write down against each stimulus word the first word it made them think of, working as quickly as possible. The
+			obtained words were used in a next round of the experiment. (The cycle was repeated three times, by then the number of
+			different responses was so large that they could not all be re-used as stimuli.)
+		</p>
+		
+<p class="svArticle section" id="e_p_19">
+
+			Our associative ontology is similar to the EAT in that the weights of the links between terms are expressed as the number of
+			people who make that association. The difference is that in the EAT collection, people are prompted explicitly to create links
+			between concepts, while we deduce such links by observing tagging behavior. More importantly, however, both methods have the
+			crucial property that the result clearly depends on the community of people who take part in experiment. The method of ontology
+			engineering is particularly revealing, because once the initial set of words is selected there is only one parameter to the
+			process: the population chosen. (In particular, the knowledge engineer has no other role than handing out questionnaires and
+			collecting the responses.) Some of the results are likely to hold for other communities (like the overwhelming reaction of
+			saying <em>Noah</em> when hearing the word <em>ark</em>), but many of the aggregated associations are driven by the collective
+			mind set of the subjects of the experiment. A collective mindset that is likely shaped by the well-known law of community
+			formation: interaction creates similarity, while similarity creates interaction.
+		</p>
+		
+<p class="svArticle section" id="e_p_20">
+
+			We cannot only repeat the experiments with different communities, but given some information about the social structure of the
+			community, we could also extract local ontologies by limiting our tripartite ontology to the associations of a certain
+			sub-community of actors. Note that this is the principle of locality in action, one of the expected hallmarks of emergent
+			semantics <span id="bbib3"><a class="intra_ref" href="#bib3" id="e_a_22">[3]</a>
+. We will demonstrate this effect in
+			Section <span id="bsec6"><a class="intra_ref" href="#sec6" id="ancbsec6">3.2</a></span> where we extract an ontology of
+			research topics in the Semantic Web domain.
+		</p>
+		
+<p class="svArticle section" id="e_p_21">
+In modern terms, the EAT is an emergent ontology based on empirical data. Unlike
+			ontologies that are meant to codify fixed agreements, all graphs that we derive are also emergent in the sense of evolving
+			dynamically with the Actor&ndash;Concept&ndash;Instance network. Changes in the original network can occur in a number of ways. Users may
+			join or leave the community, changing the set of actors. The focus of the community may shift, affecting the set of items
+			tagged and the concepts used. Last, the understanding and use of terms may change, reflecting in the set of associations
+			between concepts and instances created by the users.</p>
+		
+<p class="svArticle section" id="e_p_22">
+
+			Although our association networks are very simple ontological structures, there are several opportunities of enriching them
+			with additional semantics. We start by observing that a significant drawback of the EAT is the heterogeneity of terms. Our
+			emergent ontologies will also likely to contain a diverse mixture of specific and generic terms, i.e. terms that we can
+			unambiguously place in a clearly defined context (e.g. instances such as <em>Peter</em>) and terms that can occur in multiple
+			contexts of use (e.g. <em>war</em>). From a network view, general words are therefore more likely to bridge different clusters
+			of words, while specific terms are expected to exhibit a dense clustering in their neighborhood. This suggest an opportunity to
+			distinguish between these two categories by computing the <em>clustering coefficient</em>, the <em>(local) betweenness
+				centrality</em> or the <em>network constraint</em> on our terms <span id="bbib6-2"><a class="intra_ref" href="#bib6" id="e_a_24">[6]</a>
+ and <span id="bbib9-2"><a class="intra_ref" href="#bib9" id="e_a_25">[9]</a>
+. These well-known ego-network measures of Social Network Analysis are
+			readily available in popular network analysis packages such as Pajek <span id="bbib10"><a class="intra_ref" href="#bib10" id="e_a_26">[10]</a>
+ and UCINET <span id="bbib11"><a class="intra_ref" href="#bib11" id="e_a_27">[11]</a>
+.
+			Based on the same observation, we also expect that clustering algorithms can help us in finding synonym sets of the more
+			specific terms. There is a wide range of clustering algorithms available in the above mentioned network analysis packages,
+			based on different definitions of cohesiveness.
+		</p>
+		
+<p class="svArticle section" id="e_p_23">
+
+			We may also extract broader/narrower term relations typical of thesauri using set theory. In an ideal situation, we would say
+			that Concept <em>A</em> is a super-concept of Concept <em>B</em> if the set of entities (persons or items) classified under <em>B</em>
+			is a subset of the entities under <span id="mmlsi31" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>A</em>(<em>B</em>&sube;<em>A</em>⇋<em>A</em>&cap;<em>B</em>=<em>B</em>)</span></span>. We might
+			also add the criterium that the set of <em>A</em> should be significantly larger then the set of <em>B</em>, i.e. <span id="mmlsi32" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source">|<em>B</em>|/|<em>A</em>|&lt;<em>k</em></span></span>
+			for some value of <em>k</em>. In principle, such an ordering allows us to define a Galois lattice using the subset relation. In
+			practice, such a lattice would be very sparse (considering the number of entities and the number of possible subsets over
+			them), so we will approximate this method by looking for near-perfect overlaps, i.e. <span id="mmlsi33" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source">|<em>A</em>&cap;<em>B</em>|/|<em>B</em>|&lt;<em>n</em></span></span>
+			for some value of <em>n</em>. Finding appropriate values for the <em>k</em>, <em>n</em> parameters of the model is the task of
+			the researcher.
+		</p>
+		
+<p class="svArticle section" id="e_p_24">
+
+			The reader should note that the meaning of these broader/narrower relations are very different, depending on whether we analyze
+			the <span id="mmlsi34" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span> or the <span id="mmlsi35" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span>
+			ontology. In the first case, the interpretation is that all (or most) of the items classified under the narrower term also
+			appear under the broader term. In other words, what we extract is a classification hierarchy. In the second case, the meaning
+			is that all the persons associated with the narrower term are also associated with the broader term. In other words, we extract
+			a hierarchy based on sub-community relationships.
+		</p>
+		
+<h2 class="svArticle" id="sec4">3. Case studies</h2>
+		
+<p class="svArticle section" id="e_p_25">
+
+			In the following, we demonstrate the broad applicability of the Actor&ndash;Concept&ndash;Instance model of ontologies by looking at two
+			different semantic social networks. Our first data set comes from an existing web-based social bookmarking tool called
+			del.icio.us (Section <span id="bsec5"><a class="intra_ref" href="#sec5" id="ancbsec5">3.1</a></span>), while the second case is
+			built on synthetic data obtained by using web mining techniques (Section <span id="bsec6"><a class="intra_ref" href="#sec6" id="ancbsec6">3.2</a></span>). We will show how the abstract model applies to the particular cases and demonstrate our method of
+			ontology emergence based on the graph transformation described above.
+		</p>
+		
+<h3 class="svArticle" id="sec5">3.1. Ontology emergence in del.icio.us</h3>
+		
+<p class="svArticle section" id="e_p_26">
+According to the definition of author Joshua Schachter, del.icio.us is a social
+			bookmarking tool. Much like the similar functions of browsers, del.icio.us allows users to manage a personal collection of
+			links to web sites and describe those links with one or more keywords. Unlike stand-alone tools, del.icio.us is a web-based
+			system that allows users to share bookmarks with each other. Bookmarks can be browsed by user, by keywords (tags) or by a
+			combination of both criteria. Further, the user interface encourages exchange by showing how bookmarks are linked together via
+			users and tags. In terms of the Actor&ndash;Concept&ndash;Instance model, registered users of del.icio.us are the actors who create or
+			remove associations between terms and webpages (instances) by adding or deleting bookmarks.</p>
+		
+<p class="svArticle section" id="e_p_27">
+From the perspective of studying emergence, del.icio.us is remarkable for the dynamics of
+			its user base. The young, technologically aware community gathering around the site closely follows the latest news and trends
+			in web technology as well as the evolving vocabulary of the field. Beyond technology, del.icio.us users also post-bookmarks
+			related to current topics in politics, media, business and entertainment. The emphasis on timeliness is reinforced by listing
+			bookmarks in a backward-chronological order as it is typical for blogs.</p>
+		
+<p class="svArticle section" id="e_p_28">
+The process of annotation is made as easy as possible. A single textbox allows users to
+			enter a set of words without any recommendations made by the system. On the downside, this means that synonyms are common in
+			the folksonomy, e.g. &ldquo;semanticweb&rdquo;, &ldquo;semweb&rdquo; are different keywords. Ambiguity is also present, since users often pick overly
+			general terms to describe items (such as &ldquo;web&rdquo;, &ldquo;tool&rdquo; and other popular terms). Further, users often make the mistake to enter
+			key phrases instead of keywords (e.g. &ldquo;Bill Clinton&rdquo;), where the words are subsequently parsed as separate tags (&ldquo;Bill&rdquo; and
+			&ldquo;Clinton&rdquo;); or they escape the one-word-only limitation by concatenating words. Case sensitivity and the use of punctuation
+			marks further pollute the del.icio.us namespace. However, at the scale of system (over 30 thousand registered users in December
+			2004) the imperfections of tagging are reduced to an acceptable level. On the plus side, users benefit from instant
+			gratification in the form of linkage to other relevant, timely, socially-ranked posts.</p>
+		
+<p class="svArticle section" id="e_p_29">
+
+			del.icio.us exposes tagging data in the form of RSS feeds, which we have collected using a focused RDF crawler. The crawler was
+			initialized with the single most popular tag (&ldquo;web&rdquo;) and have traversed the RSS network in a breadth-first-search manner,
+			following links to tags mentioned in the descriptions of items. The sample data that we collected &ndash; over a million triples of
+			RDF &ndash; was stored using the Sesame storage and query facility <span id="bbib12"><a class="intra_ref" href="#bib12" id="e_a_30">[12]</a>
+. The sample represents 51,852 unique annotations of 30,790 URLs, by 10,198 persons using 29,476
+			unique tags.<span id="bfn4"><a class="intra_ref" href="#fn4" id="ancbfn4"><sup>4</sup></a></span>
+		
+</p>
+		
+<p class="svArticle section" id="e_p_30">
+Next, we have generated both the Actor&ndash;Concept and Concept&ndash;Instance graphs. In order to
+			scale down the dataset (without loosing much information) and to avoid strong associations with a low support we have filtered
+			out those entities that had only a minimal number of connections, i.e. those tags that had less than ten items classified under
+			them and those persons who have used less than five concepts.</p>
+		
+<p class="svArticle section" id="e_p_31">
+
+			Subsequently, we have extracted the above mentioned two kinds of ontologies by folding these graphs using the network analysis
+			package Pajek. As a reminder, the first ontology (<span id="mmlsi36" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span>) is based on
+			actors sharing concepts as interests, i.e. the associations reflect overlapping communities of interests, while the second
+			network (<span id="mmlsi37" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>) reflects the co-occurrence of tags
+			on items. We have filtered the networks based on the absolute strength of associations. Next, we applied geometric
+			normalization to the resulting graphs and filtered edges again based on the relative strength of the associations. We have
+			chosen the thresholds in such a way to obtain networks of equal size (438 concepts). <span id="bfig1"><a class="intra_ref" href="#fig1" id="ancbfig1">Fig. 1</a></span> shows a high level view of the <span id="mmlsi38" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>
+			graph, <span id="bfig2"><a class="intra_ref" href="#fig2" id="ancbfig2">Fig. 2</a></span> shows a detailed view of the <span id="mmlsi39" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span>
+			graph.
+		</p>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_7">
+			
+<div class="textboxdefault" id="e_div_8">
+				
+<dl class="figure" id="e_dl[@class!='footnote']_1">
+					
+<dt class="autoScroll">
+						
+<a href="#gr1" title="Full-size image (187K)"><img alt="Full-size image" border="0" class="figure large" data-fullsrc="http://origin-ars.els-cdn.com/content/image/1-s2.0-S1570826806000552-gr1.jpg" src="images/1-s2_013.gif">
+							</a>
+					
+</dt>
+					
+<dd id="e_dd_1">
+						
+<p class="caption" id="e_p_32">
+							Fig. 1. <span id="">The del.icio.us tags associated through co-occurrence on items and the clusters emerging. </span>
+						
+</p>
+						
+					
+</dd>
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_9">
+			
+<div class="textboxdefault" id="e_div_10">
+				
+<dl class="figure" id="e_dl[@class!='footnote']_2">
+					
+<dt class="autoScroll">
+						
+<a href="#gr2" title="Full-size image (40K)"><img alt="Full-size image" border="0" class="figure large" data-fullsrc="http://origin-ars.els-cdn.com/content/image/1-s2.0-S1570826806000552-gr2.jpg" src="images/1-s2_004.gif">
+							</a>
+					
+</dt>
+					
+<dd id="e_dd_2">
+						
+<p class="caption" id="e_p_33">
+							Fig. 2. <span id="">Detail view of the del.icio.us tags associated through users: a three-neighborhood of the term
+								ontology. Note that the term <em>sematic</em> is correctly associated, despite the obvious typo.<!--Comment-->
+							</span>
+						
+</p>
+						
+					
+</dd>
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<p class="svArticle section" id="e_p_34">
+
+			The results show clear evidence of emerging semantics in both cases, but the networks we obtain still show very different
+			pictures. With an equal number of vertices, the densities of the two networks are quite different (0.01 for the <span id="mmlsi40" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>
+			network, 0.006 for the <span id="mmlsi41" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span> network), and so is the amount of
+			clustering present (the average clustering coefficients are 0.2 and 0.03, respectively).
+		</p>
+		
+<p class="svArticle section" id="e_p_35">
+
+			The selection of concepts in the two networks is also very different: only 64 concepts are present in both networks of the
+			total of 438 nodes in each graph. (A sample is included in <span id="btbl1"><a class="intra_ref" href="#tbl1" id="ancbtbl1">Table 1</a></span>.) A closer look reveals that the concepts within the clusters of the first network are often
+			very specialized terms, while those in between the clusters are overly general terms. A look at the terms with the lowest
+			clustering and highest betweenness centrality confirms this hypothesis. The top five terms with highest betweenness are <em>up</em>,
+			<em>cool</em>, <em>hot</em>, <em>in</em>, <em>to</em>. Noticeable also is that the terms with the highest clustering and lowest
+			network constraint are those related to sex. As mentioned before, the second network shows much less clustering: overly general
+			and overly specific terms are both missing.
+		</p>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_11">
+			
+<div class="textboxdefault" id="e_div_12">
+				
+<dl class="table " id="e_dl[@class!='footnote']_3">
+					
+<dd id="e_dd_3">
+						
+<p class="caption" id="e_p_36">
+							
+<span class="label">Table 1. </span>Terms starting with &ldquo;A&rdquo; or &ldquo;a&rdquo; in the two lightweight ontologies generated from the
+							del.icio.us network
+						</p>
+					
+</dd>
+					
+<dd class="table" id="e_dd_4">
+						
+<table>
+							
+<tbody>
+								
+<tr>
+									
+<td colspan="1" rowspan="1"><span id="mmlsi42" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span></td>
+									<td colspan="1" rowspan="1">*/GoogleHacks, _0, 04, 1, 2, 2005, 3g, a, A, a9, Aaron_Mankovski, actona, actors, adult,
+										aduva, advice, ajax, all, Allegrini, america, an, and, angeles, apparel, Apple, as, assembly, attempt, attention,
+										attention.xml, aviv, axml, azur</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1"><span id="mmlsi43" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span></td>
+									<td colspan="1" rowspan="1">.net, 3d, 43folders, academic, accessibility, acronym, actionscript, activism, ad, ads,
+										adsense, advertising, advice, advisories, adwords, agile, ajax, amazon, america, analysis, and, Apache, apache, api,
+										app, apple, application, architecture, archive, Art, art, articles, asia, astronomy, atlas, Audio</td>
+								
+</tr>
+							
+</tbody>
+						
+</table>
+					
+</dd>
+					
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<p class="svArticle section" id="e_p_37">
+
+			The clue to the different qualities of these networks lies in the difference in the way associations are created between the
+			concepts. In the first case, there exist a strong association between concepts if they share a large percentage of items, <em>independent
+				of the number of users interested in them and regardless if these associations were added by the same users or not</em>. The
+			resulting distribution of association weights shows a very slow decline, the average weight is fairly high. In the second case,
+			there is a strong association in the network if two concepts share a large fraction of the users among them, <em>independent
+				of the number of instances associated with them and regardless whether these terms were added to the same instances or not</em>.
+			The resulting weight distribution shows a very steep decline, the average weight is fairly low.
+		</p>
+		
+<p class="svArticle section" id="e_p_38">
+
+			This suggest that the first network (<span id="mmlsi44" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>) is more
+			appropriate for concept mining. In fact, a <span id="mmlsi45" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>λ</em></span></span>-set analysis performed with UCINET on a slightly
+			larger network of 751 concepts resulted in meaningful clusters of specific terms, representing various domains of interests in
+			the del.icio.us community. At a level of <span id="mmlsi46" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>λ</em>=20</span></span>, we found five cohesive groups of concepts
+			that we identified as interests related to travel, business, free time, porn and web design (see <span id="bfig2"><a class="intra_ref" href="#fig2" id="ancbfig2">Fig. 2</a></span> and <span id="btbl2"><a class="intra_ref" href="#tbl2" id="ancbtbl2">Table 2</a></span>).
+		</p>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_13">
+			
+<div class="textboxdefault" id="e_div_14">
+				
+<dl class="table " id="e_dl[@class!='footnote']_4">
+					
+<dd id="e_dd_6">
+						
+<p class="caption" id="e_p_39">
+							
+<span class="label">Table 2. </span>The five main clusters of interest based on the Concept&ndash;Instance network
+						</p>
+					
+</dd>
+					
+<dd class="table" id="e_dd_7">
+						
+<table>
+							
+<tbody>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">travel</td>
+									<td colspan="1" rowspan="1">cote, provence, villa, azur, mas, holiday, vacation, tourism, france, heritage</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">business</td>
+									<td colspan="1" rowspan="1">venture_capital, enterprise, up, start, venture, newspaper, capital, Segev, pitango, vc</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">free time</td>
+									<td colspan="1" rowspan="1">procrastination, info, advice, gtd, life, notes, planning, daily, reading, forums</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">sex</td>
+									<td colspan="1" rowspan="1">hot, to, street, pictures, on, photos, free, celeb, adult, lesbian</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">web design</td>
+									<td colspan="1" rowspan="1">design, designer, webdesign, premium, logo, logos, dreamweaver, templates, best, good</td>
+								
+</tr>
+							
+</tbody>
+						
+</table>
+					
+</dd>
+					
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<p class="svArticle section" id="e_p_40">
+
+			However, the <span id="mmlsi47" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span> semantic network ignores the
+			relevance of the individual concepts from the user perspective and as such it gives an inaccurate picture of the community.
+			Concepts related to sex, for example, get a misleadingly high centrality in the network due to the specificity and extent of
+			the vocabulary used to describe sex-related sites. On the other hand, the more evenly distributed community-based network (<span id="mmlsi48" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span>)
+			contains concepts that are actually important to del.icio.us users. These concepts almost all come from the computer domain,
+			the apparent core interest of users. The strength of links between the concepts are also a more accurate representation of
+			reality as they are not biased by the actual number of items that have been tagged with them.
+		</p>
+		
+<p class="svArticle section" id="e_p_41">
+
+			The ignorance of the item-based extraction method towards the number of users also makes it problematic to extract taxonomic
+			relations. Namely, many of the relations we extracted are based on the word usage of a small number of users, and in the worst
+			case a single user. The Concept&ndash;Actor ontology yields much more easily interpretable results, shown in <span id="btbl3"><a class="intra_ref" href="#tbl3" id="ancbtbl3">Table 3</a></span>. As discussed before, these are sub-community relations: the
+			community associated with a narrower term is a sub-community of the community associated with the broader term. Nevertheless,
+			even here we find an association created by a single story marked by a large number of users. This suggests an improvement to
+			our original method, namely filtering out concepts that have only a limited number of items or persons associated to them. We
+			take this into account as we move on to generalize our method to community-based ontology extraction from Web pages.
+		</p>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_15">
+			
+<div class="textboxdefault" id="e_div_16">
+				
+<dl class="table " id="e_dl[@class!='footnote']_5">
+					
+<dd id="e_dd_9">
+						
+<p class="caption" id="e_p_42">
+							
+<span class="label">Table 3. </span>Broader/narrower term relations in the technology domain, based on sub-communities in
+							del.icio.us
+						</p>
+					
+</dd>
+					
+<dd class="table" id="e_dd_10">
+						
+<table>
+							
+<thead>
+								
+<tr>
+									
+<th colspan="1" rowspan="1">Broader</th>
+									<th colspan="1" rowspan="1">Narrower</th>
+								
+</tr>
+							
+</thead>
+							
+<tbody>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">rss</td>
+									<td colspan="1" rowspan="1">atom</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">cmyk</td>
+									<td colspan="1" rowspan="1">rgb</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">cell</td>
+									<td colspan="1" rowspan="1">umts, wcdma, ev-do</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">phone</td>
+									<td colspan="1" rowspan="1">cell</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">ajax</td>
+									<td colspan="1" rowspan="1">json</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">xml</td>
+									<td colspan="1" rowspan="1">xslt</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">rdf</td>
+									<td colspan="1" rowspan="1">owl</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">flickr</td>
+									<td colspan="1" rowspan="1">gmail, picasa</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">ruby</td>
+									<td colspan="1" rowspan="1">rails</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">mac</td>
+									<td colspan="1" rowspan="1">iphoto</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">java</td>
+									<td colspan="1" rowspan="1">j2ee</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">google</td>
+									<td colspan="1" rowspan="1">gds</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">search</td>
+									<td colspan="1" rowspan="1">a9, engine</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">linux</td>
+									<td colspan="1" rowspan="1">ubuntu, gnome</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">flash</td>
+									<td colspan="1" rowspan="1">actionscript</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">flickr</td>
+									<td colspan="1" rowspan="1">lickr, photoset</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">javascript</td>
+									<td colspan="1" rowspan="1">xmlhttprequest, dom, sarissa</td>
+								
+</tr>
+							
+</tbody>
+						
+</table>
+					
+</dd>
+					
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<p class="svArticle section" id="e_p_43">
+
+			We conclude by noting the potential application of the results to improving del.icio.us itself, e.g. by offering search and
+			navigation based on broader/narrower terms. Considering the dynamics of the community and the extent of neologism, the
+			ontologies emerging from folksonomies such as del.icio.us also have a large potential for enriching established, but slowly
+			evolving linguistic ontologies such as Wordnet (<span id="btbl3"><a class="intra_ref" href="#tbl3" id="ancbtbl3">Table
+					3</a></span>).
+		</p>
+		
+<h3 class="svArticle" id="sec6">3.2. Community-based ontology extraction from Web pages</h3>
+		
+<p class="svArticle section" id="e_p_44">
+Folksonomies such as del.icio.us are effective, because they attract sizeable
+			sub-communities of users pursuing similar interests. Nevertheless, the community of del.icio.us is still a niche compared to
+			the general web population, just as the number of web sites tagged is only a fraction of the number of pages on the Web.</p>
+		
+<p class="svArticle section" id="e_p_45">
+We would like to show in the following that even without explicitly assigned tags, it is
+			possible to extend the idea of community-based ontology extraction to the Web. Let&rsquo;s suppose that we have a selected a
+			community, whose members will play the role of Actors in our model, and we have prepared a list of terms whose associations we
+			are interested in. The instances of our model are the pages of the Web. Further, we assume that a web page is tagged by a
+			concept if the concept occurs on the page.</p>
+		
+<p class="svArticle section" id="e_p_46">
+Based on these assumptions, the Concept&ndash;Instance ontology is straightforward to create:
+			we can use a search engine to obtain page counts for all pairs of concepts and then normalize by their separate page counts.
+			This is the basic co-occurrence analysis method of text mining.</p>
+		
+<p class="svArticle section" id="e_p_47">
+
+			Generating the Actor&ndash;Concept ontology requires another broad assumption. We will say that there is an association between a
+			concept, a person and a web page if the name of the person and the label of the concept co-occur on the page. This association
+			represents a weaker commitment than in the case of folksonomies, because it is not guaranteed that the association is made <em>by</em>
+			the person. Nonetheless, we can now generate the bipartite graph of persons and concepts by measuring the association using
+			page counts from the search engine.
+		</p>
+		
+<p class="svArticle section" id="e_p_48">
+
+			First, we measure the association between a person (e.g. <em>&ldquo;Peter Mika&rdquo;</em>) and a concept (e.g. <em>&ldquo;Semantic Web&rdquo;</em>) by
+			submitting a Boolean query combining the two terms (e.g. <em>&ldquo;Peter Mika&rdquo; AND &ldquo;Semantic Web&rdquo;</em>). We normalize the result
+			with the number of pages where the concept occurs. We then repeat this with the same concept and the names of all other members
+			of the target community. We calculate the mean strength of association with the concept of <em>&ldquo;Semantic Web&rdquo;</em>. Lastly, we
+			associate those members of the community with this concept whose association strength is at least one standard deviation higher
+			than the mean. (Note that this is a slightly more sophisticated method of filtering than a general threshold.) We can now fold
+			the bipartite graph of actors and concepts to obtain the <span id="mmlsi49" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span> ontology.
+		</p>
+		
+<p class="svArticle section" id="e_p_49">
+
+			Our method of community-based ontology extraction have been implemented as part of the Flink system. The system is a web-based
+			presentation of the social networks and research interests of Semantic Web researchers.<span id="bfn5"><a class="intra_ref" href="#fn5" id="ancbfn5"><sup>5</sup></a></span> The community of researchers represented in Flink includes all authors,
+			program committee members and organizers of all past international Semantic Web events from 2001, altogether 607 persons. The
+			system extracts the social network of researchers as described in <span id="bbib13"><a class="intra_ref" href="#bib13" id="e_a_47">[13]</a>
+ and associates them with research topics using the search engine Google.
+		</p>
+		
+<p class="svArticle section" id="e_p_50">
+
+			Flink can also be used to perform co-occurrence analysis and generate the <span id="mmlsi50" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>
+			ontology. We improve the basic method by adding the disambiguation term <em>&ldquo;Semantic Web&rdquo; OR ontology</em> to the queries sent
+			to the search engine, limiting the items returned to those relating to the Semantic Web.
+		</p>
+		
+<p class="svArticle section" id="e_p_51">
+
+			The resulting ontological structures are not included here due to limitations of space, but we strongly encourage the reader to
+			consult them online.<span id="bfn6"><a class="intra_ref" href="#fn6" id="ancbfn6"><sup>6</sup></a></span> To make the networks
+			comparable, we have included only the 100 strongest associations in each network. Again, we see a significant difference in the
+			set of concepts remaining in the networks. Namely, from the original 60 terms (selected manually from the proceedings of the
+			ISWC events), the method of text mining found the strongest associations between more general terms. Specific concepts related
+			to the Semantic Web seem to float to the periphery and are misplaced in general. For example, the term <em>FOAF</em> is related
+			to <em>XML</em> and <em>OWL-S</em>, technologies not directly related to FOAF. <em>Annotation</em> is related to <em>alignment</em>
+			and <em>databases</em>. The term <em>ontology</em> is associated, among others, with <em>HTML</em>, <em>XML</em> and <em>databases</em>,
+			concepts not directly related to the understanding of ontologies in the Semantic Web community.
+		</p>
+		
+<p class="svArticle section" id="e_p_52">
+
+			The <span id="mmlsi51" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span> association network represents a
+			clear improvement in these respects. The method found correct associations between domain specific concepts. For example, the
+			term <em>FOAF</em> is linked here to <em>Redland</em> and <em>Sesame</em>, the triple stores preferred by FOAF developers for
+			their scalability. Terms related to ontology languages (<em>OWL</em>, <em>RDF</em>, <em>OIL</em>, <em>DAML+OIL</em>, <em>ontology
+				languages</em>, etc.) are correctly clustered together, just as the technologies related to ontology storage (query languages,
+			triple stores), with terms related to ontology development (<em>OilEd</em>, <em>OntoEdit</em>, <em>ontology development</em>)
+			connecting the two clusters. More general technologies are also placed correctly in context, i.e. corresponding to the way they
+			are used in the Semantic Web. For example, <em>NLP</em> is tied to the notions of <em>annotation</em> and <em>ontology
+				learning</em>.
+		</p>
+		
+<p class="svArticle section" id="e_p_53">
+
+			The difference in the node sets can be explained in a similar way as in the case of del.icio.us: the <span id="mmlsi52" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>
+			network ignores the overall relevance of these concepts to the Semantic Web community. Considering the associations, we believe
+			that there is another effect in play. By querying the associations of persons first and then linking concepts through
+			overlapping communities, we simulate the effect of first asking the members of the community to associate themselves with
+			certain research interests and then relating these interests through overlapping communities. Overlapping communities turn out
+			to be a stronger link than overlapping sets of web pages. A possible explanation is that even after including the
+			disambiguating term in the query, the search engine still suffers from <em>knowing too much</em>, blurring away
+			community-specific interpretations.
+		</p>
+		
+<h2 class="svArticle" id="sec7">4. Evaluation</h2>
+		
+<p class="svArticle section" id="e_p_54">
+
+			In absence of a golden standard, evaluating the results of ontology learning or ontology mapping is a difficult task:
+			inevitably, it requires consulting the community or communities whose conceptualizations are being learned or mapped. In order
+			to evaluate our results, we have thus approached in email 61 researchers active in the Semantic Web domain, most of whom are
+			members of the ISWC community and many of them are in the graph-theoretical core of the community.<span id="bfn7"><a class="intra_ref" href="#fn7" id="ancbfn7"><sup>7</sup></a></span> The single question we asked was <em>In terms of the
+				associations between the concepts, which ontology of Semantic Web related concepts do you consider more accurate?</em> Lacking a
+			yardstick, there is no principled correct answer to this question that we expected to receive. Instead, we were interested to
+			find out if there is a majority opinion emerging as an answer and if yes, which of the two ontologies (produced by the two
+			different methods) would that majority accept as more accurate.
+		</p>
+		
+<p class="svArticle section" id="e_p_55">
+Many respondents expressed difficulty in answering the question due to the (intentional)
+			lack of further explanations or instructions, e.g. what the associations mean, but also due to the very different node sets of
+			the two semantic networks. Nonetheless, out of the 33 respondents only three persons were not willing to express any preference
+			(even if a slight one) for one network or the other. Twenty-three respondents were members of the ISWC community and 15 of them
+			belong to the core of the community.</p>
+		
+<p class="svArticle section" id="e_p_56">
+
+			The distribution of the answers for the various subgroups are summarized in <span id="btbl4"><a class="intra_ref" href="#tbl4" id="ancbtbl4">Table 4</a></span>. First, taking all responses into account, we can conclude that the participants
+			consider the <span id="mmlsi54" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span> network as a more accurate
+			representation of associations between the concepts than the <span id="mmlsi55" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span> network (the
+			result is significant at a level of <span id="mmlsi56" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>p</em>=0.01</span></span>). The majority vote becomes even stronger if we consider only
+			the members of the ISWC community, i.e. the persons whose name has been used to extract the semantic network. Thus as a second
+			finding we can also conclude that the <span id="mmlsi57" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span> network is
+			considered more accurate particularly by those whose names were used in the extraction process. The results become even more
+			conclusive if we only consider the votes from the core members of the community. Based on this finding and assuming a
+			continuum, we can state that the <span id="mmlsi58" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span> network better reflects the
+			conceptualizations of those closer to the core of the community. Combined together, our findings confirm that the <span id="mmlsi59" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span>
+			network better reflects the conceptualizations of those involved in Semantic Web research, and this holds especially for those
+			most actively involved in Semantic Web research.
+		</p>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_17">
+			
+<div class="textboxdefault" id="e_div_18">
+				
+<dl class="table " id="e_dl[@class!='footnote']_6">
+					
+<dd id="e_dd_12">
+						
+<p class="caption" id="e_p_57">
+							
+<span class="label">Table 4. </span>Results for the comparison of the community-based (<span id="mmlsi60" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span>)
+							and item-based (<span id="mmlsi61" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span>) ontology extraction methods
+						</p>
+					
+</dd>
+					
+<dd class="table" id="e_dd_13">
+						
+<table>
+							
+<thead>
+								
+<tr>
+									
+<th colspan="1" rowspan="1"></th>
+									<th colspan="1" rowspan="1"><em>N</em></th>
+									<th colspan="1" rowspan="1"><span id="mmlsi62" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>a</em><em>c</em></sub></span></span></th>
+									<th colspan="1" rowspan="1"><span id="mmlsi63" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>O</em><sub><em>c</em><em>i</em></sub></span></span></th>
+									<th colspan="1" rowspan="1">Ratio (%)</th>
+									<th colspan="1" rowspan="1">Significance</th>
+								
+</tr>
+							
+</thead>
+							
+<tbody>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">All</td>
+									<td colspan="1" rowspan="1">30</td>
+									<td colspan="1" rowspan="1">22</td>
+									<td colspan="1" rowspan="1">8</td>
+									<td colspan="1" rowspan="1">73.3</td>
+									<td colspan="1" rowspan="1">0.0055</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">ISWC</td>
+									<td colspan="1" rowspan="1">23</td>
+									<td colspan="1" rowspan="1">18</td>
+									<td colspan="1" rowspan="1">5</td>
+									<td colspan="1" rowspan="1">78.3</td>
+									<td colspan="1" rowspan="1">0.0040</td>
+								
+</tr>
+								
+<tr>
+									
+<td colspan="1" rowspan="1">ISWC-core</td>
+									<td colspan="1" rowspan="1">15</td>
+									<td colspan="1" rowspan="1">13</td>
+									<td colspan="1" rowspan="1">2</td>
+									<td colspan="1" rowspan="1">86.7</td>
+									<td colspan="1" rowspan="1">0.0032</td>
+								
+</tr>
+							
+</tbody>
+						
+</table>
+					
+</dd>
+					
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<h2 class="svArticle" id="sec8">5. Discussion: ontologies and folksonomies</h2>
+		
+<p class="svArticle section" id="e_p_58">
+
+			This paper has been first published at the Fourth International Semantic Web Conference (ISWC) held in Galway, Ireland in
+			November 2005. The appearance of this paper was the starting sign for an important discussion in the Web community about the
+			place of folksonomies in the Semantic Web vision. This discussion still carries on today.<span id="bfn8"><a class="intra_ref" href="#fn8" id="ancbfn8"><sup>8</sup></a></span> Unfortunately, it is often trivialized into a slogan-level debate contrasting
+			Web 2.0<span id="bfn9"><a class="intra_ref" href="#fn9" id="ancbfn9"><sup>9</sup></a></span> and the Semantic Web. This debate
+			between proponents of folksonomies and controlled vocabularies (ontologies) gives the impression as if a single choice would
+			need to be made between competing ways of bringing semantics to the Web.
+		</p>
+		
+<p class="svArticle section" id="e_p_59">
+
+			We would like to argue here that there is no need to make such a choice: in fact, folksonomies are ontologies. To understand
+			why, it is useful to revisit some of the fundamental characterizations of ontologies from the literature. For example, based on
+			reports from others on various uses of ontologies Smith and Welty characterize ontologies as a set of representation mechanisms
+			that can be classified according their expressivity as shown in <span id="bfig3"><a class="intra_ref" href="#fig3" id="ancbfig3">Fig. 3</a></span><span id="bbib5"><a class="intra_ref" href="#bib5" id="e_a_55">[5]</a>
+. They note that
+			there is a point on this scale (marked with the black bar) where automated reasoning becomes useful: this is the point where
+			the ontology at least has a stable hierarchy, allowing to reason with subclass relations. Elst and Abecker propose a
+			three-dimensional classification of the formality, stability, and sharing scope of knowledge <span id="bbib14"><a class="intra_ref" href="#bib14" id="e_a_56">[14]</a>
+). In other words, it is difficult if not
+			impossible to obtain knowledge that is formal, but also dynamic and widely shared. As shown in <span id="bfig5"><a class="intra_ref" href="#fig5" id="ancbfig5">Fig. 5</a></span>, this classification is simplified into two dimensions in our own
+			survey of ontology-based Knowledge Management <span id="bbib4"><a class="intra_ref" href="#bib4" id="e_a_59">[4]</a>
+,
+			where ontology-based applications are classified according to their level of expressivity (the Semantic dimension) and their
+			level of distribution<span id="bfn10"><a class="intra_ref" href="#fn10" id="ancbfn10"><sup>10</sup></a></span> (the Web
+			dimension). We also noted based on the evidence of existing applications that it seems difficult to go forward along both
+			dimensions simultaneously: highly formal knowledge requires commitment that is difficult to achieve in a large scale, while
+			ontologies that are widely shared (lightweight web ontologies such as RSS and FOAF) are necessarily shallow due to their
+			sharing scope. Stability, although not a separate dimension, also clearly plays a role in this: large scale systems like the
+			Web are very dynamic, while achieving significant ontological commitment (formality) would require stability. This
+			classification has been widely used since, e.g. populated with applications and technologies as in <span id="bfig6"><a class="intra_ref" href="#fig6" id="ancbfig6">Fig. 6</a></span>. As expected, existing work is situated in the upper left or lower
+			right corners of the matrix, while the theoretically problematic upper right corner is empty.
+		</p>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_19">
+			
+<div class="textboxdefault" id="e_div_20">
+				
+<dl class="figure" id="e_dl[@class!='footnote']_7">
+					
+<dt class="autoScroll">
+						
+<a href="#gr3" title="Full-size image (27K)"><img alt="Full-size image" border="0" class="figure large" data-fullsrc="http://origin-ars.els-cdn.com/content/image/1-s2.0-S1570826806000552-gr3.jpg" src="images/1-s2_012.gif">
+							</a>
+					
+</dt>
+					
+<dd id="e_dd_15">
+						
+<p class="caption" id="e_p_60">
+							Fig. 3. <span id="">Various forms of ontologies can be classified according to their expressivity (formality) <span id="fig3bbib5"><a class="intra_ref" href="#bib5" id="e_a_63">[5]</a>
+.<!--Comment-->
+							</span>
+							<!--caption-->
+						
+</p>
+						
+					
+</dd>
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_21">
+			
+<div class="textboxdefault" id="e_div_22">
+				
+<dl class="figure" id="e_dl[@class!='footnote']_8">
+					
+<dt class="autoScroll">
+						
+<a href="#gr4" title="Full-size image (5K)"><img alt="Full-size image" border="0" class="figure large" data-fullsrc="http://origin-ars.els-cdn.com/content/image/1-s2.0-S1570826806000552-gr4.gif" src="images/1-s2_002.gif">
+							</a>
+					
+</dt>
+					
+<dd id="e_dd_16">
+						
+<p class="caption" id="e_p_61">
+							Fig. 4. <span id="">The three-dimensional characterization of Elst and Abecker emphasis the contradiction between
+								various aspects of knowledge including formality <span id="fig4bbib14"><a class="intra_ref" href="#bib14" id="e_a_66">[14]</a>
+.<!--Comment-->
+							</span>
+							<!--caption-->
+						
+</p>
+						
+					
+</dd>
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_23">
+			
+<div class="textboxdefault" id="e_div_24">
+				
+<dl class="figure" id="e_dl[@class!='footnote']_9">
+					
+<dt class="autoScroll">
+						
+<a href="#gr5" title="Full-size image (47K)"><img alt="Full-size image" border="0" class="figure large" data-fullsrc="http://origin-ars.els-cdn.com/content/image/1-s2.0-S1570826806000552-gr5.jpg" src="images/1-s2_011.gif">
+							</a>
+					
+</dt>
+					
+<dd id="e_dd_17">
+						
+<p class="caption" id="e_p_62">
+							Fig. 5. <span id="">The classification of Mika and Akkermans emphasizes the aspects of formality and distribution
+								(the two scales) and the difficulty of moving along both dimensions simultaneously <span id="fig5bbib4"><a class="intra_ref" href="#bib4" id="e_a_69">[4]</a>
+.<!--Comment-->
+							</span>
+							<!--caption-->
+						
+</p>
+						
+					
+</dd>
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<div class="figTblUpiOuter svArticle" id="e_div_25">
+			
+<div class="textboxdefault" id="e_div_26">
+				
+<dl class="figure" id="e_dl[@class!='footnote']_10">
+					
+<dt class="autoScroll">
+						
+<a href="#gr6" title="Full-size image (60K)"><img alt="Full-size image" border="0" class="figure large" data-fullsrc="http://origin-ars.els-cdn.com/content/image/1-s2.0-S1570826806000552-gr6.jpg" src="images/1-s2.gif">
+							</a>
+					
+</dt>
+					
+<dd id="e_dd_18">
+						
+<p class="caption" id="e_p_63">
+							Fig. 6. <span id="">The classification instantiated with technologies. As expected, the upper right corner is empty.
+								<em>Source</em>: Carole Goble, University of Manchester.<!--Comment-->
+							</span>
+							<!--caption-->
+						
+</p>
+						
+					
+</dd>
+				
+</dl>
+			
+</div>
+		
+</div>
+		
+<p class="svArticle section" id="e_p_64">
+
+			If we interpret the term ontology to cover the whole spectrum, it is easy to show that folksonomies simply represent different
+			positions on the scales than the more formal controlled vocabularies traditionally employed by the Semantic Web community.
+			Folksonomies are <em>lightweight</em>, in fact so light that many in the Semantic Web community consider them &lsquo;useless&rsquo; in the
+			sense that automated reasoning using logical approaches cannot be applied (i.e. folksonomies are to the left of the bar on the
+			scale of <span id="bfig3"><a class="intra_ref" href="#fig3" id="ancbfig3">Fig. 3</a></span>). However, as we have shown in this
+			work there is more semantics in folksonomies than meets the eye. The methods to extract it are not logic based, but borrowed
+			from network analysis and in fact folksonomies may require a shift in the methods applied by the Semantic Web community.
+		</p>
+		
+<p class="svArticle section" id="e_p_65">
+
+			Folksonomies are also <em>dynamic</em>&ndash; changing over time with every tagging action &ndash; as opposed to the more stable structures
+			that most semantic applications are built on. Again, many would argue that this renders folksonomies useless for any purpose
+			other than knowledge discovery. For example, one may not want to describe the parameters of a web service using a folksonomy
+			because such a web service could not be relied on by dependent services.<span id="bfn11"><a class="intra_ref" href="#fn11" id="ancbfn11"><sup>11</sup></a></span> We note here, however, that in practice folksonomies are much less volatile than many
+			would expect. We believe that the majority of terms has a single well-defined meaning that remains stable over long periods of
+			time. Also, while the objects tagged may change on a daily basis, the overall focus of the del.icio.us community, for example,
+			changes much slower. Although investigating the temporal dimension of folksonomies is subject of future work (the work of
+			Dubinko et al. in visualizing tags over time is an important step in this direction <span id="bbib15"><a class="intra_ref" href="#bib15" id="e_a_75">[15]</a>
+), we expect that folksonomies have a substantial stable backbone if we observe them
+			for longer periods of time. Much like ontologies that stabilize after long, heated debates, these stable parts of folksonomies
+			can in fact be considered as lightweight ontologies that represent a consensus over the meaning of terms.
+		</p>
+		
+<p class="svArticle section" id="e_p_66">
+
+			In terms of sharing, folksonomies have a very <em>limited scope</em> compared to ontologies. Due to their dynamics and
+			lightweight nature, the mapping of folksonomies is a predictably difficult, if not impossible challenge. Tagging systems at the
+			moment represent islands of semantics that do not cross the boundaries of a single website. Even if we could capture, for
+			example, the relationship between the tag <em>ruby</em> on del.icio.us and the same tag on Flickr that mapping would need to be
+			just as volatile as the semantics of the terms themselves.
+		</p>
+		
+<p class="svArticle section" id="e_p_67">
+Lightweight, dynamic and limited in sharing scope, folksonomies are a different kind of
+			ontology than the more formal and stable controlled vocabularies advocated by the Semantic Web community for the Web. Their
+			applications are also different and thus they are unlikely to replace or even compete with logic-based approaches.
+			Folksonomies, however, will have a significant impact on realizing the original vision of the Semantic Web as an enrichment of
+			the current Web. In particular, it is the first time that the barriers of providing knowledge have been lowered to such an
+			extent that ordinary users are willing to provide metadata on web resources on a large scale.</p>
+		
+<p class="svArticle section" id="e_p_68">
+Although the semantics is much more implicit, the collective actions of a large number of
+			individuals can still lead to the emergence of semantics. Furthermore, the metadata in tagging systems comes with an important
+			new attribute, namely the identity of the individuals who have associated a certain tag with a certain object. This social
+			dimension of ontologies and its effects on semantics has been the subject of our paper.</p>
+		
+<h2 class="svArticle" id="sec9">6. Conclusions and future work</h2>
+		
+<p class="svArticle section" id="e_p_69">
+The Semantic Web is a web for machines, but the process of creating and maintaining it is
+			a social one. Although machines are helpful in manipulating symbols according to pre-defined rules, only the users of the
+			Semantic Web have the necessary interpretive and associative capability for creating and maintaining ontologies. Ontology
+			creation necessitates a social presence as it requires an actor to reliably predict how other members of the community would
+			interpret the symbols of an ontology based on their limited description. With incorporating the notion of semantics into the
+			web architecture, we have thus made the users of the system a critical part of the design.</p>
+		
+<p class="svArticle section" id="e_p_70">
+
+			We have argued elsewhere for a three layered view of the Semantic Web, namely the layer of communities and their relations, the
+			layer of semantics (ontologies and their relations) and the layer of content items and their relations (the hypertext Web) <span id="bbib16"><a class="intra_ref" href="#bib16" id="e_a_76">[16]</a>
+. In this paper we have formalized this view as a
+			tripartite model of ontologies with three different classes of nodes (actors, concepts, and instances) and hyperedges
+			representing the commitment of a user in terms of classifying an instance as belonging to a certain concept. We have shown the
+			usefulness of this model by generating two kinds of association networks: the well-known co-occurrence network of ontology
+			learning and a novel semantic network based on community relationships. Among the future work is the study of the two emerging
+			social networks, based on object and concept overlaps.
+		</p>
+		
+<p class="svArticle section" id="e_p_71">
+
+			The general advantage of the incorporation of the social context into the representation of ontologies is the possibility of
+			studying emergence from user actions. Emergent semantics is likely to best complement well-established, but slowly evolving
+			ontologies such as WordNet <span id="bbib7"><a class="intra_ref" href="#bib7" id="e_a_77">[7]</a>
+, which lack the
+			associative component.<span id="bfn12"><a class="intra_ref" href="#fn12" id="ancbfn12"><sup>12</sup></a></span> We have also
+			compared the two networks based on object and person overlap and noted the advantage of the second network: the possibility to
+			extract semantics pertinent to a sub-community of the user network. In some sense, this is the opposite of mining general
+			knowledge from search engines as in the work of Cimiano et al. or Etzioni et al. <span id="bbib17-2"><a class="intra_ref" href="#bib17" id="e_a_79">[17]</a>
+
+			and <span id="bbib18-"><a class="intra_ref" href="#bib18" id="e_a_80">[18]</a>
+. In comparison to these systems, our community-based ontology
+			extraction has a great potential in extracting ontologies that more closely match the conceptualization of a particular
+			community. For example, when trying to find associations between concepts used by the Web Services community, it is natural to
+			consider only the associations created (explicitly or implicitly) by those involved in developing Web Services. As we have
+			shown, using this method the resulting ontology is more likely to be accepted as accurate by the community itself.
+		</p>
+		
+<p class="svArticle section" id="e_p_72">
+It seems that ontologies are us: inseparable from the context of the community in which
+			they are created and used. A greater acknowledgement of this state &ndash; by incorporating the link between actors and concepts into
+			the model of ontologies &ndash; have only benefits to bring in terms of more meaningful and easily maintainable conceptual
+			structures. While we are only at the beginning of realizing these benefits, there is a clear magic as we see semantics emerge
+			from the individual actions of a community at work.</p>
+		
+<div id="e_div_27">
+			
+			
+<div class="refText svRefs" id="e_div_28">
+				
+<h2 id="section_references">References</h2>
+				
+<ol class="references">
+					
+<li id="bib1">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_11">
+<a class="label intra_ref" href="#bbib1" id="e_a_81">[1]</a>
+</li>
+							
+<li class="author" id="e_li_12">T.R. Gruber</li>
+							
+<li class="title" id="e_li_13">
+<p id="e_p_73">Towards principles for the design of ontologies used for knowledge sharing</p>
+</li>
+							
+<li class="source" id="e_li_14">
+<p id="e_p_74">N. Guarino, R. Poli (Eds.), Formal Ontology in Conceptual Analysis and Knowledge
+									Representation, Kluwer Academic Publishers, Deventer, The Netherlands (1993)</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib2">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_16">
+<a class="label intra_ref" href="#bbib2" id="e_a_82">[2]</a>
+</li>
+							
+<li class="author" id="e_li_17">N. Guarino</li>
+							
+<li class="title" id="e_li_18">
+<p id="e_p_75">Formal Ontology in Information Systems</p>
+</li>
+							
+<li class="source" id="e_li_19">
+<p id="e_p_76">IOS Press (1998)</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib3">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_21">
+<a class="label intra_ref" href="#bbib3" id="e_a_83">[3]</a>
+</li>
+							
+<li class="source" id="e_li_22">K. Aberer, P. Cudr&eacute;-Mauroux, A.M. Ouksel, T. Catarci, M.-S. Hacid, A. Illarramendi, V. Kashyap, M.
+								Mecella, E. Mena, E.J. Neuhold, O.D. Troyer, T. Risse, M. Scannapieco, F. Saltor, L. de Santis, S. Spaccapietra, S. Staab,
+								R. Studer, Emergent semantics principles and issues, in: Database Systems for Advanced Applications Ninth International
+								Conference, vol. 2973 of LNCS, DASFAA, 2004, pp. 25&ndash;38.</li>
+						
+</ul>
+</li>
+					
+<li id="bib4">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_24">
+<a class="label intra_ref" href="#bbib4" id="e_a_84">[4]</a>
+</li>
+							
+<li class="author" id="e_li_25">P. Mika, H. Akkermans</li>
+							
+<li class="title" id="e_li_26">
+<p id="e_p_77">Towards a new synthesis of ontology technology and knowledge management</p>
+</li>
+							
+<li class="source" id="e_li_27">
+<p id="e_p_78">Knowledge Eng. Rev., 19 (4) (2004), pp. 317&ndash;345</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib5">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_29">
+<a class="label intra_ref" href="#bbib5" id="e_a_85">[5]</a>
+</li>
+							
+<li class="author" id="e_li_30">B. Smith, C. Welty</li>
+							
+<li class="title" id="e_li_31">
+<p id="e_p_79">Ontology: towards a new synthesis</p>
+</li>
+							
+<li class="source" id="e_li_32">
+<p id="e_p_80">Formal Ontology in Information Systems, ACM Press, Ongunquit, Maine (2001), pp. iii&ndash;x</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib6">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_34">
+<a class="label intra_ref" href="#bbib6" id="e_a_86">[6]</a>
+</li>
+							
+<li class="author" id="e_li_35">S. Wasserman, K. Faust, D. Iacobucci, M. Granovetter</li>
+							
+<li class="title" id="e_li_36">
+<p id="e_p_81">Social Network Analysis: Methods and Applications</p>
+</li>
+							
+<li class="source" id="e_li_37">
+<p id="e_p_82">Cambridge University Press (1994)</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib7">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_39">
+<a class="label intra_ref" href="#bbib7" id="e_a_87">[7]</a>
+</li>
+							
+<li class="source" id="e_li_40">
+<p id="e_p_83">C. Fellbaum (Ed.), WordNet&mdash;An Electronic Lexical Database, MIT Press (1998)</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib8">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_42">
+<a class="label intra_ref" href="#bbib8" id="e_a_88">[8]</a>
+</li>
+							
+<li class="author" id="e_li_43">G. Kiss, C. Armstrong, R. Milroy, J. Piper</li>
+							
+<li class="title" id="e_li_44">
+<p id="e_p_84">An Associative Thesaurus of English and Its Computer Analysis</p>
+</li>
+							
+<li class="source" id="e_li_45">
+<p id="e_p_85">Edinburgh University Press (1973)</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib9">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_47">
+<a class="label intra_ref" href="#bbib9" id="e_a_89">[9]</a>
+</li>
+							
+<li class="author" id="e_li_48">R.S. Burt</li>
+							
+<li class="title" id="e_li_49">
+<p id="e_p_86">Structural Holes: The Social Structure of Competition</p>
+</li>
+							
+<li class="source" id="e_li_50">
+<p id="e_p_87">Harvard University Press (1995)</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib10">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_52">
+<a class="label intra_ref" href="#bbib10" id="e_a_90">[10]</a>
+</li>
+							
+<li class="author" id="e_li_53">V. Batagelj, A. Mrvar</li>
+							
+<li class="title" id="e_li_54">
+<p id="e_p_88">Pajek&mdash;program for large network analysis</p>
+</li>
+							
+<li class="source" id="e_li_55">
+<p id="e_p_89">Connections, 21 (2) (1998), pp. 47&ndash;57</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib11">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_57">
+<a class="label intra_ref" href="#bbib11" id="e_a_91">[11]</a>
+</li>
+							
+<li class="source" id="e_li_58">S. Borgatti, M. Everett, L. Freeman, Ucinet for Windows: Software for Social Network Analysis,
+								Analytic Technologies, Harvard.</li>
+						
+</ul>
+</li>
+					
+<li id="bib12">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_60">
+<a class="label intra_ref" href="#bbib12" id="e_a_92">[12]</a>
+</li>
+							
+<li class="author" id="e_li_61">J. Broekstra, A. Kampman, F. van Harmelen</li>
+							
+<li class="title" id="e_li_62">
+<p id="e_p_90">Sesame: an architecture for storing and querying RDF and RDF schema</p>
+</li>
+							
+<li class="source" id="e_li_63">
+<p id="e_p_91">Proceedings of the First International Semantic Web Conference (ISWC 2002), no. 2342 in
+									Lecture Notes in Computer Science (LNCS), Springer-Verlag (2002), pp. 54&ndash;68</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib13">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_65">
+<a class="label intra_ref" href="#bbib13" id="e_a_93">[13]</a>
+</li>
+							
+<li class="author" id="e_li_66">P. Mika</li>
+							
+<li class="title" id="e_li_67">
+<p id="e_p_92">Social networks and the semantic web: an experiment in online social network analysis</p>
+</li>
+							
+<li class="source" id="e_li_68">
+<p id="e_p_93">Proceedings of the IEEE/WIC/ACM International Conference on Web Intelligence, Beijing, China
+									(2004)</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib14">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_70">
+<a class="label intra_ref" href="#bbib14" id="e_a_94">[14]</a>
+</li>
+							
+<li class="author" id="e_li_71">L. van Elst, A. Abecker</li>
+							
+<li class="title" id="e_li_72">
+<p id="e_p_94">Ontologies for information management: balancing formality, stability, and sharing scope</p>
+</li>
+							
+<li class="source" id="e_li_73">
+<p id="e_p_95">Expert Syst. Appl., 23 (4) (2002), pp. 357&ndash;366</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib15">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_75">
+<a class="label intra_ref" href="#bbib15" id="e_a_95">[15]</a>
+</li>
+							
+<li class="author" id="e_li_76">M. Dubinko, R. Kumar, J. Magnani, J. Novak, P. Raghavan, A. Tomkins</li>
+							
+<li class="title" id="e_li_77">
+<p id="e_p_96">Visualizing tags over time</p>
+</li>
+							
+<li class="source" id="e_li_78">
+<p id="e_p_97">
+									
+<span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwww2006.org%252Fprogramme%252Ffiles%252Fpdf%252F25.pdf" target="externObjLink"> http://www2006.org/programme/files/pdf/25.pdf</a></span> Proceedings of the 15th International World
+									Wide Web Conference, Edinburgh, UK (2006)
+								</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib16">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_80">
+<a class="label intra_ref" href="#bbib16" id="e_a_97">[16]</a>
+</li>
+							
+<li class="author" id="e_li_81">P. Mika</li>
+							
+<li class="title" id="e_li_82">
+<p id="e_p_98">Social networks and the Semantic Web: the next challenge</p>
+</li>
+							
+<li class="source" id="e_li_83">
+<p id="e_p_99">IEEE Intell. Syst., 20 (1) (2005), pp. 80&ndash;93</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib17">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_85">
+<a class="label intra_ref" href="#bbib17" id="e_a_98">[17]</a>
+</li>
+							
+<li class="author" id="e_li_86">P. Cimiano, S. Handschuh, S. Staab</li>
+							
+<li class="title" id="e_li_87">
+<p id="e_p_100">Towards the self-annotating web</p>
+</li>
+							
+<li class="source" id="e_li_88">
+<p id="e_p_101">
+									Proceedings of the 13th International World Wide Web Conference, New York, USA (2004), pp. 462&ndash;471 <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwwwconf.ecs.soton.ac.uk%252Farchive%252F00000573%252F01%252Fp462-cimiano.pdf" target="externObjLink">http://wwwconf.ecs.soton.ac.uk/archive/00000573/01/p462-cimiano.pdf</a></span>
+								
+</p>
+</li>
+						
+</ul>
+</li>
+					
+<li id="bib18">
+<ul class="reference" id="">
+							
+<li class="referenceLabel" id="e_li_90">
+<a class="label intra_ref" href="#bbib18" id="e_a_100">[18]</a>
+</li>
+							
+<li class="author" id="e_li_91">O. Etzioni, M. Cafarella, D. Downey, S. Kok, A.-M. Popescu, T. Shaked, S. Soderland, D.S. Weld, A.
+								Yates</li>
+							
+<li class="title" id="e_li_92">
+<p id="e_p_102">Web Scale information extraction in know it all (preliminary results)</p>
+</li>
+							
+<li class="source" id="e_li_93">
+<p id="e_p_103">
+									Proceedings of the 13th International World Wide Web Conference, New York, USA (2004), pp. 100&ndash;111 <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwww2004.org%252Fproceedings%252Fdocs%252F1p100.pdf" target="externObjLink">http://www2004.org/proceedings/docs/1p100.pdf</a></span>
+								
+</p>
+</li>
+						
+</ul>
+</li>
+				
+</ol>
+			
+</div>
+			
+<div class="artFooterContent" id="e_div_29">
+				
+<dl class="footnote" id="fn1">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn1">1</a>
+					
+</dt>
+					
+<dd id="e_dd_19">
+						
+<p id="e_p_104">
+							del.icio.us, <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwww.flickr.com" target="externObjLink">http://www.flickr.com</a></span>, <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwww.citeulike.org" target="externObjLink">http://www.citeulike.org</a></span>, <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwww.43things.com" target="externObjLink">http://www.43things.com</a></span>.
+						</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn2">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn2">2</a>
+					
+</dt>
+					
+<dd id="e_dd_20">
+						
+<p id="e_p_105">
+							Recall that <span id="mmlsi20" title="Click to view the MathML source"><img border="0" height="15" src="images/1-s2_016.gif" width="72"></span>, where <span id="mmlsi21" title="Click to view the MathML source"><img border="0" height="16" src="images/1-s2_006.gif" width="62"></span> with <span id="mmlsi22" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>b</em><sub><em>i</em><em>j</em></sub>=1</span></span> if actor <span id="mmlsi23" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>a</em><sub><em>i</em></sub></span></span>
+							is affiliated with concept <span id="mmlsi24" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>c</em><sub><em>j</em></sub></span></span>; and <span id="mmlsi25" title="Click to view the MathML source"><img border="0" height="15" src="images/1-s2_009.gif" width="72"></span>, where <span id="mmlsi26" title="Click to view the MathML source"><img border="0" height="16" src="images/1-s2_014.gif" width="69"></span> with <span id="mmlsi27" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>d</em><sub><em>p</em><em>q</em></sub>=1</span></span> if concept <span id="mmlsi28" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>c</em><sub><em>p</em></sub></span></span>
+							is used to tag the instance <span id="mmlsi29" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>i</em><sub><em>q</em></sub></span></span>.
+						</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn3">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn3">3</a>
+					
+</dt>
+					
+<dd id="e_dd_21">
+						
+<p id="e_p_106">
+							Consult the EAT online at <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwww.eat.rl.ac.uk%252F" target="externObjLink">http://www.eat.rl.ac.uk/</a></span>.
+						</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn4">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn4">4</a>
+					
+</dt>
+					
+<dd id="e_dd_22">
+						
+<p id="e_p_107">This is a sample of the complete data set because the RSS feeds expose only the latest 30 items for each tag.
+							Further, we stopped crawling after reaching this size. To our knowledge this is still the largest ontology annotation data
+							set ever studied.</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn5">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn5">5</a>
+					
+</dt>
+					
+<dd id="e_dd_23">
+						
+<p id="e_p_108">
+							Flink itself uses Semantic Web technology and is the winner of the Semantic Web Challenge of 2004. See <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fflink.semanticweb.org" target="externObjLink">http://flink.semanticweb.org</a></span> and <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fchallenge.semanticweb.org" target="externObjLink">http://challenge.semanticweb.org</a></span>.
+						</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn6">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn6">6</a>
+					
+</dt>
+					
+<dd id="e_dd_24">
+						
+<p id="e_p_109">
+							
+<span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fwww.cs.vu.nl%252F%7Epmika%252Fresearch%252Fiswc2005%252F" target="externObjLink">http://www.cs.vu.nl/&sim;pmika/research/iswc2005/</a></span>.
+						</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn7">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn7">7</a>
+					
+</dt>
+					
+<dd id="e_dd_25">
+						
+<p id="e_p_110">
+							We performed a categorical core/periphery analysis with correlation optimization using UCINET 6 based on the connected part
+							of the Flink social network data (<span id="mmlsi53" title="Click to view the MathML source"><span class="formulatext" title="click to view the MathML source"><em>N</em>=528</span></span>), available at <span class="interref" data-locatortype="url"><a href="http://www.sciencedirect.com/science?_ob=RedirectURL&amp;_method=externObjLink&amp;_locator=url&amp;_issn=15708268&amp;_origin=article&amp;_zone=art_page&amp;_plusSign=%2B&amp;_targetURL=http%253A%252F%252Fprauw.cs.vu.nl%253A8080%252Fflink%252Fgraph" target="externObjLink">http://prauw.cs.vu.nl:8080/flink/graph</a></span>. The results show a clear C/P structure with 63 persons
+							in the core and 465 persons on the periphery.
+						</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn8">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn8">8</a>
+					
+</dt>
+					
+<dd id="e_dd_26">
+						
+<p id="e_p_111">See for example the panel discussion at the 15th World Wide Web Conference (WWW2006) held in Edinburgh, UK, or the
+							similarly titled panel at the 5th International Semantic Web Conference (ISWC2006) held in Athens, GA.</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn9">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn9">9</a>
+					
+</dt>
+					
+<dd id="e_dd_27">
+						
+<p id="e_p_112">Web 2.0 is a mix of design ideas, technological innovation in building web application and an entirely different
+							conceptualization of web sites as community places. Common to many Web 2.0 websites, however, is the use of folksonomies as
+							user generated models of the domain.</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn10">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn10">10</a>
+					
+</dt>
+					
+<dd id="e_dd_28">
+						
+<p id="e_p_113">Not in a physical sense, but in terms of the authority/control over the knowledge.</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn11">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn11">11</a>
+					
+</dt>
+					
+<dd id="e_dd_29">
+						
+<p id="e_p_114">
+							Another Web 2.0 trend, the opening up of service APIs and the appearance of <em>mash-ups</em> in fact point to the
+							timeliness of Semantic Web technology for the Web.
+						</p>
+					
+</dd>
+				
+</dl>
+				
+<dl class="footnote" id="fn12">
+					
+<dt class="label">
+						
+<a class="intra_ref" href="#bfn12">12</a>
+					
+</dt>
+					
+<dd id="e_dd_30">
+						
+<p id="e_p_115">
+							For example, according to WordNet the distance of the terms <em>Noah</em> and <em>ark</em> is quite large: their closest
+							common ancestor in the hypernym tree is <em>object, physical object</em>. Yet, the Edinburgh master&rsquo;s students
+							overwhelmingly associate the term <em>Noah</em> with <em>ark</em> and vice versa. The association is so strong in fact (78
+							and 79% of all terms mentioned in response, respectively) that it is safe to say that in the mind of the students these
+							terms are solely defined by each other, in the context of the biblical story of Noah&rsquo;s ark.
+						</p>
+					
+</dd>
+				
+</dl>
+			
+</div>
+		
+</div>
+	
+</div>
+</div>
+</body>
+
+</html>
