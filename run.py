@@ -66,18 +66,16 @@ class LODE:
 
             # This part only if the requests come from the URL
             # TODO: check if "http://" is intepreted as encoded
-            lodeURL = "http://eelst.cs.unibo.it/apps/LODE/extract?"
-            translatedString = URIDecoder().decodes("http://" + params[1:])
-            print(lodeURL + translatedString)
+            translated_string = URIDecoder().decodes(params[1:])
 
             # This part for all the requests
-            req = requests.get(lodeURL + translatedString)
+            req = requests.get("http://eelst.cs.unibo.it/apps/LODE/extract?" + translated_string)
 
             web.header('Access-Control-Allow-Origin', '*')
             web.header('Access-Control-Allow-Credentials', 'true')
             web.header('Content-Type', 'Content-type: text/html')
             web_logger.mes()
-            return req.text
+            return req.text + params[1:] + translated_string
 
 
 if __name__ == "__main__":
