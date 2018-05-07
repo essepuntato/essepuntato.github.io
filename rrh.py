@@ -20,11 +20,12 @@ import re
 
 class RewriteRuleHandler(object):
     def __init__(self, class_name, r_list=None, urls=()):
-        self.urls = urls
+        self.urls = ()
         self.class_name = class_name
         self.rr = []
         if r_list is not None:
             self.add_rules(r_list)
+        self.urls += urls
 
     def add_rule(self, p, r, is_last=False):
         self.rr += [(p, r, is_last)]
@@ -35,7 +36,7 @@ class RewriteRuleHandler(object):
                 self.add_rule(r[0], r[1], r[2])
             else:
                 self.add_rule(r[0], r[1])
-            self.urls = ("(" + r[0] + ")", self.class_name) + self.urls
+            self.urls += ("(" + r[0] + ")", self.class_name)
 
     def rewrite(self, u):
         res = u
