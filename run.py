@@ -123,9 +123,6 @@ class Ditto:
             web_logger.mes()
             return render.ditto()
         else:
-            # TODO: everything to check
-            web_logger.mes()
-
             translated_string = URIDecoder().decodes(params[1:])
             req = requests.get("http://eelst.cs.unibo.it/apps/LODE/extract?" + translated_string)
 
@@ -142,8 +139,6 @@ class LODE:
             web_logger.mes()
             return render.lode()
         else:
-            web_logger.mes()
-
             translated_string = URIDecoder().decodes(params[1:])
             req = requests.get("http://eelst.cs.unibo.it/apps/LODE/extract?" + translated_string)
 
