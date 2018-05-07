@@ -108,22 +108,13 @@ web_logger = WebLogger("essepuntato.it", "essepuntato_log.txt", [
 
 class Redirect:
     def GET(self, *args):
-        headers = {}
         accept = web.ctx.env.get('HTTP_ACCEPT')
         if accept is not None and accept != "":
-            headers["Accept"] = accept
+            web.header('Accept', accept)
 
-        print rewrite.rewrite(args[0]), headers
-        req = requests.get(rewrite.rewrite(args[0]), headers=headers)
-
-        if req.status_code == 200:
-            web_logger.mes()
-
-            web.header('Access-Control-Allow-Origin', '*')
-            web.header('Access-Control-Allow-Credentials', 'true')
-
-            return req.text
-        # raise web.seeother(rewrite.rewrite(args[0]))
+        web.header('Access-Control-Allow-Origin', '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
+        raise web.seeother(rewrite.rewrite(args[0]))
 
 
 class Home:
