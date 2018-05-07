@@ -131,7 +131,7 @@ class Ditto:
 
             web.header('Access-Control-Allow-Origin', '*')
             web.header('Access-Control-Allow-Credentials', 'true')
-            web.header('Content-Type', 'Content-type: text/html')
+            web.header('Content-Type', 'text/html')
             web_logger.mes()
             return req.text
 
@@ -149,7 +149,7 @@ class LODE:
 
             web.header('Access-Control-Allow-Origin', '*')
             web.header('Access-Control-Allow-Credentials', 'true')
-            web.header('Content-Type', 'Content-type: text/html')
+            web.header('Content-Type', 'text/html')
             web_logger.mes()
             return req.text
 
