@@ -8,6 +8,8 @@ from ud import URIDecoder
 import re
 from rrh import RewriteRuleHandler
 import requests
+from sc import Store
+from urlparse import parse_qs
 
 # Vars
 base_path = "templates" + os.sep
@@ -106,6 +108,8 @@ web_logger = WebLogger("essepuntato.it", "essepuntato_log.txt", [
     # {"REMOTE_ADDR": ["127.0.0.1"]}  # uncomment this for test
 )
 
+store = Store("static/tmp", "http://www.essepuntato.it")
+
 class Redirect:
     def GET(self, *args):
         accept = web.ctx.env.get('HTTP_ACCEPT')
@@ -146,6 +150,15 @@ class LODE:
             return render.lode()
         else:
             translated_string = URIDecoder().decodes(params[1:])
+            query_dict = parse_qs(translated_string)
+
+            # Handling https issue
+            if "url" in query_dict:
+                cur_url = query_dict["url"][0]
+                new_url = store.store(cur_url)
+                if new_url is not None:
+                    translated_string = translated_string.replace(cur_url, new_url)
+
             req = requests.get("http://eelst.cs.unibo.it/apps/LODE/extract?" + translated_string)
 
             web.header('Access-Control-Allow-Origin', '*')
