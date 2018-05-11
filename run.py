@@ -174,7 +174,7 @@ class LODE:
 
         module = my_form["module"] if "module" in my_form else ""
         reasoner = my_form["reasoner"] if "reasoner" in my_form else ""
-        lang = "/" + my_form["number"] if "number" in my_form else ""
+        lang = "/lang=" + my_form["number"] if "number" in my_form else ""
 
         return self.__call(module + reasoner + lang + url)
 
