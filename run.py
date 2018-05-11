@@ -10,6 +10,12 @@ from rrh import RewriteRuleHandler
 import requests
 from sc import Store
 from urlparse import parse_qs
+import cgi
+
+# Set the max size of the file uploadable. The variable outside the brackets
+# represent the limit expressed in MB.
+max_mb = 5
+cgi.maxlen = (1024 * 1024) * max_mb
 
 # Vars
 base_path = "templates" + os.sep
@@ -108,7 +114,7 @@ web_logger = WebLogger("essepuntato.it", "essepuntato_log.txt", [
     # {"REMOTE_ADDR": ["127.0.0.1"]}  # uncomment this for test
 )
 
-store = Store("static/tmp", "http://www.essepuntato.it")
+store = Store("static/tmp", "http://www.essepuntato.it", max_mb=max_mb)
 
 class Redirect:
     def GET(self, *args):
@@ -144,12 +150,41 @@ class Ditto:
 
 
 class LODE:
+    def __call(self, qs):
+        translated_string = URIDecoder().decodes(qs)
+        req = requests.get("http://eelst.cs.unibo.it/apps/LODE/extract?" + translated_string)
+
+        web.header('Access-Control-Allow-Origin', '*')
+        web.header('Access-Control-Allow-Credentials', 'true')
+        web.header('Content-Type', 'text/html')
+        web_logger.mes()
+        return req.text
+
+    def POST(self, params=None):
+        try:
+            my_form = web.input(file={})
+        except ValueError:
+            raise web.badrequest("File too large, you can upload files up to %s MB." % max_mb)
+
+        if "file" in my_form and my_form["file"] is not None:
+            cur_file_content = my_form['file'].file.read()
+            url = "/" + store.store_file(cur_file_content)
+        else:
+            url = "/" + my_form["url"]
+
+        module = my_form["module"] if "module" in my_form else ""
+        reasoner = my_form["reasoner"] if "reasoner" in my_form else ""
+        lang = "/" + my_form["number"] if "number" in my_form else ""
+
+        return self.__call(module + reasoner + lang + url)
+
     def GET(self, params):
         if params is None or re.match("^/?$", params):
             web_logger.mes()
             return render.lode()
         else:
-            translated_string = URIDecoder().decodes(params[1:])
+            qs = params[1:]
+            translated_string = URIDecoder().decodes(qs)
             query_dict = parse_qs(translated_string)
 
             # Handling https issue
@@ -157,15 +192,9 @@ class LODE:
                 cur_url = query_dict["url"][0]
                 new_url = store.store(cur_url)
                 if new_url is not None:
-                    translated_string = translated_string.replace(cur_url, new_url)
+                    qs = qs.replace(cur_url, new_url)
 
-            req = requests.get("http://eelst.cs.unibo.it/apps/LODE/extract?" + translated_string)
-
-            web.header('Access-Control-Allow-Origin', '*')
-            web.header('Access-Control-Allow-Credentials', 'true')
-            web.header('Content-Type', 'text/html')
-            web_logger.mes()
-            return req.text
+            return self.__call(qs)
 
 
 if __name__ == "__main__":

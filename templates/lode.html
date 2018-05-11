@@ -36,10 +36,11 @@ $def with ()
     </head>
     <body>
         <h1><img src="img/lode/logo.png" alt="LODE logo" /></h1>
-		<form id="inputform">
+		<form method="POST" enctype="multipart/form-data" action="/lode" accept-charset="utf-8">
 			<p>
 				<input type="url" id="url" name="url" placeholder="Put here the complete ontology URL"
-                       size="60" required="required"/>
+                       size="60" />
+                or <input type="file" name="file" onchange="form.url.value = ''" /></p>
 			<div>
 				<span class="modules">
 					<label>Modules:</label>
@@ -273,44 +274,5 @@ RewriteRule ^ontology\$ ontology.owl [R=303]
         <p>
             <a href="http://palindrom.es/phd/whoami/">Silvio Peroni</a> (Ph.D.) is a postdoc from the University of Bologna. He maintains a <a href="http://palindrom.es/phd">blog</a> about his research.
         </p>
-        <script>
-            function processForm(e) {
-                if (e.preventDefault) e.preventDefault();
-
-                var radios = document.getElementsByName('module');
-                var module = "";
-                for (var i = 0, length = radios.length; i < length; i++) {
-                    if (radios[i].checked) {
-                        module = radios[i].value;
-                        break;
-                    }
-                }
-
-                var reasoner_el = document.getElementById('reasoner');
-                var reasoner = "";
-                if (reasoner_el.checked) {
-                    reasoner = reasoner_el.value;
-                }
-
-                var lang_el = document.getElementById('number');
-                lang = "";
-                if (lang_el.value.trim() != "") {
-                    lang = "/" + lang_el.value.trim()
-                }
-
-                var url = "/" + document.getElementById('url').value
-
-                window.location.href = "lode" + module + reasoner + lang + url;
-
-                return false;
-            }
-
-            var form = document.getElementById('inputform');
-            if (form.attachEvent) {
-                form.attachEvent("submit", processForm);
-            } else {
-                form.addEventListener("submit", processForm);
-            }
-        </script>
     </body>
 </html>

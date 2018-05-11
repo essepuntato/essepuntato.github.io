@@ -6,6 +6,7 @@ from glob import glob
 from os import sep, makedirs
 from os.path import exists
 from re import search
+from web import badrequest
 from time import time
 
 
@@ -34,14 +35,21 @@ class Store:
 
                 for chunk in req.iter_content(1024, decode_unicode=True):
                     if time() - start > self.timeout:
-                        raise ValueError('timeout reached')
+                        raise badrequest("Timeout reached (max %s seconds)." % self.timeout)
 
                     size += len(chunk)
                     if size > self.max:
-                        raise ValueError('response too large')
+                        raise badrequest("File too large, you can upload files up to %s MB." % self.max_mb)
 
                     content += chunk
 
+            return self.store_file(content, ext)
+        except:
+            pass  # do nothing
+
+    def store_file(self, content, ext=""):
+        try:
+            if content is not None:
                 n = -1
                 for cf in sorted(glob(self.dir + "[0-9]")):
                     n += 1
