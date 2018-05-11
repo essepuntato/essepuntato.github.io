@@ -33,6 +33,15 @@ render = web.template.render(base_path)
 rewrite = RewriteRuleHandler(
     "Redirect",
     [
+        ("^/2013/07/teufel/?$", "http://dwellonit.sourceforge.net/teufel", True),
+        ("^/2013/10/vagueness/evaluation/?$",
+         "https://svn.code.sf.net/p/dwellonit/code/VaguenessOntology/experiments.html", True),
+        ("^/2013/10/vagueness/samod/?$", "https://svn.code.sf.net/p/dwellonit/code/VaguenessOntology/samod.zip", True),
+        ("^/2013/10/vagueness(/.*)?$", "http://dwellonit.sourceforge.net/vo", True),
+        ("^/samod/?$", "https://github.com/essepuntato/samod", True),
+        ("^/2014/03/fentry/samod/?$", "https://svn.code.sf.net/p/dwellonit/code/FEO/samod.zip", True),
+        ("^/2014/03/fentry(/.*)?$", "http://dwellonit.sourceforge.net/fentry", True),
+        ("^/2013/10/politicalroles(/.*)?$", "http://dwellonit.sourceforge.net/proles", True),
         ("^/2013/citalo/test/data/?$", "http://dwellonit.sourceforge.net/citalotestdata", True),
         ("^/2013/06/patterns/test/?$", "http://fpoggi.web.cs.unibo.it/JASIST/", True),
         ("^/2013/doco/test/?$", "/2013/doco/test.html", True),
