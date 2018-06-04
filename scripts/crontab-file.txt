@@ -1,0 +1,1 @@
+*/1 *   *   *   *   /var/www/essepuntato.it/scripts/check-and-run-again.sh
