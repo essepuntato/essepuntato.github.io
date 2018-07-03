@@ -41,6 +41,7 @@ rewrite = RewriteRuleHandler(
         ("^/samod/?$", "https://github.com/essepuntato/samod", True),
         ("^/2014/03/fentry/samod/?$", "https://svn.code.sf.net/p/dwellonit/code/FEO/samod.zip", True),
         ("^/2014/03/fentry(/.*)?$", "http://dwellonit.sourceforge.net/fentry", True),
+        ("^/2014/eswc/test?$", "/2014/eswc/test/data.html", True),
         ("^/2013/10/politicalroles(/.*)?$", "http://dwellonit.sourceforge.net/proles", True),
         ("^/2013/citalo/test/data/?$", "http://dwellonit.sourceforge.net/citalotestdata", True),
         ("^/2013/06/patterns/test/?$", "http://fpoggi.web.cs.unibo.it/JASIST/", True),
