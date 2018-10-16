@@ -40,7 +40,7 @@ rewrite = RewriteRuleHandler(
         ("^/2013/10/vagueness(/.*)?$", "http://dwellonit.sourceforge.net/vo", True),
         ("^/samod/?$", "https://github.com/essepuntato/samod", True),
         ("^/2014/03/fentry/samod/?$", "https://svn.code.sf.net/p/dwellonit/code/FEO/samod.zip", True),
-        ("^/2014/03/fentry(/.*)?$", "http://dwellonit.sourceforge.net/fentry", True),
+        ("^/2014/03/fentry(/.*)?$", "https://w3id.org/people/essepuntato/fentry", True),
         ("^/2014/eswc/test?$", "/2014/eswc/data.html", True),
         ("^/2013/10/politicalroles(/.*)?$", "http://dwellonit.sourceforge.net/proles", True),
         ("^/2013/citalo/test/data/?$", "http://dwellonit.sourceforge.net/citalotestdata", True),
