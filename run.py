@@ -9,7 +9,7 @@ import re
 from rrh import RewriteRuleHandler
 import requests
 from sc import Store
-from urlparse import parse_qs
+from urllib.parse import parse_qs
 import cgi
 
 # Set the max size of the file uploadable. The variable outside the brackets
