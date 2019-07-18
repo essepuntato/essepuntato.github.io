@@ -1,1 +1,7 @@
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "contrast"
+locale: "en-GB"
+title: "Silvio Peroni's website"
+title_separator: "|"
+name: "Silvio Peroni"
+description: "Silvio Peroni's personal website, with information about his work and, more rarely, his hobbies."
