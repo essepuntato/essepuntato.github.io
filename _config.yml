@@ -111,7 +111,7 @@ author:
   avatar           : "/assets/img/p.png"
   bio              : "Assistant Professor at the University of Bologna. Developer of the SPAR Ontologies, Co-Director of OpenCitations, Co-Founder of I4OC"
   location         : "Bologna, Italy"
-  email            : "essepuntato@gmail.com
+  email            : "essepuntato@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
