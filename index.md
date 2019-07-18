@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Homepage
+layout: home
+author_profile: true
 ---
 
-# Welcome
+# Test
 
 This is my homepage.
