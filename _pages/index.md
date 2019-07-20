@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: default
 author_profile: true
+permalink: /
 ---
 
 I - a.k.a. S. (pronounced "essepuntato" in Italian), better known as Silvio Peroni - am an Assistant Professor in Computer Science at the [Department of Classical Philology and Italian Studies](http://www.ficlit.unibo.it/), [University of Bologna](http://www.unibo.it/en), and proud member of the [Digital Humanities Advanced Research Centre (./DH.arc)](https://dharc.unibo.it).
