@@ -114,7 +114,7 @@ author:
   email            : "essepuntato@gmail.com"
   links:
     - label: "Work"
-      icon: "fab fa-fw fa-university"
+      icon: "fas fa-fw fa-university"
       url: "https://www.unibo.it/sitoweb/silvio.peroni/en/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
