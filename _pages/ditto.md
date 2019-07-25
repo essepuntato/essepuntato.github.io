@@ -1,0 +1,4 @@
+---
+layout: ditto
+permalink: /ditto/
+---
