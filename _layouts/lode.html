@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>LODE - Live OWL Documentation Environment</title>
-        <link rel="shortcut icon" href="img/lode/lode.ico" />
-        <link href="assets/css/lode/owl.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/lode/Primer.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/lode/rec.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/lode/extra.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/assets/img/lode/lode.ico" />
+        <link href="/assets/css/lode/owl.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/lode/Primer.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/lode/rec.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/lode/extra.css" rel="stylesheet" type="text/css" />
         <meta charset="UTF-8" />
 		<style type="text/css">
 			h1 {
@@ -33,7 +33,7 @@
         </style>
     </head>
     <body>
-        <h1><img src="img/lode/logo.png" alt="LODE logo" /></h1>
+        <h1><img src="/assets/img/lode/logo.png" alt="LODE logo" /></h1>
 		<form method="POST" enctype="multipart/form-data" action="/lode" accept-charset="utf-8">
 			<p>
 				<input type="url" id="url" name="url" placeholder="Put here the complete ontology URL"
@@ -178,12 +178,12 @@ RewriteRule ^ontology\$ ontology.owl [R=303]
         <p>
             LODE takes the most common properties used for denoting annotations, such as <em>dc:title</em>, <em>dc:description</em>, <em>rdfs:label</em> and <em>rdfs:comment</em>. The translation in HTML of annotations made using those properties varies a little depending on whether the annotations describe the ontology itself, or its entities (classes, properties, instances). The following figures illustrates how ontology's annotations are handled by LODE.
         </p>
-        <p class ="imageblock"><img src="img/lode/ontology.png" alt="visualization of ontology annotations" /></p>
-        <p class ="imageblock"><img src="img/lode/picture.png" alt="visualization of pictures" /></p>
+        <p class ="imageblock"><img src="/assets/img/lode/ontology.png" alt="visualization of ontology annotations" /></p>
+        <p class ="imageblock"><img src="/assets/img/lode/picture.png" alt="visualization of pictures" /></p>
         <p>
             Similarly, the following picture describes how annotations about each entity of the ontology are handled by LODE.
         </p>
-        <p class ="imageblock"><img src="img/lode/class.png" alt="visualization of class annotations" /></p>
+        <p class ="imageblock"><img src="/assets/img/lode/class.png" alt="visualization of class annotations" /></p>
         <p>
             The annotation properties handled by LODE are:
         </p>
