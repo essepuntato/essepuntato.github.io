@@ -37,8 +37,7 @@
 		<form method="POST" enctype="multipart/form-data" action="/lode" accept-charset="utf-8">
 			<p>
 				<input type="url" id="url" name="url" placeholder="Put here the complete ontology URL"
-                       size="60" />
-                or <input type="file" name="file" onchange="form.url.value = ''" /></p>
+                       size="60" /></p>
 			<div>
 				<span class="modules">
 					<label>Modules:</label>
@@ -76,7 +75,7 @@ RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+
 RewriteCond %{HTTP_ACCEPT} text/html [OR]
 RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
-<strong>RewriteRule ^ontology\$ http://www.essepuntato.it/lode/http://www.mydomain.com/ontology [R=303,L]</strong>
+<strong>RewriteRule ^ontology\$ https://w3id.org/lode/http://www.mydomain.com/ontology [R=303,L]</strong>
 
 # Rewrite rule to serve RDF/XML content if requested
 RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
@@ -154,22 +153,22 @@ RewriteRule ^ontology\$ ontology.owl [R=303]
         <ul>
             <li>
                 <p>
-                    <a href="http://www.essepuntato.it/lode/http://purl.org/spar/fabio">http://www.essepuntato.it/lode/http://purl.org/spar/fabio</a>
+                    <a href="https://w3id.org/lode/http://purl.org/spar/fabio">https://w3id.org/lode/http://purl.org/spar/fabio</a>
                 </p>
             </li>
             <li>
                 <p>
-                    <a href="http://www.essepuntato.it/lode/owlapi/http://www.essepuntato.it/2008/12/earmark">http://www.essepuntato.it/lode/owlapi/http://www.essepuntato.it/2008/12/earmark</a>
+                    <a href="https://w3id.org/lode/owlapi/http://www.essepuntato.it/2008/12/earmark">https://w3id.org/lode/owlapi/http://www.essepuntato.it/2008/12/earmark</a>
                 </p>
             </li>
             <li>
                 <p>
-                    <a href="http://www.essepuntato.it/lode/imported/http://www.essepuntato.it/2008/12/earmark">http://www.essepuntato.it/lode/imported/http://www.essepuntato.it/2008/12/earmark</a>
+                    <a href="https://w3id.org/lode/imported/http://www.essepuntato.it/2008/12/earmark">https://w3id.org/lode/imported/http://www.essepuntato.it/2008/12/earmark</a>
                 </p>
             </li>
             <li>
                 <p>
-                    <a href="http://www.essepuntato.it/lode/closure/http://www.essepuntato.it/2008/12/earmark">http://www.essepuntato.it/lode/closure/http://www.essepuntato.it/2008/12/earmark</a>
+                    <a href="https://w3id.org/lode/closure/http://www.essepuntato.it/2008/12/earmark">https://w3id.org/lode/closure/http://www.essepuntato.it/2008/12/earmark</a>
                 </p>
             </li>
         </ul>
