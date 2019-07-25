@@ -1,0 +1,4 @@
+---
+layout: lode
+permalink: /lode/
+---
