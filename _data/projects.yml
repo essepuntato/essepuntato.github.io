@@ -8,6 +8,11 @@
   description: "The Semantic Publishing and Referencing Ontologies, a.k.a. SPAR Ontologies, form a suite of orthogonal and complementary OWL 2 DL ontology modules for the creation of comprehensive machine-readable RDF metadata for every aspect of semantic publishing and referencing: document description, bibliographic resource identifiers, types of citations and related contexts, bibliographic references, document parts and status, agents' roles and contributions, bibliometric data and workflow processes."
   img: "http://www.sparontologies.net/static/img/spar/spar-flower.png"
 
+- name: RASH Framework
+  url: "https://github.com/essepuntato/rash/"
+  description: "The RASH Framework is a set of specifications and writing/conversion/extraction tools for writing academic articles in RASH, i.e., a markup language defined as a subset of HTML for writing scientific articles with embedded RDF annotations."
+  img: "https://raw.githubusercontent.com/essepuntato/rash/master/documentation/img/rash.png"
+
 - name: LODE
   url: /lode/
   description: "LODE (Live OWL Documentation Environment) is a web service that automatically extracts classes, object properties, data properties, named individuals, annotation properties, general axioms and namespace declarations from an OWL ontology available on the Web, and renders them as ordered lists, together with their textual definitions, in a human-readable HTML page designed for browsing and navigation by means of embedded links."
