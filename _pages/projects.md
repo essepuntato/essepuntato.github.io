@@ -1,7 +1,7 @@
 ---
 layout: archive
 author_profile: true
-permalink: /project/
+permalink: /prj/
 title: Projects
 ---
 
@@ -11,7 +11,7 @@ This page lists some of the main projects and initiatives in which I am directly
 <div class="prj">
     <img src="{{ prj.img }}" />
     <p>
-        <a href="{{ prj.url }}>"<strong>{{ prj.name }}.</strong></a> 
+        <strong><a href="{{ prj.url }}">{{ prj.name }}</a> | </strong> 
         {{ prj.description }}
     </p>
 </div>
