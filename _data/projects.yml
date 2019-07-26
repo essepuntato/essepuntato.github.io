@@ -1,0 +1,25 @@
+- name: OpenCitations
+  url: "http://opencitations.net"
+  description: "OpenCitations is a scholarly infrastructure organization dedicated to open scholarship and the publication of open bibliographic and citation data by the use of Semantic Web (Linked Data) technologies, and engaged in advocacy for semantic publishing and open citations. It has developed the OpenCitations Corpus (OCC) of open downloadable bibliographic and citation data recorded in RDF, and a system and resolution service for Open Citation Identifiers (OCIs), and it is currently developing a number of Open Citation Indexes using the data openly available in third-party bibliographic databases."
+  img: "http://opencitations.net/static/img/logo.png"
+
+- name: SPAR Ontologies
+  url: "http://www.sparontologies.net"
+  description: "The Semantic Publishing and Referencing Ontologies, a.k.a. SPAR Ontologies, form a suite of orthogonal and complementary OWL 2 DL ontology modules for the creation of comprehensive machine-readable RDF metadata for every aspect of semantic publishing and referencing: document description, bibliographic resource identifiers, types of citations and related contexts, bibliographic references, document parts and status, agents' roles and contributions, bibliometric data and workflow processes."
+  img: "http://www.sparontologies.net/static/img/spar/spar-flower.png"
+
+- name: LODE
+  url: /lode/
+  description: "LODE (Live OWL Documentation Environment) is a web service that automatically extracts classes, object properties, data properties, named individuals, annotation properties, general axioms and namespace declarations from an OWL ontology available on the Web, and renders them as ordered lists, together with their textual definitions, in a human-readable HTML page designed for browsing and navigation by means of embedded links."
+  img: /assets/img/lode/logo.png
+
+- name: Graffoo
+  url: /graffoo/
+  description: "Graffoo (Graphical Framework for OWL Ontologies) is an open source tool that can be used to present the classes, properties and restrictions within OWL ontologies, or sub-sections of them, as clear and easy-to-understand diagrams."
+  img: /assets/img/graffoo/logo.png
+
+- name: Ditto
+  url: /ditto/
+  description: "Ditto (Digrams Transformation into OWL) is a tool that enables the automatic transformation of E/R (with crow's foot notation) and Graffoo diagrams developed in yEd into OWL ontologies, according to three different transformation schemes."
+  img: /assets/img/ditto/ditto-logo.png
+
