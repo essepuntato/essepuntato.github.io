@@ -1,0 +1,354 @@
+- journal:
+  - name: "PeerJ Computer Science"
+    url: "https://peerj.com/computer-science/"
+    issn: 2376-5992
+    role: "Editorial Board member"
+
+  - name: "Research Ideas and Outcomes"
+    url: "http://riojournal.com/"
+    issn: 2367–7163
+    role: "Subject Editor"
+
+  - name: "Research Ideas and Outcomes"
+    url: "http://riojournal.com/"
+    issn: 2367–7163
+    role: "Subject Editor"
+
+  - name: "“Semantic Web for the Legal Domain” Special Issue, of Semantic Web"
+    url: "http://www.semantic-web-journal.net/blog/semantic-web-journal-special-issue-semantic-web-legal-domain"
+    issn: 1570-0844
+    role: "Guest Editor"
+
+- conference:
+  - name: "18th International Semantic Web Conference (ISWC 2019)"
+    url: "http://iswc2019.semanticweb.org/ "
+    role: "Programme Committee member (Resource Track)"
+
+  - name: "16th Extended Semantic Web Conference (ESWC 2019)"
+    url: "https://2019.eswc-conferences.org"
+    role: "Programme Committee member (Research Track)"
+
+  - name: "The Web Conference 2019"
+    url: "https://www2019.thewebconf.org/"
+    role: "Programme Committee member"
+
+  - name: "15th Italian Research Conference on Digital Libraries (IRCDL 2019)"
+    url: "https://ircdl2019.isti.cnr.it/"
+    role: "Programme Committee member"
+
+  - name: "17th International Semantic Web Conference (ISWC 2018)"
+    url: "http://iswc2018.semanticweb.org/ "
+    role: "Programme Committee member (Research Track, Resource Track)"
+
+  - name: "15th Extended Semantic Web Conference (ESWC 2018)"
+    url: "https://2018.eswc-conferences.org/organizing-committee"
+    role: "Open conference data Chair and Programme Committee member (Research Track, Resource Track, Workshops and Tutorials)"
+
+  - name: "The Web Conference 2018"
+    url: "https://www2018.thewebconf.org/"
+    role: "Programme Committee member"
+
+  - name: "16th International Semantic Web Conference (ISWC 2017)"
+    url: "http://iswc2017.semanticweb.org/ "
+    role: "Programme Committee member (Research Track, Resource Track)"
+
+  - name: "13th International Conference on Semantic Systems (Semantics 2017)"
+    url: "http://www.semantics.cc/ "
+    role: "Programme Committee member"
+
+  - name: "15th International Semantic Web Conference (ISWC 2016)"
+    url: "http://iswc2016.semanticweb.org/ "
+    role: "Metadata Chair and Programme Committee member (Research Track, Resource Track, Poster and Demo Track)"
+
+  - name: "20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)"
+    url: "http://ekaw2016.cs.unibo.it/ "
+    role: "Local Chair, Sponsorship Chair, and Programme Committee member"
+
+  - name: "12th International Conference on Semantic Systems (Semantics 2016)"
+    url: "http://www.semantics.cc/ "
+    role: "Programme Committee member"
+
+  - name: "13th Extended Semantic Web Conference (ESWC 2016)"
+    url: "http://2016.eswc-conferences.org/ "
+    role: "Programme Committee member of"
+
+  - name: "31st Annual ACM Symposium on Applied Computing (SAC 2016)"
+    url: "http://www.cs.unibo.it/sacwt16/ "
+    role: "Programme Committee member of the Web Technologies track"
+
+  - name: "28th International Conference on Legal Knowledge and Information Systems (JURIX 2015)"
+    url: "http://jurix2015.di.uminho.pt/"
+    role: "Programme Committee member"
+
+  - name: "1st International Akoma Ntoso Conference (IANC 2015)"
+    url: "http://www.akomantoso.org/akoma-ntoso-conference/"
+    role: "Programme Committee member"
+
+  - name: "14th International Semantic Web Conference (ISWC 2015)"
+    url: "http://iswc2015.semanticweb.org/ "
+    role: "Programme Committee member (Research Track, In-Use and Software Track, Data Sets and Ontologies Track)"
+
+  - name: "11th International Conference on Semantic Systems (Semantics 2015)"
+    url: "http://www.semantics.cc/ "
+    role: "Programme Committee member"
+
+  - name: "12th Extended Semantic Web Conference (ESWC 2015)"
+    url: "http://2015.eswc-conferences.org/ "
+    role: "Chair of the “Vocabularies, Schemas, Ontologies” Research Track"
+
+  - name: "30th Annual ACM Symposium on Applied Computing (SAC 2015)"
+    url: "http://www.cs.unibo.it/sacwt15/ "
+    role: "Programme Committee member of the Web Technologies track"
+
+  - name: "3rd Conference of the Association for Digital Humanities and Digital Culture (AIUCD 2014)"
+    url: "http://aiucd2014.unibo.it/"
+    role: "Programme Committee member"
+
+  - name: "27th International Conference on Legal Knowledge and Information Systems (JURIX 2014)"
+    url: "http://conference.jurix.nl/2014/"
+    role: "Programme Committee member"
+
+  - name: "10th International Conference on Semantic Systems (Semantics 2014)"
+    url: "http://www.semantics.cc/ "
+    role: "Programme Committee member"
+
+  - name: "13th International Semantic Web Conference (ISWC 2014)"
+    url: "http://iswc2014.semanticweb.org/  "
+    role: "Programme Committee member (Research Track)"
+
+  - name: "29th Annual ACM Symposium on Applied Computing (SAC 2014)"
+    url: "http://www.cs.unibo.it/sacwt14/ "
+    role: "Programme Committee member of the Web Technologies track"
+
+  - name: "11th Extended Semantic Web Conference (ESWC 2014)"
+    url: "http://2014.eswc-conferences.org/  "
+    role: "Organising Committee member (Publicity Chair) and Programme Committee member"
+
+  - name: "Second International Conference on Building and Exploring Web Based Environments (WEB 2014)"
+    url: "http://www.iaria.org/conferences2013/WEB13.html"
+    role: "Programme Committee member"
+
+  - name: "28th Annual ACM Symposium on Applied Computing (SAC 2013)"
+    url: "http://www.cs.unibo.it/sacwt13/ "
+    role: "Programme Committee member of the Web Technologies track"
+
+  - name: "10th Extended Semantic Web Conference (ESWC 2013)"
+    url: "http://2013.eswc-conferences.org/  "
+    role: "Programme Committee member"
+
+  - name: "9th International Conference on Semantic Systems (i-Semantics 2013)"
+    url: "http://i-semantics.tugraz.at/ "
+    role: "Programme Committee member"
+
+  - name: "First International Conference on Building and Exploring Web Based Environments (WEB 2013)"
+    url: "http://www.iaria.org/conferences2013/WEB13.html"
+    role: "Programme Committee member"
+
+  - name: "27th Annual ACM Symposium on Applied Computing (SAC 2012)"
+    url: "http://www.cs.unibo.it/sacwt12/ "
+    role: "Programme Committee member of the Web Technologies track"
+
+  - name: "8th International Conference on Semantic Systems (i-Semantics 2012)"
+    url: "http://i-semantics.tugraz.at/ "
+    role: "Programme Committee member"
+
+  - name: "26th Annual ACM Symposium on Applied Computing (SAC 2011)"
+    url: "http://www.cs.unibo.it/sacwt11/ "
+    role: "Programme Committee member of the Web Technologies track"
+
+- workshop:
+  - name: "4th Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2019)"
+    url: "http://wing.comp.nus.edu.sg/~birndl2019/"
+    role: "Programme Committee member"
+
+  - name: "1st International Workshop on Open data and Ontologies for Cultural Heritage (ODOCH 2019)"
+    url: "http://odoch19.uniroma1.it/odoch19/odoch19"
+    role: "Programme Committee member"
+
+  - name: "2nd International Workshop on Enabling Open Semantic Science (SemSci 2018)"
+    url: "https://semsci.github.io/SemSci2018/"
+    role: "Programme Committee member"
+
+  - name: "Workshop on Open Citations 2018 (WOOC 2018)"
+    url: "https://workshop-oc.github.io/"
+    role: "Organiser"
+
+  - name: "2018 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Dissemination (SAVE-SD 2018)"
+    url: "http://cs.unibo.it/save-sd/2018/index.html "
+    role: "Chair"
+
+  - name: "2018 International Workshop on Visualizations and User Interfaces for Ontologies and Linked Data (VOILA 2017)"
+    url: "http://voila2018.visualdataweb.org/"
+    role: "Programme Committee member"
+
+  - name: "2nd International Workshop on Capturing Scientific Knowledge (SciKnow 2017)"
+    url: "https://sciknow.github.io/sciknow2017/ "
+    role: "Programme Committee member"
+
+  - name: "2nd Workshop on Humanities in the Semantic Web (WhiSe 2017)"
+    url: "http://whise.kmi.open.ac.uk/"
+    role: "Programme Committee member"
+
+  - name: "2017 International Workshop on Visualizations and User Interfaces for Ontologies and Linked Data (VOILA 2017)"
+    url: "http://voila2017.visualdataweb.org/"
+    role: "Programme Committee member"
+
+  - name: "2017 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data (SAVE-SD 2017)"
+    url: "http://cs.unibo.it/save-sd/2017/index.html "
+    role: "Chair"
+
+  - name: "1st Workshop on Humanities in the Semantic Web (WhiSe 2016)"
+    url: "http://whise.kmi.open.ac.uk/"
+    role: "Programme Committee member"
+
+  - name: "2016 International Workshop on Visualizations and User Interfaces for Ontologies and Linked Data (VOILA 2016)"
+    url: "http://voila2016.visualdataweb.org/"
+    role: "Programme Committee member"
+
+  - name: "2016 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data (SAVE-SD 2016)"
+    url: "http://cs.unibo.it/save-sd/2016/index.html "
+    role: "Chair"
+
+  - name: "6th Workshop on Artificial Intelligence and the Complexity Legal Systems (AICOL 2015)"
+    url: "http://www.aicol.eu/"
+    role: "Programme Committee member"
+
+  - name: "12th OWL: Experiences and Directions Workshop (OWLED 2015)"
+    url: "https://www.w3.org/community/owled/workshop-2015/"
+    role: "Programme Committee member"
+
+  - name: "2015 International Workshop on Visualizations and User Interfaces for Ontologies and Linked Data (VOILA 2015)"
+    url: "http://voila2015.visualdataweb.org/"
+    role: "Programme Committee member"
+
+  - name: "1st International Workshop on LINKed Education (LINKED 2015)"
+    url: "https://linked2015.wordpress.com/ "
+    role: "Proceeding Chair"
+
+  - name: "2015 International Workshop on Legal Domain And Semantic Web Applications (LeDA-SWAn 2015)"
+    url: "http://cs.unibo.it/ledaswan2015"
+    role: "Chair"
+
+  - name: "2015 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data (SAVE-SD 2015)"
+    url: "http://cs.unibo.it/save-sd/2015/index.html "
+    role: "Chair"
+
+  - name: "2014 International Workshop on Semantic Web for the Law (SW4Law 2014)"
+    url: "http://cs.unibo.it/sw4law2014"
+    role: "Chair"
+
+  - name: "International Workshop on Visualizations and User Interfaces for Knowledge Engineering and Linked Data Analytics (VISUAL 2014)"
+    url: "http://linkedscience.org/events/visual2014/"
+    role: "Programme Committee member"
+
+  - name: "2014 Workshop on Collaborative Annotations in Shared Environments: metadata, vocabularies and techniques in the Digital Humanities (DH-CASE 2014)"
+    url: "http://research-it.berkeley.edu/dhcase2014"
+    role: "Programme Committee member"
+
+  - name: "2013 Workshop on Collaborative Annotations in Shared Environments: metadata, vocabularies and techniques in the Digital Humanities (DH-CASE 2013)"
+    url: "http://www.cs.unibo.it/dh-case/"
+    role: "Programme Committee member"
+
+- school:
+  - name: "2017 Summer School on LEX"
+    url: "http://summerschoollex.cirsfid.unibo.it/"
+    role: "Lecturer"
+
+  - name: "2nd Italian Summer School on Open Data for the Territory: Culture, Tourism, Environment (CULTA 2017)"
+    url: "http://culta.cirsfid.unibo.it/"
+    role: "Lecturer"
+
+  - name: "2016 Summer School on LEX"
+    url: "http://summerschoollex.cirsfid.unibo.it/"
+    role: "Lecturer"
+
+  - name: "12th Summer School on Ontology Engineering and the Semantic Web (SSSW 2016)"
+    url: "http://sssw.org/2016/"
+    role: "Support Team Member"
+
+  - name: "2015 Summer School on LEX"
+    url: "http://summerschoollex.cirsfid.unibo.it/"
+    role: "Lecturer"
+
+  - name: "1st Italian Summer School on Open Data for the Territory: Culture, Tourism, Environment (CULTA 2015)"
+    url: "http://culta.cirsfid.unibo.it/"
+    role: "Lecturer"
+
+  - name: "11th Summer School on Ontology Engineering and the Semantic Web (SSSW 2015)"
+    url: "http://sssw.org/2015/ "
+    role: "Support Team Member"
+
+  - name: "2014 Summer School on LEX"
+    url: "http://summerschoollex.cirsfid.unibo.it/"
+    role: "Lecturer"
+
+- teaching:
+  - name: "Computational Thinking and Programming"
+    degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+    url: "http://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/424624"
+    aa: "2019/2020"
+
+  - name: "Basic Informatics"
+    degree: "Bachelor's Degree in Humanities, University of Bologna"
+    url: "http://www.unibo.it/it/didattica/insegnamenti/insegnamento/2019/394759"
+    aa: "2019/2020"
+
+  - name: "Open Science e Open Access nelle Scienze (Umane e non solo)"
+    degree: "Seminar for the Ph.D. Programme in Literary and Philological Cultures, University of Bologna"
+    url: "https://github.com/open-sci/seminar-2019-06"
+    aa: "2018/2019"
+
+  - name: "Computational Thinking and Programming"
+    degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+    url: "http://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2018/424624"
+    aa: "2018/2019"
+
+  - name: "Basic Informatics"
+    degree: "Bachelor's Degree in Humanities, Univeristy of Bologna"
+    url: "http://www.unibo.it/it/didattica/insegnamenti/insegnamento/2018/394759"
+    aa: "2018/2019"
+
+  - name: "Semantic Web and Knowledge Management"
+    degree: "Master in Design and Technology for Fashion Communication, University of Bologna"
+    url: "https://master.unibo.it/fashion-communication/it"
+    aa: "2017/2018"
+
+  - name: "Computational Thinking and Programming"
+    degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+    url: "http://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2017/424624"
+    aa: "2017/2018"
+
+  - name: "Web and Semantic Web technologies"
+    degree: "Master in Traditional and Digital Publishing, University of Bologna"
+    url: "https://master.unibo.it/editoria/it"
+    aa: "2017/2018"
+
+  - name: "Semantic Web and Knowledge Management"
+    degree: "Master in Design and Technology for Fashion Communication, University of Bologna"
+    url: "https://master.unibo.it/fashion-communication/it"
+    aa: "2017/2018"
+
+  - name: "Semantic Web and Ontology Engineering"
+    degree: "LAST-JD Ph.D. Programme, University of Bologna"
+    url: "http://www.last-jd.eu/"
+    aa: "2015/2016"
+
+  - name: "Web scraping with Python"
+    degree: "Ph.D. Programme and Post-doctoral Researcher Programme, European University Institute"
+    url: "https://www.eui.eu/"
+    aa: "2014/2015"
+
+  - name: "PDF scraping with Python"
+    degree: "Ph.D. Programme in Economics, University of Bologna"
+    url: "https://phd.unibo.it/economics/en"
+    aa: "2014/2015"
+
+  - name: "Web scraping with Python"
+    degree: "Ph.D. Programme in Economics, University of Bologna"
+    url: "https://phd.unibo.it/economics/en"
+    aa: "2014/2015"
+
+  - name: "Semantic Web and Ontology Engineering"
+    degree: "LAST-JD Ph.D. Programme, University of Bologna"
+    url: "http://www.last-jd.eu/"
+    aa: "2013/2014"
