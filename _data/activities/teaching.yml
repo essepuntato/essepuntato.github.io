@@ -1,0 +1,69 @@
+- name: "Computational Thinking and Programming"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "http://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/424624"
+  aa: "2019/2020"
+
+- name: "Basic Informatics"
+  degree: "Bachelor's Degree in Humanities, University of Bologna"
+  url: "http://www.unibo.it/it/didattica/insegnamenti/insegnamento/2019/394759"
+  aa: "2019/2020"
+
+- name: "Open Science e Open Access nelle Scienze (Umane e non solo)"
+  degree: "Seminar for the Ph.D. Programme in Literary and Philological Cultures, University of Bologna"
+  url: "https://github.com/open-sci/seminar-2019-06"
+  aa: "2018/2019"
+
+- name: "Computational Thinking and Programming"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "http://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2018/424624"
+  aa: "2018/2019"
+
+- name: "Basic Informatics"
+  degree: "Bachelor's Degree in Humanities, Univeristy of Bologna"
+  url: "http://www.unibo.it/it/didattica/insegnamenti/insegnamento/2018/394759"
+  aa: "2018/2019"
+
+- name: "Semantic Web and Knowledge Management"
+  degree: "Master in Design and Technology for Fashion Communication, University of Bologna"
+  url: "https://master.unibo.it/fashion-communication/it"
+  aa: "2017/2018"
+
+- name: "Computational Thinking and Programming"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "http://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2017/424624"
+  aa: "2017/2018"
+
+- name: "Web and Semantic Web technologies"
+  degree: "Master in Traditional and Digital Publishing, University of Bologna"
+  url: "https://master.unibo.it/editoria/it"
+  aa: "2017/2018"
+
+- name: "Semantic Web and Knowledge Management"
+  degree: "Master in Design and Technology for Fashion Communication, University of Bologna"
+  url: "https://master.unibo.it/fashion-communication/it"
+  aa: "2017/2018"
+
+- name: "Semantic Web and Ontology Engineering"
+  degree: "LAST-JD Ph.D. Programme, University of Bologna"
+  url: "http://www.last-jd.eu/"
+  aa: "2015/2016"
+
+- name: "Web scraping with Python"
+  degree: "Ph.D. Programme and Post-doctoral Researcher Programme, European University Institute"
+  url: "https://www.eui.eu/"
+  aa: "2014/2015"
+
+- name: "PDF scraping with Python"
+  degree: "Ph.D. Programme in Economics, University of Bologna"
+  url: "https://phd.unibo.it/economics/en"
+  aa: "2014/2015"
+
+- name: "Web scraping with Python"
+  degree: "Ph.D. Programme in Economics, University of Bologna"
+  url: "https://phd.unibo.it/economics/en"
+  aa: "2014/2015"
+
+- name: "Semantic Web and Ontology Engineering"
+  degree: "LAST-JD Ph.D. Programme, University of Bologna"
+  url: "http://www.last-jd.eu/"
+  aa: "2013/2014"
