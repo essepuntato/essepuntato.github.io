@@ -5,7 +5,7 @@ permalink: /act/
 title: Activities
 ---
 
-This page lists various activities I have done in the past, according to the following categories:
+This page lists various activities I am doing and have done in the past, according to the following categories:
 
 * [journals](#journals)
 * [conferences](#conferences)
