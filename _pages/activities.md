@@ -5,39 +5,55 @@ permalink: /act/
 title: Activities
 ---
 
-This page lists various (editorial, reviewing, teaching) activities I have done in the past.
+This page lists various activities I have done in the past, according to the following categories:
+
+* [journals](#journals)
+* [conferences](#conferences)
+* [workshops](#workshops)
+* [summer schools](#summer-schools)
+* [teaching duties](#teaching-duties)
 
 ## Journals
+<ul>
 {% for item in site.data.activities.journal %}
-<p>
-    {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>, ISSN: {{item.issn}}
-</p>
+    <li>
+        {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>, ISSN: {{item.issn}}
+    </li>
 {% endfor %}
+</ul>
 
 ## Conferences
+<ul>
 {% for item in site.data.activities.conference %}
-<p>
-    {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>
-</p>
+    <li>
+        {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>
+    </li>
 {% endfor %}
+</ul>
 
 ## Workshops
+<ul>
 {% for item in site.data.activities.workshop %}
-<p>
-    {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>
-</p>
+    <li>
+        {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>
+    </li>
 {% endfor %}
+</ul>
 
 ## Summer Schools
+<ul>
 {% for item in site.data.activities.school %}
-<p>
-    {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>
-</p>
+    <li>
+        {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>
+    </li>
 {% endfor %}
+</ul>
 
-## Other teaching duties
+## Teaching duties
+<ul>
 {% for item in site.data.activities.teaching %}
-<p>
-    <a href="{{item.url}}">{{item.name}}</a>, {{item.degree}}, academic year {{item.aa}}
-</p>
+    <li>
+        <a href="{{item.url}}">{{item.name}}</a>, {{item.degree}}, academic year {{item.aa}}
+    </li>
 {% endfor %}
+</ul>
