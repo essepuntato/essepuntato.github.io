@@ -473,9 +473,14 @@
   <macro name="oa">
   	<choose>
       <if variable="URL">
-        <group delimiter=" ">
-          <text variable="URL"/>
-        </group>
+        <choose>
+          <if variable="DOI" match="any">
+            <text prefix=", available at " variable="URL"/>
+          </if>
+          <else>
+            <text variable="URL"/>
+          </else>
+        </choose>
       </if>
     </choose>
   </macro>
@@ -1489,7 +1494,7 @@
         <text macro="event" prefix=". "/>
       </group>
       <text macro="access" prefix=" "/>
-      <text macro="oa" prefix=" (OA: " suffix=")"/>
+      <text macro="oa" />
       <choose>
         <if is-uncertain-date="original-date">
           <group prefix=" [" suffix="]" delimiter=" ">
