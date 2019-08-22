@@ -868,10 +868,7 @@
                     <text term="presented at" text-case="capitalize-first"/>
                   </else>
                 </choose>
-                <group delimiter=", ">
-                  <text variable="event"/>
-                  <text variable="event-place"/>
-                </group>
+                <text variable="event-place"/>
               </group>
             </group>
           </if>
