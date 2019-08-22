@@ -5,6 +5,16 @@ permalink: /tlk/
 title: Talks
 ---
 
-The (surely incomplete) list of my talks, as listed in my [Zotero account](https://www.zotero.org/essepuntato/) and generated through [BibBase](https://bibbase.org).
+The (surely incomplete) list of my talks, as listed in my [Zotero account](https://www.zotero.org/essepuntato/).
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F5306497%2Fcollections%2F8SC8YV4W%2Fitems%3Fkey%3DkLj9Y2QS4wKQwtHaxdrbIgOf%26format%3Dbibtex%26limit%3D100&jsonp=1"></script>
+<div id="pub"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+$.get("https://api.zotero.org/users/5306497/publications/items?include=bib&style=https://essepuntato.github.io/assets/csl/apa.csl&linkwrap=1&sort=date&itemType=presentation", function( data ) {
+    $.each(data, function(idx, val) {
+        console.log(val.bib);
+        $("#pub").append(val.bib);
+    });
+});
+</script> 
