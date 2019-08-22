@@ -8,8 +8,8 @@
 @import "minimal-mistakes"; // main partials
 
 /* Modifications to the main CSS */
-#bibbase_header {
-    display: none;
+.cls-entry {
+    line-height: normal !important;
 }
 
 #main div.archive {
