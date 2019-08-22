@@ -469,9 +469,11 @@
         <text macro="publisher" suffix="."/>
       </else>
     </choose>
-    <choose>
+  </macro>
+  <macro name="oa">
+  	<choose>
       <if variable="URL">
-        <group delimiter=" OA: ">
+        <group delimiter=" ">
           <text variable="URL"/>
         </group>
       </if>
@@ -1487,6 +1489,7 @@
         <text macro="event" prefix=". "/>
       </group>
       <text macro="access" prefix=" "/>
+      <text macro="oa" prefix=" (OA: " suffix=")"/>
       <choose>
         <if is-uncertain-date="original-date">
           <group prefix=" [" suffix="]" delimiter=" ">
