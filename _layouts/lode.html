@@ -34,32 +34,35 @@
     </head>
     <body>
         <h1><img src="/assets/img/lode/logo.png" alt="LODE logo" /></h1>
-		<form method="POST" enctype="multipart/form-data" action="/lode" accept-charset="utf-8">
+		<form method="GET" action="http://150.146.207.114/lode/extract" accept-charset="utf-8">
 			<p>
 				<input type="url" id="url" name="url" placeholder="Put here the complete ontology URL"
                        size="60" /></p>
 			<div>
 				<span class="modules">
 					<label>Modules:</label>
-					<input type="radio" name="module" value="" checked="checked" /> <span class="text">None</span>
-					<input type="radio" name="module" value="/owlapi" /> <span class="text">OWLAPI</span>
+                    <span class="noWrap">
+					    <input type="checkbox" name="owlapi" value="true" /> <span class="text">OWLAPI</span>
+                    </span>
 					<span class="noWrap">
-						<input type="radio" name="module" value="/imported" /> <span class="text">OWLAPI + Imported</span>
+						<input type="checkbox" name="imported" value="true" /> <span class="text">Imported</span>
 					</span>
 					<span class="noWrap">
-						<input type="radio" name="module" value="/closure" /> <span class="text">OWLAPI + Closure</span>
+						<input type="checkbox" name="closure" value="true" /> <span class="text">Closure</span>
 					</span>
+                    <span class="noWrap">
+                        <input type="checkbox" id="reasoner" name="reasoner" value="true" /> <span class="reasoner">Reasoner</span>
+                    </span>
 				</span><br />
-				<input type="checkbox" id="reasoner" name="reasoner" value="/reasoner" /> <span class="reasoner">Use the reasoner</span>
 				<span class="lang noWrap">
 					<label for="number">Language</label>:
-					<input id="number" type="text" name="lang_label" value="" placeholder="'en' if empty" />
+					<input id="number" type="text" name="lang" value="en" placeholder="'en' if empty" />
 				</span>
 			</div>
             <p><button type="submit">Generate Documentation</button></p>
 		</form>
         <p>
-            <em><a href="http://www.github.com/essepuntato/LODE" title="Project homepage hosted by GitHub"><strong>L</strong>ive <strong>O</strong>WL <strong>D</strong>ocumentation <strong>E</strong>nvironment</a></em> (<em>LODE</em>), version 1.2 dated 3 June 2013, is a service that automatically extracts classes, object properties, data properties, named individuals, annotation properties, general axioms and namespace declarations from an OWL and OWL2 ontology, and renders them as ordered lists, together with their textual definitions, in a human-readable HTML page designed for browsing and navigation by means of embedded links.
+            <em><a href="http://www.github.com/essepuntato/LODE" title="Project homepage hosted by GitHub"><strong>L</strong>ive <strong>O</strong>WL <strong>D</strong>ocumentation <strong>E</strong>nvironment</a></em> (<em>LODE</em>) is a service that automatically extracts classes, object properties, data properties, named individuals, annotation properties, general axioms and namespace declarations from an OWL and OWL2 ontology, and renders them as ordered lists, together with their textual definitions, in a human-readable HTML page designed for browsing and navigation by means of embedded links.
         </p>
         <p>
             This LODE service is an open source development, and can be freely used, as described in this document. It may be used in conjunction with content negotiation to display this human-readable version of an OWL ontology when the user accesses the ontology using a web browser, or alternatively to deliver the OWL ontology itself when the user accesses the ontology using an ontology editing tool such as <a href="http://protege.stanford.edu/">Protégé</a> and <a href="http://neon-toolkit.org">NeOn Toolkit</a>. An exemplar implementation of such content negotiation is given in the <em><a href="http://www.w3.org/TR/swbp-vocab-pub/">Best Practice Recipes for Publishing RDF Vocabularies</a></em> by using the <em>.htaccess</em> file:
@@ -267,6 +270,11 @@ RewriteRule ^ontology\$ ontology.owl [R=303]
         <h2>About the author</h2>
         <p>
             <a href="http://www.essepuntato.it">Silvio Peroni</a> (Ph.D.) is an Assistant Professor at the Department of Classical Philology and Italian Studies, University of Bologna.
+        </p>
+
+        <h2>Acknowledgements</h2>
+        <p>
+            The online service is currently hosted by a server kindly provided by the <a href="http://stlab.istc.cnr.it/">Semantic Technology Laboratory (STLab)</a>, <a href="http://istc.cnr.it">Institute of Cognitive Sciences and Technologies</a>, <a href="http://www.cnr.it" National Research Council</a>, Rome, Italy.
         </p>
     </body>
 </html>
