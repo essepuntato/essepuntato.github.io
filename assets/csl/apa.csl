@@ -479,6 +479,11 @@
           </if>
           <else>
             <text prefix=" " variable="URL"/>
+            <choose>
+              <if variable="extra">
+                <text prefix=", freely available at " variable="extra"/>
+              </if>
+            </choose>
           </else>
         </choose>
       </if>
