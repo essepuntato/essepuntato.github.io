@@ -480,8 +480,8 @@
           <else>
             <text prefix=" " variable="URL"/>
             <choose>
-              <if variable="notes">
-                <text prefix=", freely available at " variable="notes"/>
+              <if variable="note">
+                <text prefix=", freely available at " variable="note"/>
               </if>
             </choose>
           </else>
