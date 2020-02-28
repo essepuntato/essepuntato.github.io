@@ -8,6 +8,16 @@
   url: "http://www.unibo.it/it/didattica/insegnamenti/insegnamento/2019/394759"
   aa: "2019/2020"
 
+- name: "Digital Humanities"
+  degree: "Master in Traditional and Digital Publishing, University of Bologna"
+  url: "https://master.unibo.it/editoria/it"
+  aa: "2019/2020"
+
+- name: "Semantic Web and Ontology Engineering"
+  degree: "LAST-JD Ph.D. Programme, University of Bologna"
+  url: "http://www.last-jd.eu/"
+  aa: "2019/2020"
+
 - name: "Open Science e Open Access nelle Scienze (Umane e non solo)"
   degree: "Seminar for the Ph.D. Programme in Literary and Philological Cultures, University of Bologna"
   url: "https://github.com/open-sci/seminar-2019-06"

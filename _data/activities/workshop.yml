@@ -1,3 +1,7 @@
+- name: "Workshop on Open Citations and Open Scholarly Metadata (WOOC 2020)"
+  url: "https://workshop-oc.github.io"
+  role: "Organiser"
+
 - name: "4th Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2019)"
   url: "http://wing.comp.nus.edu.sg/~birndl2019/"
   role: "Programme Committee member"
@@ -11,7 +15,7 @@
   role: "Programme Committee member"
 
 - name: "Workshop on Open Citations 2018 (WOOC 2018)"
-  url: "https://workshop-oc.github.io/"
+  url: "https://workshop-oc.github.io/2018/"
   role: "Organiser"
 
 - name: "2018 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Dissemination (SAVE-SD 2018)"
@@ -23,7 +27,7 @@
   role: "Programme Committee member"
 
 - name: "2nd International Workshop on Capturing Scientific Knowledge (SciKnow 2017)"
-  url: "https://sciknow.github.io/sciknow2017/ "
+  url: "https://sciknow.github.io/sciknow2017/"
   role: "Programme Committee member"
 
 - name: "2nd Workshop on Humanities in the Semantic Web (WhiSe 2017)"
