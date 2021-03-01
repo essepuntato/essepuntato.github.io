@@ -5,7 +5,7 @@ permalink: /bio/
 title: Short biography
 ---
 
-I (ORCiD: [0000-0003-0530-4305](https://orcid.org/0000-0003-0530-4305)) hold a Ph.D. degree in Computer Science and I am an Assistant Professor at the [Department of Classical Philology and Italian Studies](http://www.ficlit.unibo.it/), [University of Bologna](http://www.unibo.it/en), where I [teach](https://www.unibo.it/sitoweb/silvio.peroni/teachings) *Basic Informatics* (Bachelor's degree in [Humanities](https://corsi.unibo.it/1cycle/Humanities)) and *Computational Thinking and Programming* (Master's degree in [Digital Humanities and Digital Knowledge](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge)). 
+I (ORCiD: [0000-0003-0530-4305](https://orcid.org/0000-0003-0530-4305)) hold a Ph.D. degree in Computer Science and I am an Associate Professor at the [Department of Classical Philology and Italian Studies](http://www.ficlit.unibo.it/), [University of Bologna](http://www.unibo.it/en), where I [teach](https://www.unibo.it/sitoweb/silvio.peroni/teachings) *Basic Informatics* (Bachelor's degree in [Humanities](https://corsi.unibo.it/1cycle/Humanities)) and *Computational Thinking and Programming* (Master's degree in [Digital Humanities and Digital Knowledge](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge)). 
 
 I am an expert in document markup and semantic descriptions of bibliographic entities using OWL ontologies. I am one of the main developers of the [SPAR (Semantic Publishing and Referencing) Ontologies](http://www.sparontologies.net), Director (with [David Shotton](https://twitter.com/dshotton)) of [OpenCitations](http://opencitations.net), and founding member of the [Initiative for Open Citations (I4OC)](https://i4oc.org).
 
