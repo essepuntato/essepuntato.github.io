@@ -5,7 +5,7 @@ permalink: /pub/
 title: Publications
 ---
 
-The list of my last 20 publications - fill list available in my [Zotero account](https://www.zotero.org/essepuntato/).
+The list of my last 20 publications - full list available in my [Zotero account](https://www.zotero.org/essepuntato/).
 
 <div class="loader"></div>
 
