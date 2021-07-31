@@ -21,7 +21,7 @@ This page lists the the grants and award I have received during the past years.
         <strong>reference:</strong> {{item.number}}<br />
         {% endif %}
         <strong>total amount:</strong> {{item.amount}}<br />
-        <strong>period:</strong> from {{item.sdate}} to {{time.edate}}
+        <strong>period:</strong> from {{item.sdate}} to {{item.edate}}
     </li>
 {% endfor %}
 </ul>
