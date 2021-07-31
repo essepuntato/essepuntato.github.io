@@ -30,7 +30,10 @@ This page lists the the grants and award I have received during the past years.
 <ul>
 {% for item in site.data.activities.awards %}
     <li>
-        {{item.role}}, <a href="{{item.url}}">{{item.name}}</a>
+        {{item.description}}, {{item.date}} <a href="{{item.url}}">{{item.name}}</a>
+        {% if item.url %}
+        - more info available <a href="{{item.url}}"online</a>
+        {% endif %}
     </li>
 {% endfor %}
 </ul>
