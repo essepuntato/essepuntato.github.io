@@ -874,7 +874,7 @@
                   </else>
                 </choose>
                 <text variable="event"/>
-                <text prefix=", " variable="event-place"/>
+                <text prefix="(" suffix=")" variable="event-place"/>
               </group>
             </group>
           </if>
