@@ -28,7 +28,7 @@ This page lists the the grants and award I have received during the past years.
 
 ## Awards
 <ul>
-{% for item in site.data.activities.awards %}
+{% for item in site.data.awards %}
     <li>
         {{item.description}}, {{item.date}} <a href="{{item.url}}">{{item.name}}</a>
         {% if item.url %}
