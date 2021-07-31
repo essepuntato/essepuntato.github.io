@@ -17,7 +17,7 @@ This page lists the the grants and award I have received during the past years.
         <strong><a href="{{item.url}}">{{item.name}}</a></strong><br />
         <strong>role:</strong> {{item.role}}<br />
         <strong>funded by:</strong> {{item.funder}}<br />
-        {% if item.number != "" %}
+        {% if item.number %}
         <strong>reference:</strong> {{item.number}}<br />
         {% endif %}
         <strong>total amount:</strong> {{item.amount}}<br />
