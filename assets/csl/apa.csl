@@ -480,7 +480,7 @@
           <else>
             <text prefix=" " variable="URL"/>
             <choose>
-              <if variable="note">
+              <if variable="note" match="any">
                 <text prefix=", freely available at " variable="note"/>
               </if>
             </choose>
