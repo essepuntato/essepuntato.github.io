@@ -8,6 +8,8 @@ main:
     url: "/tlk/"
   - title: "Projects"
     url: "/prj/"
+  - title: "Grants and Awards"
+    url: "/grt/"
   - title: "Activities"
     url: "/act/"
   # - title: "Quick-Start Guide"
