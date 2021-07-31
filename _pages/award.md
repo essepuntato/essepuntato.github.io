@@ -14,14 +14,14 @@ This page lists the the grants and award I have received during the past years.
 <ul>
 {% for item in site.data.grants %}
     <li>
-        <a href="{{item.url}}">{{item.name}}</a><br />
-        role: {{item.role}}<br />
-        funded by: {{item.funder}}<br />
+        <strong><a href="{{item.url}}">{{item.name}}</a></strong><br />
+        <strong>role:</strong> {{item.role}}<br />
+        <strong>funded by:</strong> {{item.funder}}<br />
         {% if item.number != "" %}
-        grant number: {{item.number}}<br />
+        <strong>reference:</strong> {{item.number}}<br />
         {% endif %}
-        total amount: {{item.amount}}<br />
-        period: from {{item.sdate}} to {{time.edate}}
+        <strong>total amount:</strong> {{item.amount}}<br />
+        <strong>period:</strong> from {{item.sdate}} to {{time.edate}}
     </li>
 {% endfor %}
 </ul>
