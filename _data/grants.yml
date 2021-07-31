@@ -1,3 +1,20 @@
+- name: "OpenAIRE-Nexus Scholarly Communication Services for EOSC users"
+  amount: "3,999,923.50 EUR"
+  funder: "European Union"
+  number: "EU H2020-INFRAEOSC-2020-2, Grant n. 101017452"
+  url: "https://cordis.europa.eu/project/id/101017452"
+  role: "Local Unit (University of Bologna) Coordinator"
+  sdate: "2021-01"
+  edate: "2023-06"
+
+- name: "Wikipedia Citations in Wikidata"
+  amount: "8,070 EUR"
+  funder: "Wikimedia Foundation"
+  url: "https://meta.wikimedia.org/wiki/Wikicite/grant/Wikipedia_Citations_in_Wikidata"
+  role: "Principal Investigator"
+  sdate: "2021-01"
+  edate: "2021-04"
+
 - name: "Social cohesion, Participation, and Inclusion through Cultural Engagement"
   amount: "3,124,131 EUR"
   funder: "European Union"
@@ -31,7 +48,6 @@
   number: "Grant n. 8017"
   url: "https://sloan.org/grant-detail/8017"
   role: "Principal Investigator"
-  report: "https://opencitations.wordpress.com/2019/01/02/opencitations-enhancement-project-final-report/"
   sdate: "2017-05"
   edate: "2018-11"
 
