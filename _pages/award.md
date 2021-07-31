@@ -32,7 +32,7 @@ This page lists the the grants and award I have received during the past years.
     <li>
         {{item.description}}, {{item.date}} <a href="{{item.url}}">{{item.name}}</a>
         {% if item.url %}
-        - more info available <a href="{{item.url}}"online</a>
+        - more info available <a href="{{item.url}}">online</a>
         {% endif %}
     </li>
 {% endfor %}
