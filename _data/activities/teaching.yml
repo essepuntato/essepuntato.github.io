@@ -1,3 +1,38 @@
+- name: "Computational Thinking and Programming"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/467045"
+  aa: "2021/2022"
+
+- name: "Data Science"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/467046"
+  aa: "2021/2022"
+
+- name: "Open Science"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/443753"
+  aa: "2021/2022"
+
+- name: "Basic Informatics"
+  degree: "Bachelor's Degree in Humanities, University of Bologna"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/458983"
+  aa: "2021/2022"
+
+- name: "Computational Thinking and Programming"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/424624"
+  aa: "2020/2021"
+
+- name: "Open Science"
+  degree: "Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/443753"
+  aa: "2020/2021"
+
+- name: "Basic Informatics"
+  degree: "Bachelor's Degree in Humanities, University of Bologna"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/458983"
+  aa: "2020/2021"
+
 - name: "Semantic Web"
   degree: "Bachelor's Degree in Digital Communication Design, IAAD - the Italian University for Design"
   url: "https://www.iaad.it/en/digital/"
@@ -10,7 +45,7 @@
 
 - name: "Basic Informatics"
   degree: "Bachelor's Degree in Humanities, University of Bologna"
-  url: "http://www.unibo.it/it/didattica/insegnamenti/insegnamento/2019/394759"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/394759"
   aa: "2019/2020"
 
 - name: "Digital Humanities"
@@ -35,7 +70,7 @@
 
 - name: "Basic Informatics"
   degree: "Bachelor's Degree in Humanities, Univeristy of Bologna"
-  url: "http://www.unibo.it/it/didattica/insegnamenti/insegnamento/2018/394759"
+  url: "https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2018/394759"
   aa: "2018/2019"
 
 - name: "Semantic Web and Knowledge Management"
