@@ -18,7 +18,7 @@ This page lists various activities I am doing and have done in the past, accordi
 <ul>
 {% for item in site.data.activities.institutional %}
     <li>
-        {{item.role}}, <a href="{{item.website}}">{{item.institution}}</a>{% if item.behalfof %} (on behalf of {{item.behalfof}}){% endif %}, from {{item.start}} {% if item.end %} to {{item.end}}{% endif %}
+        {{item.role}}, <a href="{{item.website}}">{{item.institution}}</a>{% if item.behalfof %} (on behalf of <a href="{{item.bwebsite}}">{{item.behalfof}}</a>){% endif %}, from {{item.start}} {% if item.end %} to {{item.end}}{% endif %}
     </li>
 {% endfor %}
 </ul>
