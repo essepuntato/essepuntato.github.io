@@ -7,11 +7,21 @@ title: Activities
 
 This page lists various activities I am doing and have done in the past, according to the following categories:
 
+* [institutional roles](#institutional-roles)
 * [journals](#journals)
 * [conferences](#conferences)
 * [workshops](#workshops)
 * [summer schools](#summer-schools)
 * [teaching duties](#teaching-duties)
+
+## Institutional roles
+<ul>
+{% for item in site.data.activities.institutional %}
+    <li>
+        {{item.role}}, <a href="{{item.website}}">{{item.institution}}</a> {% if item.behalfof %}(on behalf of {{item.behalfof}}){% endif %}, from {{item.start}} {% if item.end %} to {{item.end}}{% endif %}
+    </li>
+{% endfor %}
+</ul>
 
 ## Journals
 <ul>
