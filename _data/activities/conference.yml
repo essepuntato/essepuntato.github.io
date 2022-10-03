@@ -1,3 +1,11 @@
+- name: "45th International Conference on Software Engineering (ICSE 2023)"
+  url: "https://conf.researchr.org/home/icse-2023"
+  role: "Programme Committee member (Artifact Evaluation track)"
+
+- name: "19th Italian Research Conference on Digital Libraries (IRCDL 2023)"
+  url: "http://lacam.di.uniba.it/IRCDL23/"
+  role: "Programme Committee member"
+  
 - name: "26th International Conference on Theory and Practice of Digital Libraries (TPDL 2022)"
   url: "http://tpdl2022.dei.unipd.it/"
   role: "Programme Committee member (Research & Practitioner Full Papers track)"
