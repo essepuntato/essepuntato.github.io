@@ -1,3 +1,7 @@
+- name: "19th International Conference on Semantic Systems (SEMANTiCS 2023)"
+  url: "https://2023-eu.semantics.cc/"
+  role: "Organising Committee (Research and Innovation Chair)"
+
 - name: "45th International Conference on Software Engineering (ICSE 2023)"
   url: "https://conf.researchr.org/home/icse-2023"
   role: "Programme Committee member (Artifact Evaluation track)"
@@ -44,7 +48,7 @@
 
 - name: "15th Extended Semantic Web Conference (ESWC 2018)"
   url: "https://2018.eswc-conferences.org/organizing-committee"
-  role: "Open conference data Chair and Programme Committee member (Research Track, Resource Track, Workshops and Tutorials)"
+  role: "Organising Committee (Open conference data Chair) and Programme Committee member (Research Track, Resource Track, Workshops and Tutorials)"
 
 - name: "The Web Conference 2018"
   url: "https://www2018.thewebconf.org/"
@@ -60,11 +64,11 @@
 
 - name: "15th International Semantic Web Conference (ISWC 2016)"
   url: "http://iswc2016.semanticweb.org/ "
-  role: "Metadata Chair and Programme Committee member (Research Track, Resource Track, Poster and Demo Track)"
+  role: "Organising Committee (Metadata Chair) and Programme Committee member (Research Track, Resource Track, Poster and Demo Track)"
 
 - name: "20th International Conference on Knowledge Engineering and Knowledge Management (EKAW 2016)"
   url: "http://ekaw2016.cs.unibo.it/ "
-  role: "Local Chair, Sponsorship Chair, and Programme Committee member"
+  role: "Organising Committee (Local Chair, Sponsorship Chair) and Programme Committee member"
 
 - name: "12th International Conference on Semantic Systems (Semantics 2016)"
   url: "http://www.semantics.cc/ "
@@ -124,7 +128,7 @@
 
 - name: "11th Extended Semantic Web Conference (ESWC 2014)"
   url: "http://2014.eswc-conferences.org/  "
-  role: "Organising Committee member (Publicity Chair) and Programme Committee member"
+  role: "Organising Committee (Publicity Chair) and Programme Committee member"
 
 - name: "Second International Conference on Building and Exploring Web Based Environments (WEB 2014)"
   url: "http://www.iaria.org/conferences2013/WEB13.html"
