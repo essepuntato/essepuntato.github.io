@@ -1,3 +1,20 @@
+- name: "GraspOS: next Generation Research Assessment to Promote Open Science"
+  amount: "2,985,441.00 EUR"
+  funder: "European Union"
+  number: "HORIZON-INFRA-2022-EOSC-01-01, Grant n. 101095129"
+  url: "https://cordis.europa.eu/project/id/101095129"
+  role: "Local Unit (University of Bologna) Coordinator"
+  sdate: "2023-01"
+  edate: "2025-12"
+
+- name: "Partenariato Esteso 5 Changes: Cultural Heritage Active Innovation For Next-Gen Sustainable Society",
+  amount: "115,900,000.00 EUR"
+  funder: "Ministero dell'Università e della Ricerca"
+  number: "Codice proposta PE00000020"
+  role: "Spoke 4 (Virtual Technologies for Museums and Art Collections) Leader"
+  sdate: "2022-12"
+  edate: "2025-11"
+ 
 - name: "OpenAIRE-Nexus Scholarly Communication Services for EOSC users"
   amount: "3,999,923.50 EUR"
   funder: "European Union"
