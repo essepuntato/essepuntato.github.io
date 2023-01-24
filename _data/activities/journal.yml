@@ -23,12 +23,17 @@
   issn: 2367–7163
   role: "Editorial Board member (Subject Editor)"
 
-- name: "“Semantic Web for the Legal Domain” Special Issue, of Semantic Web"
+- name: "“Scholarly Data Analysis (Semantics, Analytics, Visualisation)” Special Issue, of Data Science Journal"
+  url: "https://content.iospress.com/journals/data-science/2/1-2"
+  issn: 2451-8484
+  role: "Guest Editor"
+
+- name: "“Semantic Web for the Legal Domain” Special Issue, of Semantic Web Journal"
   url: "http://www.semantic-web-journal.net/blog/semantic-web-journal-special-issue-semantic-web-legal-domain"
   issn: 1570-0844
   role: "Guest Editor"
 
 - name: "“SAVE-SD 2015 Collection” Special Issue, PeerJ Computer Science"
-  url: "http://www.semantic-web-journal.net/blog/semantic-web-journal-special-issue-semantic-web-legal-domain"
+  url: "https://peerj.com/collections/24-save-sd-2015"
   issn: 2376-5992
   role: "Guest Editor"
