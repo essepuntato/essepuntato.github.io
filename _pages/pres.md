@@ -1,6 +1,6 @@
 ---
 redirect_from: /pres
-redirect_to: https://www.dropbox.com/s/s7uvpscx1p0l2sn/slide-spoke4.pptx?dl=1
+redirect_to: https://docs.google.com/presentation/d/1tBX2gl7eWBXVcO5m5KMrMpPldq6jQBfIPyf_gj5VeHE/edit?usp=sharing
 ---
 
 
