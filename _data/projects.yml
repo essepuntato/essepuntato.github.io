@@ -3,6 +3,16 @@
   description: "OpenCitations is a scholarly infrastructure organization dedicated to open scholarship and the publication of open bibliographic and citation data by the use of Semantic Web (Linked Data) technologies, and engaged in advocacy for semantic publishing and open citations. It has developed the OpenCitations Corpus (OCC) of open downloadable bibliographic and citation data recorded in RDF, and a system and resolution service for Open Citation Identifiers (OCIs), and it is currently developing a number of Open Citation Indexes using the data openly available in third-party bibliographic databases."
   img: "http://opencitations.net/static/img/logo.png"
 
+- name: GraspOS
+  url: "https://graspos.eu/"
+  description: "GraspOS will develop a data infrastructure that will help policy reforms and bring about the adoption of a responsible research assessment system that embeds OS practices. Additionally, the project will create the necessary tools to expand the reach of the European Open Science Cloud ecosystem and improve monitoring services. These services will also allow for policy-level rewards that encourage OS practices and mindsets."
+  img: "https://graspos.eu/templates/yootheme/cache/2c/graspos-2c780789.webp"
+
+- name: CHANGES
+  url: "https://sites.google.com/uniroma1.it/changes/"
+  description: "CHANGES involves several Italian actors – 11 universities, 4 research institutions, 3 schools for advanced studies, 6 companies, and 1 centre of excellence – to promote and preserve Italian cultural heritage in compliance with the aforementioned European policies. CHANGES covers different aspects of CH, including digital and ecological transitions, and it is organised into nine different thematic sub-projects."
+  img: "https://lh4.googleusercontent.com/t7jOaTxlZsXkqS1559sGCX5HWeO9WsxmFfQtHYePvxxp-ATSAbDZIunZsbkeJNUE_lUP_oC0Md7tqYJ4-Iq1f-jwqmy1tSsxn4_vOJrfH0K_Peo9nJhuuu3V62gsCLfT-w=w1280"
+
 - name: OpenAIRE Nexus
   url: "https://www.openaire.eu/openaire-nexus-project"
   description: "OpenAIRE-Nexus brings in Europe, EOSC and the world a set of services to implement and accelerate Open Science. In particular, OpenAIRE-Nexus onboards to the EOSC fourteen services, provided by public institutions, einfrastructures, and companies, structured in three portfolios: PUBLISH, MONITOR and DISCOVER. The services are widely used in Europe and beyond and integrated in OpenAIRE-Nexus to assemble a uniform Open Science Scholarly Communication package for the EOSC."
