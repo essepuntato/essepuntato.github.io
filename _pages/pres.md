@@ -1,9 +1,4 @@
 ---
 redirect_from: /pres
-redirect_to: https://docs.google.com/presentation/d/17qAapxs4qgas6MuuStoF6Og7VoCyJ0xBMkrC-xCi8Jg/edit?usp=sharing
+redirect_to: https://liveunibo-my.sharepoint.com/:p:/g/personal/silvio_peroni_unibo_it/EdtPfUOupddHjsB0fRKr4TQBqbW3CBwnIF1joDb3l88-iA?e=nOesIB
 ---
-
-
-
-
-
