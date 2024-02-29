@@ -1,4 +1,4 @@
 ---
 redirect_from: /pres
-redirect_to: https://docs.google.com/presentation/d/1prYjhq_t21WlZhdebfEvffbfsh2BTQzkDOVEL7L7xQ8/edit?usp=sharing
+redirect_to: https://docs.google.com/presentation/d/1vVNN6U8t2uchfzRbJuoHkEfImzvpTFVU/edit?usp=sharing&ouid=106628269166481436037&rtpof=true&sd=true
 ---
