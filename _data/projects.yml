@@ -1,6 +1,6 @@
 - name: OpenCitations
   url: "http://opencitations.net"
-  description: "OpenCitations is a scholarly infrastructure organization dedicated to open scholarship and the publication of open bibliographic and citation data by the use of Semantic Web (Linked Data) technologies, and engaged in advocacy for semantic publishing and open citations. It has developed the OpenCitations Corpus (OCC) of open downloadable bibliographic and citation data recorded in RDF, and a system and resolution service for Open Citation Identifiers (OCIs), and it is currently developing a number of Open Citation Indexes using the data openly available in third-party bibliographic databases."
+  description: "OpenCitations is a scholarly infrastructure organization dedicated to open scholarship and the publication of open bibliographic and citation data by the use of Semantic Web (Linked Data) technologies, and engaged in advocacy for semantic publishing and open citations. It is currently managed by the Research Centre for Open Scholarly Metadata, an independent research centre within the University of Bologna, that has an International Board drawn from leaders within the main bibliographic stakeholder communities of relevance (librarians, bibliometricians, academics, data service providers, etc.) who have shown past solid commitment to open scholarship."
   img: "https://opencitations.net/wp-content/uploads/2025/05/OpenCitations_Logo.png"
 
 - name: GRAPHIA
