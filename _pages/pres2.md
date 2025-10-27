@@ -1,4 +1,4 @@
 ---
 redirect_from: /pres2
-redirect_to: http://137.204.165.103:8080/shu/wapps/
+redirect_to: https://docs.google.com/presentation/d/1DUHX3tMzYAFC4E0iFOaDPSybCg-ODFQ9RzzSwIc9rEw/edit?usp=sharing
 ---
