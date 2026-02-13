@@ -99,7 +99,14 @@ function prepare_html(bib) {
 					if (!is_first) {
 						s += ", "
 					}
-					s += creator.lastName;
+					if ("lastName" in creator) {
+						s += creator.lastName;
+						if ("firstName" in creator) {
+							s += ", " + Array.from(creator.firstName)[0] + "."
+						}
+					} else {
+						s += creator.name;
+					}
 					
 					is_first = is_first & false;
 						
@@ -202,7 +209,14 @@ function prepare_html(bib) {
 					if (!is_first) {
 						s += ", "
 					}
-					s += creator.lastName;
+					if ("lastName" in creator) {
+						s += creator.lastName;
+						if ("firstName" in creator) {
+							s += ", " + Array.from(creator.firstName)[0] + "."
+						}
+					} else {
+						s += creator.name;
+					}
 					
 					is_first = is_first & false;
 						
