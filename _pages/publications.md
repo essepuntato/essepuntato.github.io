@@ -21,7 +21,7 @@ function prepare_html(bib) {
 		var is_first = true;
 		for (let i = 0; i < bib.creators.length; i++) {
 			var creator = bib.creators[i];
-			if ((bib.itemType == "book" && creator.creatorType == "editor") || creator.creatorType == "author" || creator.creatorType == "presenter") {
+			if ((bib.itemType == "computerProgram" && creator.creatorType == "programmer") ||(bib.itemType == "book" && creator.creatorType == "editor") || creator.creatorType == "author" || creator.creatorType == "presenter") {
 				if (!is_first) {
 					s += ", "
 				}
@@ -254,6 +254,12 @@ function prepare_html(bib) {
 			}
 			s +=  ".";	
 		}
+	} else if (bib.itemType == "computerProgram") {
+		s += " Software";
+		if (bib.versionNumber != "") {
+			s += " - " + bib.versionNumber
+		}
+		s += ".";
 	} else {
 		// do nothing
 	}
