@@ -19,9 +19,9 @@
   img: "https://www.uniroma3.it/wp-content/uploads/2023/01/Logo-CHANGES.png"
 
 - name: OpenAIRE Nexus
-  url: "https://www.openaire.eu/openaire-nexus-project"
+  url: "https://www.unibo.it/en/research/projects-and-initiatives/research-projects-horizon-2020/586/688/8534"
   description: "OpenAIRE-Nexus brings in Europe, EOSC and the world a set of services to implement and accelerate Open Science. In particular, OpenAIRE-Nexus onboards to the EOSC fourteen services, provided by public institutions, einfrastructures, and companies, structured in three portfolios: PUBLISH, MONITOR and DISCOVER. The services are widely used in Europe and beyond and integrated in OpenAIRE-Nexus to assemble a uniform Open Science Scholarly Communication package for the EOSC."
-  img: "https://openapc.net/public/img/nexus.svg"
+  img: "hhttps://www.episciences.org/wp-content/uploads/2023/01/nexus-300x75.png"
 
 - name: SPICE
   url: "https://spice-h2020.eu"
