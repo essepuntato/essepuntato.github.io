@@ -1,9 +1,21 @@
+- name: "Workshop on Open Citations and Open Scholarly Metadata (WOOC 2025)"
+  url: "https://workshop-oc.github.io"
+  role: "Organiser"
+
+- name: "Workshop on Open Citations and Open Scholarly Metadata (WOOC 2023)"
+  url: "https://workshop-oc.github.io/2023/"
+  role: "Organiser"
+
+- name: "Workshop on Open Citations and Open Scholarly Metadata (WOOC 2022)"
+  url: "https://workshop-oc.github.io/2022/"
+  role: "Organiser"
+
 - name: "First Workshop on Bibliographic Data Analysis and Processing (BiblioDAP 2021)"
   url: "https://bibliodap.uni-koblenz.de/"
   role: "Organiser"
 
 - name: "Workshop on Open Citations and Open Scholarly Metadata (WOOC 2020)"
-  url: "https://workshop-oc.github.io"
+  url: "https://workshop-oc.github.io/2020/"
   role: "Organiser"
 
 - name: "4th Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2019)"
