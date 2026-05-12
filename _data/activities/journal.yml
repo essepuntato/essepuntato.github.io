@@ -1,3 +1,8 @@
+- name: "Journal of Open Humanities Data"
+  url: "https://openhumanitiesdata.metajnl.com/"
+  issn: 2059-481X
+  role: "Editorial Board member"
+
 - name: "Journal of Documentation"
   url: "https://www.emerald.com/insight/publication/issn/0022-0418"
   issn: 0022-0418
