@@ -18,6 +18,11 @@
   description: "CHANGES involves several Italian actors – 11 universities, 4 research institutions, 3 schools for advanced studies, 6 companies, and 1 centre of excellence – to promote and preserve Italian cultural heritage in compliance with the aforementioned European policies. CHANGES covers different aspects of CH, including digital and ecological transitions, and it is organised into nine different thematic sub-projects."
   img: "https://www.uniroma3.it/wp-content/uploads/2023/01/Logo-CHANGES.png"
 
+- name: GraspOS
+  url: "https://graspos.eu/"
+  description: "The aim of GraspOS is to build a federated, open, and EOSC-compliant infrastructure for research assessment with the following key objectives: (1) improve the recognition of Open Science-related activities, helping also the incentivisation of Open Science practices, and (2) support the discovery and use of open research information and infrastructures in research assessment processes."
+  img: "https://graspos.eu/templates/yootheme/cache/2c/graspos-2c780789.webp"
+
 - name: OpenAIRE Nexus
   url: "https://www.unibo.it/en/research/projects-and-initiatives/research-projects-horizon-2020/586/688/8534"
   description: "OpenAIRE-Nexus brings in Europe, EOSC and the world a set of services to implement and accelerate Open Science. In particular, OpenAIRE-Nexus onboards to the EOSC fourteen services, provided by public institutions, einfrastructures, and companies, structured in three portfolios: PUBLISH, MONITOR and DISCOVER. The services are widely used in Europe and beyond and integrated in OpenAIRE-Nexus to assemble a uniform Open Science Scholarly Communication package for the EOSC."
