@@ -1,3 +1,23 @@
+- name: "25th International Semantic Web Conference (ISWC 2026)"
+  url: "https://iswc2026.semanticweb.org/"
+  role: "Senior Programme Committee member (Resource Track)"
+
+- name: "23rd European Semantic Web Conference (ESWC 2026)"
+  url: "https://2026.eswc-conferences.org/"
+  role: "Senior Programme Committee member (Research Track)"
+
+- name: "Digital Heritage 2025 (DH 2025)"
+  url: "https://digitalheritage2025.unisi.it/"
+  role: "Chair of the 'Digital Technologies for CHANGES' Research Track"
+
+- name: "The Web Conference 2025 (TheWebConf 2025)"
+  url: "https://archives.iw3c2.org/www2025/"
+  role: "Programme Committee member (Semantics and Knowledge Track)"
+
+- name: "The Web Conference 2024 (TheWebConf 2024)"
+  url: "https://archives.iw3c2.org/www2024/"
+  role: "Programme Committee member (Semantics and Knowledge Track)"
+
 - name: "20th International Conference on Semantic Systems (SEMANTiCS 2024)"
   url: "https://2024-eu.semantics.cc/"
   role: "Organising Committee (Interactive Session Chair) and Programme Committee member"
@@ -18,7 +38,7 @@
   url: "http://tpdl2022.dei.unipd.it/"
   role: "Programme Committee member (Research & Practitioner Full Papers track)"
 
-- name: "19th Extended Semantic Web Conference (ESWC 2022)"
+- name: "19th European Semantic Web Conference (ESWC 2022)"
   url: "https://2022.eswc-conferences.org/"
   role: "Programme Committee member (Ph.D. Symposium)"
 
@@ -34,7 +54,7 @@
   url: "http://iswc2019.semanticweb.org/ "
   role: "Programme Committee member (Resource Track)"
 
-- name: "16th Extended Semantic Web Conference (ESWC 2019)"
+- name: "16th European Semantic Web Conference (ESWC 2019)"
   url: "https://2019.eswc-conferences.org"
   role: "Programme Committee member (Research Track)"
 
@@ -50,7 +70,7 @@
   url: "http://iswc2018.semanticweb.org/ "
   role: "Programme Committee member (Research Track, Resource Track)"
 
-- name: "15th Extended Semantic Web Conference (ESWC 2018)"
+- name: "15th European Semantic Web Conference (ESWC 2018)"
   url: "https://2018.eswc-conferences.org/organizing-committee"
   role: "Organising Committee (Open conference data Chair) and Programme Committee member (Research Track, Resource Track, Workshops and Tutorials)"
 
@@ -78,7 +98,7 @@
   url: "http://www.semantics.cc/ "
   role: "Programme Committee member"
 
-- name: "13th Extended Semantic Web Conference (ESWC 2016)"
+- name: "13th European Semantic Web Conference (ESWC 2016)"
   url: "http://2016.eswc-conferences.org/ "
   role: "Programme Committee member"
 
@@ -102,7 +122,7 @@
   url: "http://www.semantics.cc/ "
   role: "Programme Committee member"
 
-- name: "12th Extended Semantic Web Conference (ESWC 2015)"
+- name: "12th European Semantic Web Conference (ESWC 2015)"
   url: "http://2015.eswc-conferences.org/ "
   role: "Chair of the “Vocabularies, Schemas, Ontologies” Research Track"
 
@@ -130,7 +150,7 @@
   url: "http://www.cs.unibo.it/sacwt14/ "
   role: "Programme Committee member of the Web Technologies track"
 
-- name: "11th Extended Semantic Web Conference (ESWC 2014)"
+- name: "11th European Semantic Web Conference (ESWC 2014)"
   url: "http://2014.eswc-conferences.org/  "
   role: "Organising Committee (Publicity Chair) and Programme Committee member"
 
@@ -142,7 +162,7 @@
   url: "http://www.cs.unibo.it/sacwt13/ "
   role: "Programme Committee member of the Web Technologies track"
 
-- name: "10th Extended Semantic Web Conference (ESWC 2013)"
+- name: "10th European Semantic Web Conference (ESWC 2013)"
   url: "http://2013.eswc-conferences.org/  "
   role: "Programme Committee member"
 
